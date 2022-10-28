@@ -1,0 +1,70 @@
+.central-simmer .el-input {
+    --el-input-bg-color: var(--cs-primary);
+    --el-input-border-radius: 15px;
+    --el-input-border-color: rgba(255, 255, 255, 0);
+    --el-input-text-color: #ffffff;
+}
+
+.central-simmer .el-input .el-input__inner {
+    padding: 0 20px;
+}
+
+.central-simmer {
+    --cs-primary: #9019da;
+
+    --el-bg-color: #e3caf9d6 !important;
+    --el-menu-bg-color: #e3caf9d6 !important;
+    --el-menu-active-color: var(--cs-primary) !important;
+    --thumbBG: var(--cs-primary) !important;
+    --el-fill-color-blank: #f7edff !important;
+
+    --el-color-primary-light-9: #eedafa !important;
+    --el-color-primary-light-8: #e5baff !important;
+    --el-color-primary-light-7: #e5baff !important;
+    --el-color-primary-light-5: #d1a9e9 !important;
+    --el-color-primary-light-3: #b030ff !important;
+    --el-color-primary: var(--cs-primary) !important;
+    --el-text-color-primary: #6F448A !important;
+    --el-color-primary-dark-2: #8224e3 !important;
+
+    --el-text-color-secondary: rgb(136,136,136) !important;
+    --el-dialog-bg-color: #e3caf9 !important;
+    --el-text-color-placeholder: var(--el-color-white) !important;
+
+    --el-color-success: #1a9c91 !important;
+    --el-color-success-light-3: #00d082 !important;
+    --el-color-success-light-5: #00d084 !important;
+    --el-color-success-light-7: #aebcb9 !important;
+    --el-color-success-light-8: #aebcb9 !important;
+    --el-color-success-light-9: #b6e3d4 !important;
+    --el-color-success-dark-2: #00ab6b !important;
+
+    --el-color-danger: #BB338E !important;
+    --el-color-danger-light-3: #ee2c82 !important;
+    --el-color-danger-light-5: #e94c89 !important;
+    --el-color-danger-light-7: #ea4c89 !important;
+    --el-color-danger-light-8: #ea4c89 !important;
+    --el-color-danger-light-9: #ffceec !important;
+    --el-color-danger-dark-2: #6b003e !important;
+
+    --el-color-warning: #BB9612 !important;
+    --el-color-warning-light-3: #ffa41b !important;
+    --el-color-warning-light-5: #dd9933 !important;
+    --el-color-warning-light-7: #f0ad4e !important;
+    --el-color-warning-light-8: #fdd79a !important;
+    --el-color-warning-light-9: #fecda5 !important;
+    --el-color-warning-dark-2: #ff6900 !important;
+
+}
+
+.central-simmer .el-input__inner::placeholder{
+    color: var(--el-color-white);
+}
+
+.central-simmer section.el-container .el-scrollbar {
+    background: url("https://centralsimmer.com/wp-content/uploads/themeres/bg/bg_lightskin_plain.jpg") !important;
+}
+
+.central-simmer.dark section.el-container .el-scrollbar {
+    background: url("https://centralsimmer.com/wp-content/uploads/themeres/bg/bg_darkskin_plain.jpg") !important;
+}

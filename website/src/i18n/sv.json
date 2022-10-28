@@ -1,0 +1,432 @@
+{
+    "message": {
+        "common": {
+            "link": "länk länk",
+            "item_type_label": "Typ",
+            "group_item_type_label": "Mods grupp",
+            "hide_button": "Hide",
+            "edit_button": "Edit",
+            "translate_button": "Översättning",
+            "website": "Webbplats",
+            "operation_label": "Operation",
+            "file_label": "Fil",
+            "select_file": "Välj fil",
+            "version_label": "Version",
+            "name_label": "Namnnamn",
+            "date_label": "Datum",
+            "size_label": "Storlek",
+            "search_label": "Sök efter Sök",
+            "update_label": "Uppdatering",
+            "disabled_label": "Inaktiverad",
+            "description_label": "Beskrivning",
+            "no_results_label": "Inga resultat",
+            "please_review_your_criteria": "Vänligen granska dina kriterier",
+            "are_you_sure_do_you_cant_to_remove_this_mod": "Är du säker på att du vill ta bort denna mod?",
+            "remove_label": "Ta bort",
+            "disable_label": "Inaktivera",
+            "enable_label": "Aktivera",
+            "unignore_update_until_next_one": "Un-ignore uppdatering till nästa",
+            "created_label": "Skapad",
+            "creator_label": "Skaparen",
+            "source_label": "Källa",
+            "info_label": "Info",
+            "installations_label": "Installationer",
+            "marked_outdated_label": "Markerad som föråldrad",
+            "updated_label": "Uppdaterad",
+            "downloads_label": "Nedladdningar",
+            "required_label": "Krav",
+            "files_label": "Filer",
+            "tags_label": "Taggar",
+            "sort_label": "Sort",
+            "filter_label": "Filter",
+            "filters_label": "Filter",
+            "provider_label": "Leverantör",
+            "modder_website": "Modders hemsida",
+            "creator_name_label": "Skaparens namn",
+            "clear_filters_button": "Tydliga filter",
+            "sort": {
+                "best_match": "Bästa match",
+                "downloads": "Nedladdningar",
+                "creation_date": "Skapelsedatum",
+                "last_update": "Senaste uppdateringen"
+            },
+            "install_button": "Installera",
+            "remove_mod_button": "Ta bort mod",
+            "faq_label": "FAQ",
+            "contact_label": "Kontakta Kontakt",
+            "about_label": "Om",
+            "last_update_label": "Senaste uppdateringen",
+            "close_button": "Nära",
+            "cancel_button": "Avbokning",
+            "logs_label": "Loggar",
+            "others_label": "Andra",
+            "validate_button": "Validera",
+            "ok_button": "Ok",
+            "new_tag_label": "Ny tagga",
+            "type_or_select_a_tag": "Skriv eller välj en tag",
+            "add_tag": "Lägg till tagga",
+            "install_mod_button": "Installera mod",
+            "quick_install_mod_button": "Installera",
+            "no_download_file_mod_cannot_be_installed": "Mod kan inte installeras eftersom det inte finns några filer att ladda ner",
+            "developed_by": "Utvecklat av",
+            "fix_button": "Fix",
+            "no_issue_found": "Inget problem hittades",
+            "tray_files_label": "Tray filer",
+            "zip_file_in_mods_folder_label": "Zip-filer i mods mapp",
+            "ts4script_files_label": "Ts4script filer",
+            "duplicated_files": "Duplicerade filer",
+            "select_the_file_to_keep": "Välj filen för att hålla",
+            "multiple_select": {
+                "all": "Allt allt",
+                "enabled": "Enabled",
+                "disabled": "Inaktiverad",
+                "undefined": "Ingen",
+                "no_update": "Ingen uppdatering",
+                "update_available": "Uppdatera tillgänglig",
+                "update_ignored": "Uppdatering ignorerad"
+            },
+            "mods_included": "Mods ingår",
+            "group_mods_tab_label": "Mods",
+            "group_confirm_install": "Genom att installera denna grupp installerar du följande mods:",
+            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Är du säker på att du vill ta bort denna modgrupp? Mods kommer inte att tas bort, detta kommer bara att spåra gruppen.",
+            "group_installed": "Mod grupp installerad",
+            "group_uninstalled": "Mod grupp bort"
+        },
+        "app": {
+            "authenticate": "Autentisering",
+            "sign_out": "Logga ut",
+            "user_not_signed_in": "Logga in",
+            "app_required_warning": "Utan vår app kan vi inte uppdatera dina mods. Vänligen ladda ner det med detta ",
+            "app_required_title": "App krävs",
+            "new_app_update_required": "Ny uppgradering tillgänglig",
+            "new_app_update_available_title_summary": "En ny uppgradering är tillgänglig",
+            "new_app_update_text": "För att fungera, ladda ner och installera den nya versionen",
+            "new_app_update_button": "Ladda ner ny version",
+            "last_updated_mods": "Senast uppdaterade mods",
+            "most_downloaded_mods": "De flesta nedladdade mods",
+            "never_lose_time_again": "Förlora aldrig igen när du uppgraderar dina mods",
+            "choose_between_more_than": "Välj mellan mer än {modsCount} mods och CC",
+            "psst_its_free": "Psst: Det betyder mer tid att spela och det är gratis",
+            "start_using_app_button": "Börja använda vår app nu",
+            "facts_label": "Fakta",
+            "about_your_installation_title": "Om din installation",
+            "installed_mods": "Installerade mods",
+            "enabled_mods": "Aktiverade mods",
+            "disabled_mods": "Inaktiverade mods",
+            "available_updates": "Tillgängliga uppdateringar",
+            "issues_found": "Frågor hittade",
+            "about_sims_mods_updater": "Om Sims Mods Updater",
+            "app_version_label": "App version",
+            "indexed_mods": "Indexerade mods i databasen",
+            "installed_mods_using_smu": "Mod installerad med app",
+            "updated_mods_using_smu": "Mod uppdaterad med app",
+            "do_not_forget_to_join_our": "Glöm inte att gå med i vår",
+            "and_follow_us_on": "och följa oss",
+            "and": "och",
+            "coffee_time": {
+                "title": "Kaffetid!",
+                "desc": "Detta hjälper mig att köra webbplatsen och programmet. Tack vare detta är de fria för alla och presterande. Om du vill hjälpa mig mer kan du prenumerera <a href=\"https://www.buymeacoffee.com/joch\" target=\"_blank\">på min sida</a> Köp mig ett kaffe medlemskap. <br/><b>Om du stödde mig</b>Glöm inte att lägga till din e-post i din app <a href=\"/config\">Konfiguration</a>Detta kommer att ta bort alla annonser och popups, med 1 kaffe = 1 månad utan annonser."
+            },
+            "loading": "Loading...",
+            "notify": {
+                "mod_install": "{modname} har installerats",
+                "mod_updat": "{modname} har uppdaterats",
+                "mod_removed": "{modname} har tagits bort",
+                "status_issue_detected": "Vi upptäckte ett problem med en extern komponent. <br/>Du kanske inte kan installera eller uppdatera mods från vissa källor. <br/>Vänligen kontrollera statussidan för mer information.",
+                "status_issue_resolved": "Alla komponenter är nu tillgängliga: du kan nu installera och uppgradera alla mod.",
+                "waiting_no_more_tasks": "Vänta uppgifter slut",
+                "checking_dependencies": "Kontrollera beroenden",
+                "downloading_cache": "Ladda ner cache...",
+                "downloading_cache_progression": "Ladda ner cache {progression}%",
+                "validating_cache": "Validerar cache...",
+                "purging_cache": "Purging tidigare cache...",
+                "indexing_cache_progression": "Indexing cache {progression}%",
+                "downloading_dependencies_progression": "Ladda ner beroenden {progression}%",
+                "starting_internal_processes": "Starta interna processer",
+                "starting_internal_processes_failure": "Det går inte att starta interna processer. Starta om appen i administratörsläge och inaktivera din anti-malware.",
+                "waiting_for_settings": "Väntar på inställningar",
+                "initializing_versioning_system": "Initialiserande versionssystem (kan vara lång)",
+                "sorting_mods_progression": "Sortering mods {progression}%",
+                "deleting_empty_folders": "Ta bort tom mapp",
+                "fixing_issues": "Fastställande problem...",
+                "fixing_issues_progression": "Fastställande fråga n ́current}/{total}",
+                "fixing_issue_done": "Alla problem fixade. Förbered en full skanning...",
+                "reverting_change": "Revertera förändring...",
+                "reinit_versioning_system": "Reinitialiserande versionssystem (kan vara lång)",
+                "listing_files": "Lista filer i mods mapp...",
+                "retrieving_mods_from_files_progression": "Hämta mods från filer - {progression}%",
+                "merging_stuff": "Sammanslagning av saker...",
+                "loading_mods": "Loading mods...",
+                "loading_metadata": "Ladda metadata...",
+                "checking_issues_for_duplicates": "Kontrollera problem för duplicerade filer",
+                "checking_issues_for_duplicates_progression": "Kontrollera problem för duplicerade filer {progression}%",
+                "checking_issues_for_misplaced_tray_files": "Kontrollera problem för felplacerade brickfiler",
+                "checking_issues_for_misplaced_ts4script": "Kontrollera problem för felplacerade ts4script",
+                "checking_issues_for_zip_files": "Kontrollera problem för zip-fil i mods mapp",
+                "checking_issues_progression": "Kontrollera frågor {progression}%"
+            }
+        },
+        "menu": {
+            "home_menu_tooltip": "Hemsidan",
+            "mods_menu_tooltip": "Mods",
+            "issues_menu_tooltip": "Frågor",
+            "history_menu_tooltip": "Historia historia",
+            "search_menu_tooltip": "Sök efter Sök",
+            "settings_menu_tooltip": "Inställningar",
+            "download_menu_tooltip": "Ladda ner",
+            "status_menu_tooltip": "Status",
+            "faq_contact_about_menu_tooltip": "FAQ - Kontakt - Om"
+        },
+        "config": {
+            "configure_title": "Konfigurera din installation",
+            "invalid_config": "Ogiltig konfiguration",
+            "folder_not_found": "En av din valda mapp finns inte. Vänligen kontrollera dem.",
+            "mods_folder": "Mods mapp",
+            "please_select_a_folder": "Vänligen välj en mapp",
+            "select_folder_button": "Välj mapp",
+            "tray_folder": "Tray mapp",
+            "enable_versioning": "Aktivera versionering",
+            "new_folder_pattern": "Ny mapp mönster",
+            "new_folder_pattern_placeholder": "Ny mappmönster (t.ex. {skapare} {titel})",
+            "new_folder_pattern_desc": {
+                "available_placeholders_title": "Tillgängliga platshållare",
+                "example_with_your_current_pattern": "Exempel på ditt nuvarande mönster"
+            },
+            "please_fill_the_input": "Vänligen fyll ingången",
+            "check_update_interval": "Kontrollera uppdateringsintervall",
+            "hours": "timmar",
+            "display_update_popup": "Display update popup",
+            "update_mods_in_their_previous_folder": "Uppdatera mods i sin tidigare mapp",
+            "buy_me_a_coffee_email": "Köp mig ett kaffekonto e-post",
+            "please_input_a_correct_email": "Vänligen ange rätt e-postadress",
+            "buy_me_a_coffee_email_placeholder": "Köp mig en kaffepost (används för att ta bort annonser om du stödde mig)",
+            "disable_hardware_acceleration": "Inaktivera hårdvaruacceleration",
+            "versioning_warning": {
+                "title": "Aktivera versionering",
+                "desc": "Observera att versionssystemet kräver diskutrymme: åtminstone samma mängd av mappen Mods."
+            },
+            "versioning_help": {
+                "title": "Aktivera versionering",
+                "desc": "När det är aktiverat kommer appen att spela in alla ändringar som gjort appen själv. Du kommer att kunna se dina ändringar och återställa några av dem. Observera att du måste ha minst 3 gånger din mods mappstorlek i diskutrymme"
+            },
+            "display_update_help": {
+                "title": "Display update popup",
+                "desc": "När det är aktiverat visar appen dig en popup med mods att uppdatera. Om funktionshindrade måste du gå till modsmenyn för att uppdatera mods en efter en."
+            },
+            "update_mods_in_their_previous_folder_help": {
+                "title": "Uppdatera mods i sin nuvarande mapp",
+                "desc": "Berättar appen för att installera filer i mods mapp efter en uppdatering. Vänligen aktivera inte det här alternativet om du har flera mods i samma mapp."
+            },
+            "hardware_acceleration_help": {
+                "title": "Hårdvaruacceleration",
+                "desc": "Aktivera denna parameter om du stöter på lagar. Starta om appen efter att ha ändrat den här inställningen"
+            },
+            "new_folder_pattern_help": {
+                "title": "Ny mapp mönster",
+                "desc": "Detta är det mönster som används när appen skapar ny mapp i mappen Mods under en installation."
+            },
+            "new_folder_pattern_modified_popup": {
+                "title": "Mod mapp mönster ändrat",
+                "desc": "Du ändrade det nya mappmönstret.<br/>Vill du byta namn på alla dina modsmapp med det nya mönstret?",
+                "confirm_button": "Rename mods mapp",
+                "cancel_button": "Gör ingenting"
+            },
+            "refresh_logs_button": "Refresh loggar",
+            "open_log_file_button": "Open Log Fil",
+            "reset_mod_cache_button": "Återställ mod cache"
+        },
+        "update": {
+            "update_found_title": "Uppdatering hittad",
+            "ignore_until_next_update": "Ignorera uppdatering till nästa uppdatering",
+            "operation_type_remove": "Ta bort",
+            "operation_type_install": "Installera",
+            "no_file_selected_so_nothing_will_be_done": "Ingen fil vald: Detta innebär att mod inte kommer att uppdateras. Filer kommer inte att tas bort.",
+            "will_ignore_this_update_until_the_next_one_available": "Denna uppdatering kommer att ignoreras till nästa"
+        },
+        "mods": {
+            "installed_mods": "Installerade mods",
+            "category": "Kategori",
+            "state": "Staten",
+            "actions_button": "Åtgärder",
+            "check_update_button": "Kontrollera uppdatering",
+            "rescan_folder_button": "Rescan mods mapp",
+            "sort_mods_button": "Sort mods baserat på mappmönster",
+            "no_mods_found_title": "Inga mods hittade",
+            "no_mods_found_description": "Inga mods har hittats...",
+            "selected_label": "{nb} vald",
+            "remove_popup": {
+                "title": "Ta bort bekräftelse",
+                "desc": "mod <b style=\"color: var(--el-color-primary)\">{modname}</b> tas bort från filsystemet. <br/>Detta kan inte vara ogjort. Är du säker?"
+            },
+            "bulk_remove_popup": {
+                "desc": "Alla valda mods kommer att tas bort från filsystemet. <br/>Detta kan inte vara ogjort. Är du säker?"
+            },
+            "bulk_disable_popup": {
+                "desc": "Alla valda mods kommer att inaktiveras från filsystemet. <br/>Detta innebär att filer fortfarande kommer att finnas på ditt filsystem, men kommer inte att plockas av spelet."
+            },
+            "disable_popup": {
+                "title": "Inaktiv bekräftelse",
+                "desc": "mod <b style=\"color: var(--el-color-primary)\">{modname}</b> kommer att inaktiveras. <br/>Detta innebär att filer fortfarande kommer att finnas på ditt filsystem, men kommer inte att plockas av spelet."
+            },
+            "groups_tab_label": "Modsgrupper",
+            "group_form_title": "Grupp titel",
+            "group_form_description": "Gruppbeskrivning",
+            "please_fill_the_field": "Fyll i detta fält",
+            "length_should_be_in_range": "Längd bör vara från {min} till {max} bokstäver",
+            "create_new_group_button": "Ny grupp",
+            "create_new_group_dialog": "Skapa en ny Mod-grupp",
+            "edit_group_dialog": "Redigera Mod Group",
+            "group_remove_dialog": {
+                "title": "Ta bort gruppbekräftelse",
+                "desc": "Gruppen kommer att tas bort. Appen spårar inte gruppens uppdateringar. Mods kommer fortfarande att installeras"
+            },
+            "group_help_dialog": {
+                "title": "Group Mod-funktion",
+                "desc": "<h3>Den här funktionen låter dig dela ett mod pack, baserat på dina installerade mods.</h3><br/>När en användare installerar en mod-grupp installerar den automatiskt alla mods som ingår i denna grupp, med samma skapare konfiguration.<br/>Du kan skapa en mod-grupp, som kommer att vara sökbar och installeras av någon annan användare."
+            },
+            "group_err_dialog": {
+                "title": "Underlåtenhet",
+                "desc": "Kan inte skapa eller redigera en modgrupp: {reason}"
+            },
+            "group_created": "Mod grupp skapad",
+            "group_edited": "Mod grupp redigerad",
+            "no_followed_groups_title": "Ingen mod grupp",
+            "no_followed_groups_desc": "Du har ingen mod grupp. Du kan skapa en eller installera några från sökmenyn"
+        },
+        "details": {
+            "shout_out_to_modders": "Vänligen, kolla in {skapare} <a href=\"{url}\" target=\"_blank\">{typ}</a> att stödja dem",
+            "suggestions_label": "Förslag",
+            "no_suggestions_yet": "Inga förslag ännu...",
+            "mark_as_outdated": "Mark som föråldrad",
+            "unmark_as_outdated": "Unmark som föråldrad",
+            "mark_mod_as_outdated_popup_title": "Mark mod som föråldrad",
+            "mark_mod_as_outdated_popup_desc": "Du är på väg att markera denna mod som föråldrad: andra användare kommer att se den.<br/><b>Vänligen markera inte det som föråldrat om du inte är säker.</b>",
+            "mark_mod_as_outdated_popup_confirm_button": "Markera den som föråldrad"
+        },
+        "scheduler": {
+            "pending_tasks": "I väntan på uppgifter",
+            "done": "Done",
+            "checking_update": "Kontrollera uppdatering"
+        },
+        "file_picker": {
+            "select_files_to_install_title": "Välj filer för att installera",
+            "select_files_to_install_desc": "Du kanske inte vill installera alla filer: vissa av dem är förmodligen äldre versioner. Att ha samma mod med 2 olika versioner kan orsaka spelkraschen. Välj klokt;)",
+            "no_files_to_install_title": "Inga filer att installera",
+            "no_files_to_install_desc": "Inga filer att installera för denna mod. Skaparen tog bort dem, ledsen!"
+        },
+        "faq": {
+            "how_does_it_works_title": "Hur fungerar det?",
+            "how_does_it_works_desc": "Du måste ladda ner programmet, med detta <a href=\"/download\">länk länk</a> Och du måste installera den. När du har konfigurerat det kan du bläddra i mods och installera några av dem. Appen kontrollerar automatiskt uppdateringar och installerar dem för dig.",
+            "is_it_legal_title": "Är det lagligt? Kan jag bli förbjuden för att använda den?",
+            "is_it_legal_desc": "Detta är en juridisk ansökan och du kan inte förbjudas för att använda den. Detta program kommer att installera och uppdatera mods, precis på samma sätt som du gör det.",
+            "can_i_modify_mods_title": "Kan jag ändra modifieringar installerade av programmet?",
+            "can_i_modify_mods_desc": "Ja, du kan ändra modifieringar installerade av programmet."
+        },
+        "download": {
+            "why_is_there_an_app": "Varför finns det en app?",
+            "explain_why_is_there_an_app": "Eftersom vi behöver manipulera filsystemet för att installera och uppdatera dina mods.",
+            "what_do_i_need": "Vad behöver jag? ",
+            "explain_what_do_i_need": "Du måste ha minst 300 Mo free space",
+            "how_does_it_works": "Hur fungerar det? ",
+            "explain_dow_does_it_works_1": "1. Konfigurera programmet: välj din Sims 4 mods mapp",
+            "explain_dow_does_it_works_2": "2. Bläddra bland mods och klicka på knappen Installera",
+            "explain_dow_does_it_works_3": "3. Njut av och leka"
+        },
+        "commit": {
+            "title": "Mods historia",
+            "reset_history_button": "Återställ historia",
+            "history_details_title": "Historia detaljer",
+            "history_change_details_desc": {
+                "title": "Historia förändring detaljer",
+                "reason": "Reason",
+                "date": "Datum",
+                "mod": "Mod Mod",
+                "mod_files": "Mod filer",
+                "previous_version": "Tidigare version"
+            },
+            "confirm_revert_change": "Är du säker på att du vill återställa denna förändring?",
+            "confirm_revert_change_button": "Revertera denna förändring",
+            "no_file_changed": "Ingen fil har ändrats",
+            "no_file_changed_desc": "Vanligtvis inträffar denna situation när mod-beskrivningen har uppdaterats eller när moddern ändrar en icke-spårad fil (som en txt-fil).",
+            "no_file_changed_revert_desc": "Detta inträffar vanligen när förändringarna redan har återgått",
+            "reset_history_confirm": {
+                "title": "Återställ historia",
+                "desc": "Historien kommer att utplånas. <br/>Du kommer inte att förlora dina mods, men du kommer inte att kunna återställa en förändring.<br/>Du kommer att få utrymme på din disk."
+            },
+            "update_mod": "Mod uppdaterad",
+            "enable_mod": "Mod aktiverad",
+            "disable_mod": "Mod inaktiverad",
+            "install_mod": "Mod installerad",
+            "delete_mod": "Mod borttagen",
+            "sort_mods": "Mods sorterade",
+            "app_start": "App började med manuellt modifierade filer",
+            "revert_change": "Ändra reverterad",
+            "manually_modified_changed": "Manuellt modifierade filer",
+            "force_revert_change": "Revertera tvingad med historia förlust",
+            "reset_versioning": "Historia återställning",
+            "patch": {
+                "remove": "Removed",
+                "add": "Tillagd",
+                "modify": "Modifierad"
+            }
+        },
+        "about": {
+            "title": "Alla mods på ett ställe med automatisk uppdatering",
+            "subtitle": "Hitta mods som passar dig, utan att behöva söka på allt internet. Använda <span style=\"color: var(--el-color-primary)\">sims-mods-updater</span>Du kan söka runt flera skapare innehåll och hålla dina mods uppdaterade, utan att göra något.",
+            "goal": "Mitt mål är att hjälpa människor att hålla sina mods uppdaterade, utan att manuellt ladda ner dem en efter en. Jag förbättrar kontinuerligt min webbplats och min app för att göra ditt liv bättre genom att automatisera de flesta av dina uppgifter. För nu stöder jag bara Sims 4, men jag kan utöka detta koncept till andra (sims) spel.",
+            "search": "Sökalgoritmen är utformad för att hjälpa dig att hitta den perfekta mod. Algoritmen kommer att söka på alla våra stödda leverantörer: en sökning räcker för att hitta din mod. Det är också typo friendly :)",
+            "update": "Applikationen låter dig automatiskt uppdatera dina mods när det finns en ny uppdatering. Du behöver inte spendera timmar och timmar för att uppdatera dem manuellt. Vi kontrollerar också att mods är kompatibla, vilket kan spara timmar och timmar av felsökning.",
+            "providers": "Vi stöder för närvarande dessa leverantörer: modthesims, thesimsresource, nexusmods, some itch.io, some patreons and some modders. Jag planerar att lägga till fler leverantörer och jag planerar att låta dig ladda upp dina mods direkt i mitt system.",
+            "free": "Till skillnad från många andra webbplatser och verktyg kommer webbplatsen och programmet alltid att vara gratis. Annonser är bara här för att täcka webbplatsens löpande kostnader. Du kan ta bort dem genom att hjälpa mig att använda <a href=\"https://www.buymeacoffee.com/joch\">Köp mig kaffe</a> Programprogram",
+            "privacy": "Din integritet är säker hos oss: vi samlar inte in några uppgifter om dig själv. Vi använder ingen cookie och internettrafiken krypteras med SSL (https). <br/>Appen och webbplatsen skannas varje dag för säkerhetsöverträdelser och kända sårbarheter, för att se till att du inte har några problem med våra verktyg.",
+            "copyright": "<span style=\"color: var(--el-color-primary)\">Sims mods updater</span> Alla rättigheter reserverade. Denna webbplats och applikation stöds inte av eller är ansluten till elektronisk konst eller dess licensgivare. Varumärken är deras respektive ägares egendom."
+        },
+        "changelog": {
+            "features": "Funktioner",
+            "fixes": "fixar",
+            "others": "Andra",
+            "feeling_about": "Rate this version",
+            "2_4_0": {
+                "features": {
+                    "i18n": "Du kan nu välja språket i appen och på webbplatsen. Känn dig fri att rapportera fel översättning i oenigheten.",
+                    "translate_button": "Det finns nu en \"Translate\" knapp bredvid kort beskrivning (i sökresultat) och bredvid beskrivningen (i Mod detaljvy). Observera att stora beskrivningar kan ta lite tid att översättas.",
+                    "uninstalling": "Avinstallera appen tar nu bort alla interna filer och alla aktuella stater",
+                    "icemunmun": "Icemunmun mods är nu indexerade",
+                    "vickysims": "Vicky Sims mods är nu indexerade"
+                },
+                "fixes": {
+                    "fix_loading": "Förhindra att appen stannar i staten \"Loading\" efter vissa operationer",
+                    "fix_versioning": "Fixa problem med versionssystemet som inte startar korrekt på vissa datorer",
+                    "fix_restart": "Lös problemet där appen inte kunde installera eller uppdatera mods längre utan omstart",
+                    "fix_wrong_error": "Fixa falska fel visas när du installerar vissa mods"
+                },
+                "others": {
+                    "update_checking": "Uppdateringskontrollprocessen har optimerats (250 gånger snabbare)",
+                    "rewording": "Vissa omställningar har gjorts",
+                    "optimize": "Optimera webbplatsstorlek"
+                }
+            },
+            "2_5_x": {
+                "features": {
+                    "recover_versioning": "Appen kan nu återhämta sig från versionssystemkorruption",
+                    "mods_screen_redesign": "Mods-skärmen har omdesignats för att hantera prestandaproblem",
+                    "bulk_operations": "Du kan nu köra bulkverksamhet på mods (ta bort, inaktivera, aktivera och uppdatera)",
+                    "log_in": "Du kan nu logga in med hjälp av Google, Facebook, Twitter eller e-post / lösenord detta låsa upp några nya funktioner",
+                    "mod_group": "Du kan nu skapa Mods grupp som kan sökas och installeras av andra användare. Mer kommer snart runt denna funktion!",
+                    "adeepindigo": "Adeepindigo mods är nu indexerade",
+                    "feedback": "Du kan nu betygsätta en uppdatering"
+                },
+                "fixes": {
+                    "loading": "Fix loading overlay på söksidan",
+                    "disabled_popup": "Fix inaktivera popup varningsmeddelande som inte visar ordentligt",
+                    "close_button": "Fix \"nära\" knappen som inte visar rätt etikett",
+                    "update_disabled_mod": "När du uppdaterar en funktionshindrad mod kommer den fortfarande att inaktiveras efter uppdateringen"
+                },
+                "others": {
+                    "search_engine": "Uppgradera sökmotor (förbättra sökprestanda x20)",
+                    "ads": "Ta bort några annonser"
+                }
+            }
+        }
+    }
+}

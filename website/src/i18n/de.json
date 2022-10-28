@@ -1,0 +1,432 @@
+{
+    "message": {
+        "common": {
+            "link": "Gliederung",
+            "item_type_label": "Art",
+            "group_item_type_label": "Mods Gruppe",
+            "hide_button": "Hirse",
+            "edit_button": "Bearbeiten",
+            "translate_button": "Übersetzung",
+            "website": "Webseite",
+            "operation_label": "Betrieb",
+            "file_label": "Datei",
+            "select_file": "Wählen Sie die Datei",
+            "version_label": "Version",
+            "name_label": "Name",
+            "date_label": "Datum",
+            "size_label": "Größe",
+            "search_label": "Suche",
+            "update_label": "Aktualisierung",
+            "disabled_label": "Behinderte",
+            "description_label": "Warenbezeichnung",
+            "no_results_label": "Keine Ergebnisse",
+            "please_review_your_criteria": "Bitte überprüfen Sie Ihre Kriterien",
+            "are_you_sure_do_you_cant_to_remove_this_mod": "Sind Sie sicher, dass Sie diesen Mod entfernen möchten?",
+            "remove_label": "Entfernen",
+            "disable_label": "Nicht verfügbar",
+            "enable_label": "Ermöglichen",
+            "unignore_update_until_next_one": "Unwissen-Update bis zum nächsten",
+            "created_label": "Erstellt",
+            "creator_label": "Schöpfer",
+            "source_label": "Quelle",
+            "info_label": "Info",
+            "installations_label": "Installationen",
+            "marked_outdated_label": "Vermerkt als veraltet",
+            "updated_label": "Aktualisiert",
+            "downloads_label": "Downloads",
+            "required_label": "Anforderungen",
+            "files_label": "Dateien",
+            "tags_label": "Schlagwörter",
+            "sort_label": "Sortierung",
+            "filter_label": "Filter",
+            "filters_label": "Filter",
+            "provider_label": "Anbieter",
+            "modder_website": "Website von Modder",
+            "creator_name_label": "Name des Schöpfers",
+            "clear_filters_button": "Filter löschen",
+            "sort": {
+                "best_match": "Beste Übereinstimmung",
+                "downloads": "Downloads",
+                "creation_date": "Erstellungsdatum",
+                "last_update": "Letzte Aktualisierung"
+            },
+            "install_button": "Installieren",
+            "remove_mod_button": "Entfernen mod",
+            "faq_label": "FAQ",
+            "contact_label": "Kontakt",
+            "about_label": "Über uns",
+            "last_update_label": "Letzte Aktualisierung",
+            "close_button": "Schließen",
+            "cancel_button": "Abbrechen",
+            "logs_label": "Logs",
+            "others_label": "Sonstige",
+            "validate_button": "Gültig",
+            "ok_button": "Ok.",
+            "new_tag_label": "Neuer Tag",
+            "type_or_select_a_tag": "Geben Sie einen Tag ein",
+            "add_tag": "In den Warenkorb",
+            "install_mod_button": "Installieren Sie mod",
+            "quick_install_mod_button": "Installieren",
+            "no_download_file_mod_cannot_be_installed": "Der Mod kann nicht installiert werden, weil es keine Dateien zum Download",
+            "developed_by": "Entwickelt von",
+            "fix_button": "Fehler",
+            "no_issue_found": "Kein Problem gefunden",
+            "tray_files_label": "Trap-Dateien",
+            "zip_file_in_mods_folder_label": "Zip-Dateien in Mods-Ordner",
+            "ts4script_files_label": "ts4script Dateien",
+            "duplicated_files": "Duplizierte Dateien",
+            "select_the_file_to_keep": "Wählen Sie die Datei, um zu halten",
+            "multiple_select": {
+                "all": "Alle",
+                "enabled": "Ermöglicht",
+                "disabled": "Behinderte",
+                "undefined": "Keine",
+                "no_update": "Kein Update",
+                "update_available": "Update verfügbar",
+                "update_ignored": "Update ignoriert"
+            },
+            "mods_included": "Mods enthalten",
+            "group_mods_tab_label": "Änderungen",
+            "group_confirm_install": "Durch die Installation dieser Gruppe installieren Sie die folgenden Mods:",
+            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Sind Sie sicher, dass Sie diese Mod-Gruppe entfernen möchten? Mods werden nicht entfernt, das wird die Gruppe einfach nicht verfolgen.",
+            "group_installed": "Mod-Gruppe installiert",
+            "group_uninstalled": "Mod Gruppe entfernt"
+        },
+        "app": {
+            "authenticate": "Authentifizierung",
+            "sign_out": "Anmeldung",
+            "user_not_signed_in": "Anmeldung",
+            "app_required_warning": "Ohne unsere App können wir Ihre Mods nicht aktualisieren. Bitte laden Sie es mit diesem herunter ",
+            "app_required_title": "App erforderlich",
+            "new_app_update_required": "Neues Upgrade verfügbar",
+            "new_app_update_available_title_summary": "Ein neues Upgrade ist verfügbar",
+            "new_app_update_text": "Um zu arbeiten, laden Sie die neue Version herunter und installieren Sie sie",
+            "new_app_update_button": "Neue Version herunterladen",
+            "last_updated_mods": "Zuletzt aktualisierte Mods",
+            "most_downloaded_mods": "Die meisten heruntergeladenen Mods",
+            "never_lose_time_again": "Verlieren Sie nie wieder Zeit beim Upgrade Ihrer Mods",
+            "choose_between_more_than": "Wählen Sie zwischen mehr als {modsCount} mods und CC",
+            "psst_its_free": "Psst: es bedeutet mehr Zeit zu spielen und es ist kostenlos",
+            "start_using_app_button": "Starten Sie jetzt unsere App",
+            "facts_label": "Fakten",
+            "about_your_installation_title": "Über Ihre Installation",
+            "installed_mods": "Installierte Mods",
+            "enabled_mods": "Enabled mods",
+            "disabled_mods": "Deaktivierte Mods",
+            "available_updates": "Verfügbare Updates",
+            "issues_found": "Themen gefunden",
+            "about_sims_mods_updater": "Über Sims Mods Updater",
+            "app_version_label": "App-Version",
+            "indexed_mods": "Indexierte Mods in der Datenbank",
+            "installed_mods_using_smu": "Mod installiert mit App",
+            "updated_mods_using_smu": "Mod aktualisiert mit App",
+            "do_not_forget_to_join_our": "Vergessen Sie nicht, uns beizutreten",
+            "and_follow_us_on": "und folgen Sie uns",
+            "and": "und",
+            "coffee_time": {
+                "title": "Kaffeezeit!",
+                "desc": "Dies hilft mir, die Website und die Anwendung auszuführen. Vielen Dank, sie sind frei für alle und Performanten. Wenn Sie mir mehr helfen möchten, können Sie abonnieren <a href=\"https://www.buymeacoffee.com/joch\" target=\"_blank\">auf meiner Seite</a> mit Buy Me A Coffee Mitgliedschaft. <br/><b>Wenn du mich unterstützt hast</b>, vergessen Sie nicht, Ihre E-Mail in Ihrer App hinzufügen <a href=\"/config\">Konfiguration</a>: Dies wird alle Anzeigen und Popups entfernen, mit 1 Kaffee = 1 Monat ohne Anzeigen."
+            },
+            "loading": "Die...",
+            "notify": {
+                "mod_install": "{modName} wurde installiert",
+                "mod_updat": "{modName} wurde aktualisiert",
+                "mod_removed": "{modName} wurde entfernt",
+                "status_issue_detected": "Wir haben ein Problem mit einer externen Komponente erkannt. <br/>Sie können nicht in der Lage sein, Mods aus einigen Quellen zu installieren oder zu aktualisieren. <br/>Bitte überprüfen Sie die Statusseite für weitere Details.",
+                "status_issue_resolved": "Alle Komponenten sind jetzt verfügbar: Sie können jetzt alle Mods installieren und aktualisieren.",
+                "waiting_no_more_tasks": "Warteaufgaben Ende",
+                "checking_dependencies": "Überprüfung der Abhängigkeiten",
+                "downloading_cache": "Cache herunterladen...",
+                "downloading_cache_progression": "Cache herunterladen {progression}%",
+                "validating_cache": "Gültige Cache...",
+                "purging_cache": "Vorherige Cache...",
+                "indexing_cache_progression": "Indexierung cche {progression}%",
+                "downloading_dependencies_progression": "Abhängigkeiten herunterladen {progression}%",
+                "starting_internal_processes": "Starten interner Prozesse",
+                "starting_internal_processes_failure": "Unfähig, interne Prozesse zu starten. Bitte starten Sie die App im Administratormodus neu und deaktivieren Sie Ihre Anti-Malware.",
+                "waiting_for_settings": "Warten auf Einstellungen",
+                "initializing_versioning_system": "Initialisierung der Versionierung (kann lang sein)",
+                "sorting_mods_progression": "Sortierung mods {progression}%",
+                "deleting_empty_folders": "Löschen leerer Ordner",
+                "fixing_issues": "Probleme beheben...",
+                "fixing_issues_progression": "Problem behoben n°{current}/{total}",
+                "fixing_issue_done": "Alle Probleme wurden behoben. Vorbereiten eines vollen Scans...",
+                "reverting_change": "Wiederkehrende Veränderung...",
+                "reinit_versioning_system": "Reinitializing-Versioning-System (kann lang sein)",
+                "listing_files": "Auflistung von Dateien in mods Ordner...",
+                "retrieving_mods_from_files_progression": "Retrieving Mods von Dateien - {progression}%",
+                "merging_stuff": "Verschmelzung...",
+                "loading_mods": "Die...",
+                "loading_metadata": "Metadaten laden...",
+                "checking_issues_for_duplicates": "Prüfprobleme für duplizierte Dateien",
+                "checking_issues_for_duplicates_progression": "Prüfprobleme für duplizierte Dateien {progression}%",
+                "checking_issues_for_misplaced_tray_files": "Prüfprobleme für fehlerhafte Tablett-Dateien",
+                "checking_issues_for_misplaced_ts4script": "Fragen zum falschen ts4script prüfen",
+                "checking_issues_for_zip_files": "Prüfprobleme für Zip-Datei in Mods-Ordner",
+                "checking_issues_progression": "Fragen prüfen {progression}%"
+            }
+        },
+        "menu": {
+            "home_menu_tooltip": "Home",
+            "mods_menu_tooltip": "Änderungen",
+            "issues_menu_tooltip": "Emissionen",
+            "history_menu_tooltip": "Geschichte",
+            "search_menu_tooltip": "Suche",
+            "settings_menu_tooltip": "Einstellungen",
+            "download_menu_tooltip": "Downloads",
+            "status_menu_tooltip": "Status",
+            "faq_contact_about_menu_tooltip": "FAQ - Kontakt - Über uns"
+        },
+        "config": {
+            "configure_title": "Konfigurieren Sie Ihre Installation",
+            "invalid_config": "Invalide Konfiguration",
+            "folder_not_found": "Einer Ihrer ausgewählten Ordner existiert nicht. Bitte überprüfen Sie sie.",
+            "mods_folder": "Ordner ändern",
+            "please_select_a_folder": "Bitte wählen Sie einen Ordner",
+            "select_folder_button": "Wählen Sie den Ordner",
+            "tray_folder": "Transkriptor",
+            "enable_versioning": "Ausführung aktivieren",
+            "new_folder_pattern": "Neues Ordnermuster",
+            "new_folder_pattern_placeholder": "Neues Ordnermuster (z.B. {creator} {title})",
+            "new_folder_pattern_desc": {
+                "available_placeholders_title": "Verfügbare Platzhalter",
+                "example_with_your_current_pattern": "Beispiel mit Ihrem aktuellen Muster"
+            },
+            "please_fill_the_input": "Bitte füllen Sie die Eingabe aus",
+            "check_update_interval": "Aktualisierungsintervall überprüfen",
+            "hours": "Stunden",
+            "display_update_popup": "Anzeige Update popup",
+            "update_mods_in_their_previous_folder": "Update-Mods in ihrem vorherigen Ordner",
+            "buy_me_a_coffee_email": "Kaufen Sie mir eine Kaffee-Konto-E-Mail",
+            "please_input_a_correct_email": "Bitte korrekte E-Mail-Adresse eingeben",
+            "buy_me_a_coffee_email_placeholder": "Kaufen Sie mir eine Kaffee-Mail (verwendet, um Anzeigen zu entfernen, wenn Sie mich unterstützt)",
+            "disable_hardware_acceleration": "Hardwarebeschleunigung deaktivieren",
+            "versioning_warning": {
+                "title": "Ausführung aktivieren",
+                "desc": "Bitte beachten Sie, dass das Versionierungssystem Speicherplatz benötigt: mindestens die gleiche Menge Ihres Mods Ordners."
+            },
+            "versioning_help": {
+                "title": "Ausführung aktivieren",
+                "desc": "Wenn aktiviert, wird die App alle Änderungen der App selbst aufzeichnen. Sie werden in der Lage sein, Ihre Modifikationen zu sehen und einige von ihnen umzukehren. Bitte beachten Sie, dass Sie mindestens das 3-fache Ihrer Mods-Ordner-Größe im Festplattenspeicher haben müssen"
+            },
+            "display_update_help": {
+                "title": "Anzeige Update popup",
+                "desc": "Wenn aktiviert, zeigt die App Ihnen ein Popup mit Mods zum Update. Wenn deaktiviert, müssen Sie in das Mods-Menü gehen, um mods one by one zu aktualisieren."
+            },
+            "update_mods_in_their_previous_folder_help": {
+                "title": "Aktualisieren von Mods in ihrem aktuellen Ordner",
+                "desc": "Sagt der App, Dateien im Ordner des Mods nach einem Update zu installieren. Bitte aktivieren Sie diese Option nicht, wenn Sie mehrere Mods in einem gleichen Ordner haben."
+            },
+            "hardware_acceleration_help": {
+                "title": "Hardware-Beschleunigung",
+                "desc": "Aktivieren Sie diesen Parameter, wenn Sie auf Verzögerungen stoßen. Bitte starten Sie die App neu, nachdem Sie diese Einstellung geändert haben"
+            },
+            "new_folder_pattern_help": {
+                "title": "Neues Ordnermuster",
+                "desc": "Dies ist das Muster, das verwendet wird, wenn die App während einer Installation einen neuen Ordner in Ihrem Ordner Mods erstellt."
+            },
+            "new_folder_pattern_modified_popup": {
+                "title": "Änderung des Ordnermusters",
+                "desc": "Sie haben das neue Ordnermuster geändert.<br/>Möchten Sie alle Ihre Mods-Ordner mit dem neuen Muster umbenennen?",
+                "confirm_button": "Umname mods Ordner",
+                "cancel_button": "Nichts"
+            },
+            "refresh_logs_button": "Aktualisieren von Protokollen",
+            "open_log_file_button": "Protokolldatei öffnen",
+            "reset_mod_cache_button": "Zurücksetzen mod cache"
+        },
+        "update": {
+            "update_found_title": "Update gefunden",
+            "ignore_until_next_update": "Aktualisierung ignorieren bis zum nächsten Update",
+            "operation_type_remove": "Entfernen",
+            "operation_type_install": "Installieren",
+            "no_file_selected_so_nothing_will_be_done": "Keine Datei ausgewählt: das bedeutet, dass der Mod nicht aktualisiert wird. Dateien werden nicht entfernt.",
+            "will_ignore_this_update_until_the_next_one_available": "Dieses Update wird bis zum nächsten ignoriert."
+        },
+        "mods": {
+            "installed_mods": "Installierte Mods",
+            "category": "Kategorie",
+            "state": "Staat",
+            "actions_button": "Maßnahmen",
+            "check_update_button": "Aktualisierung des Prüfverfahrens",
+            "rescan_folder_button": "Rescan mods Ordner",
+            "sort_mods_button": "Sortieren Mods basierend auf Ordnermuster",
+            "no_mods_found_title": "Keine Mods gefunden",
+            "no_mods_found_description": "Es wurden keine Mods gefunden...",
+            "selected_label": "{nb} ausgewählt",
+            "remove_popup": {
+                "title": "Bestätigung entfernen",
+                "desc": "Der Mod <b style=\"color: var(--el-color-primary)\">{modName)</b> wird von Ihrem Dateisystem entfernt. <br/>Das kann nicht rückgängig gemacht werden. Bist du sicher?"
+            },
+            "bulk_remove_popup": {
+                "desc": "Alle ausgewählten Mods werden von Ihrem Dateisystem entfernt. <br/>Das kann nicht rückgängig gemacht werden. Bist du sicher?"
+            },
+            "bulk_disable_popup": {
+                "desc": "Alle ausgewählten Mods werden von Ihrem Dateisystem deaktiviert. <br/>Das bedeutet, dass Dateien immer noch auf Ihrem Dateisystem sind, aber nicht vom Spiel ausgewählt werden."
+            },
+            "disable_popup": {
+                "title": "Bestätigung deaktivieren",
+                "desc": "Der Mod <b style=\"color: var(--el-color-primary)\">{modName)</b> wird deaktiviert. <br/>Das bedeutet, dass Dateien immer noch auf Ihrem Dateisystem sind, aber nicht vom Spiel ausgewählt werden."
+            },
+            "groups_tab_label": "Mods Gruppen",
+            "group_form_title": "Titel der Gruppe",
+            "group_form_description": "Gruppenbeschreibung",
+            "please_fill_the_field": "Bitte füllen Sie dieses Feld",
+            "length_should_be_in_range": "Länge sollte von {min} zu {max} Buchstaben",
+            "create_new_group_button": "Neue Gruppe",
+            "create_new_group_dialog": "Erstellen einer neuen Mod-Gruppe",
+            "edit_group_dialog": "Mod Gruppe bearbeiten",
+            "group_remove_dialog": {
+                "title": "Gruppenbestätigung entfernen",
+                "desc": "Die Gruppe wird entfernt. Die App wird die Aktualisierungen der Gruppe nicht verfolgen. Mods werden noch installiert"
+            },
+            "group_help_dialog": {
+                "title": "Funktion der Gruppenänderung",
+                "desc": "<h3>Mit dieser Funktion können Sie ein Mod-Pack teilen, basierend auf Ihren installierten Mods.</h3><br/>Wenn ein Benutzer eine Mod-Gruppe installiert, wird es automatisch alle in dieser Gruppe enthaltenen Mods installiert, mit der gleichen Schöpferkonfiguration.<br/>Sie können eine Mod-Gruppe erstellen, die von jedem anderen Benutzer durchsuchbar und installierbar ist."
+            },
+            "group_err_dialog": {
+                "title": "Ausfall",
+                "desc": "Unfähig, eine Mod-Gruppe zu erstellen oder zu bearbeiten: {reason}"
+            },
+            "group_created": "Änderungsgruppe erstellt",
+            "group_edited": "Mod Gruppe bearbeitet",
+            "no_followed_groups_title": "Keine Mod-Gruppe",
+            "no_followed_groups_desc": "Du hast keine Mod-Gruppe. Sie können eine erstellen oder einige aus dem Suchmenü installieren"
+        },
+        "details": {
+            "shout_out_to_modders": "Bitte, schau dir das an. <a href=\"{url}\" target=\"_blank\">{\\cHFFFF}</a> um sie zu unterstützen",
+            "suggestions_label": "Vorschläge",
+            "no_suggestions_yet": "Noch keine Vorschläge...",
+            "mark_as_outdated": "Mark als veraltet",
+            "unmark_as_outdated": "Unmark als veraltet",
+            "mark_mod_as_outdated_popup_title": "Mark mod als veraltet",
+            "mark_mod_as_outdated_popup_desc": "Sie sind dabei, diesen Mod als veraltet zu markieren: andere Benutzer werden ihn sehen.<br/><b>Bitte markieren Sie es nicht als veraltet, wenn Sie nicht sicher sind.</b>",
+            "mark_mod_as_outdated_popup_confirm_button": "Markieren Sie es als veraltet"
+        },
+        "scheduler": {
+            "pending_tasks": "Aufgaben",
+            "done": "KAPITEL",
+            "checking_update": "Update der Überprüfung"
+        },
+        "file_picker": {
+            "select_files_to_install_title": "Wählen Sie Dateien zu installieren",
+            "select_files_to_install_desc": "Sie können nicht alle Dateien installieren wollen: Einige von ihnen sind wahrscheinlich ältere Versionen. Das gleiche Mod mit 2 verschiedenen Versionen kann den Spielabsturz verursachen. Wählen Sie klug ;)",
+            "no_files_to_install_title": "Keine Dateien zu installieren",
+            "no_files_to_install_desc": "Keine Dateien für diesen Mod zu installieren. Der Schöpfer hat sie entfernt."
+        },
+        "faq": {
+            "how_does_it_works_title": "Wie funktioniert das?",
+            "how_does_it_works_desc": "Sie müssen die Anwendung herunterladen, indem Sie diese <a href=\"/download\">Gliederung</a> und Sie müssen es installieren. Sobald Sie es konfiguriert haben, können Sie Mods durchsuchen und einige von ihnen installieren. Die App wird automatisch Updates überprüfen und für Sie installieren.",
+            "is_it_legal_title": "Ist es legal? Kann ich dafür verboten werden?",
+            "is_it_legal_desc": "Dies ist eine rechtliche Anwendung und Sie können nicht für die Verwendung verboten werden. Diese Anwendung wird mods installieren und aktualisieren, genau so wie Sie es tun.",
+            "can_i_modify_mods_title": "Kann ich Mods von der Anwendung installiert ändern?",
+            "can_i_modify_mods_desc": "Ja, Sie können Mods von der Anwendung installiert ändern."
+        },
+        "download": {
+            "why_is_there_an_app": "Warum gibt es eine App?",
+            "explain_why_is_there_an_app": "Weil wir Ihr Dateisystem manipulieren müssen, um Ihre Mods zu installieren und zu aktualisieren.",
+            "what_do_i_need": "Was brauche ich? ",
+            "explain_what_do_i_need": "Sie müssen mindestens 300 haben Mo freier Raum",
+            "how_does_it_works": "Wie funktioniert das? ",
+            "explain_dow_does_it_works_1": "ANHANG Konfiguration der Anwendung: Wählen Sie Ihre Sims 4 mods Ordner",
+            "explain_dow_does_it_works_2": "2. Durchsuchen Sie Mods und klicken Sie auf Installieren Taste",
+            "explain_dow_does_it_works_3": "3. Genießen und spielen"
+        },
+        "commit": {
+            "title": "Änderungen der Geschichte",
+            "reset_history_button": "Zurück zur Übersicht",
+            "history_details_title": "Geschichte Detail",
+            "history_change_details_desc": {
+                "title": "Details zum Thema Geschichte",
+                "reason": "Begründung",
+                "date": "Datum",
+                "mod": "Änderung",
+                "mod_files": "Dateien ändern",
+                "previous_version": "Vorherige Version"
+            },
+            "confirm_revert_change": "Sind Sie sicher, wollen Sie diese Änderung wiederverwenden?",
+            "confirm_revert_change_button": "Revertieren Sie diese Änderung",
+            "no_file_changed": "Keine Datei wurde geändert",
+            "no_file_changed_desc": "In der Regel geschieht diese Situation, wenn die Mod-Beschreibung aktualisiert wurde oder wenn der Modder eine nicht getrackte Datei ändert (wie eine txt-Datei).",
+            "no_file_changed_revert_desc": "Diese Situation tritt in der Regel dann auf, wenn die Änderungen bereits umgedreht wurden.",
+            "reset_history_confirm": {
+                "title": "Zurück zur Übersicht",
+                "desc": "Die Geschichte wird ausgelöscht. <br/>Sie werden Ihre Mods nicht verlieren, aber Sie werden nicht in der Lage sein, eine Änderung umzukehren.<br/>Sie gewinnen Platz auf Ihrer Festplatte."
+            },
+            "update_mod": "Aktualisierung des Programms",
+            "enable_mod": "Funktioniert",
+            "disable_mod": "Mod deaktiviert",
+            "install_mod": "Mod installiert",
+            "delete_mod": "Änderung gelöscht",
+            "sort_mods": "Mods sortiert",
+            "app_start": "App gestartet mit manuell geänderten Dateien",
+            "revert_change": "Umgekehrte Veränderung",
+            "manually_modified_changed": "Manuelle modifizierte Dateien",
+            "force_revert_change": "Zurück gezwungen mit Geschichte Verlust",
+            "reset_versioning": "Zurück zur Übersicht",
+            "patch": {
+                "remove": "Entfernt",
+                "add": "Zusätzlich",
+                "modify": "Geändert"
+            }
+        },
+        "about": {
+            "title": "Alle Mods an einem Ort mit automatischer Aktualisierung",
+            "subtitle": "Finde Mods, die zu dir passen, ohne das ganze Internet suchen zu müssen. Verwendung <span style=\"color: var(--el-color-primary)\">sims-mods-updater</span>, Sie können um mehrere Schöpfer Inhalte suchen und halten Sie Ihre Mods aktualisiert, ohne etwas zu tun.",
+            "goal": "Mein Ziel ist es, Menschen zu helfen, ihre Mods aktualisiert zu halten, ohne sie manuell von einem nach dem anderen herunterladen. Ich verbessere ständig meine Website und meine App, um Ihr Leben besser zu machen, indem ich die meisten Ihrer Aufgaben automatisiere. Ich unterstütze jetzt nur Sims 4, aber ich könnte dieses Konzept auf andere (sims) Spiele erweitern.",
+            "search": "Der Suchalgorithmus soll Ihnen helfen, die perfekte Mod zu finden. Der Algorithmus wird auf allen unseren unterstützten Anbietern suchen: eine Suche reicht aus, um Ihren Mod zu finden. Es ist auch typo freundlich :)",
+            "update": "Mit der Anwendung können Sie Ihre Mods automatisch aktualisieren, wenn es ein neues Update gibt. Sie müssen keine Stunden und Stunden verbringen, um sie manuell zu aktualisieren. Wir überprüfen auch Mods sind kompatibel, die Sie Stunden und Stunden Fehlersuche speichern können.",
+            "providers": "Wir unterstützen derzeit diese Anbieter: modthesims, thesimsresource, nexusmods, some itch.io, some patreons and some modders. Ich plane, mehr Anbieter hinzuzufügen und auch ich möchte Ihnen erlauben, Ihre Mods direkt in meinem System hochzuladen.",
+            "free": "Im Gegensatz zu vielen anderen Webseiten und Tools sind die Website und die Anwendung immer kostenlos. Anzeigen sind nur hier, um die laufenden Kosten der Website zu decken. Sie können sie entfernen, indem Sie meine Verwendung der <a href=\"https://www.buymeacoffee.com/joch\">Kaufen Sie mir einen Kaffee</a> Programm",
+            "privacy": "Ihre Privatsphäre ist bei uns sicher: Wir erheben keine Daten über sich selbst. Wir verwenden keinen Cookie und der Internetverkehr wird über SSL (https) verschlüsselt. <br/>Die App und die Website werden jeden Tag für Sicherheitsverletzungen und bekannte Sicherheitslücken gescannt, um sicherzustellen, dass Sie keine Probleme mit unseren Tools haben.",
+            "copyright": "<span style=\"color: var(--el-color-primary)\">Sims mods updater</span> - Alle Rechte vorbehalten. Diese Website und Anwendung wird nicht von elektronischen Künsten oder ihren Lizenzgebern unterstützt oder angeschlossen. Marken sind Eigentum ihrer jeweiligen Eigentümer."
+        },
+        "changelog": {
+            "features": "Eigenschaften",
+            "fixes": "Behebungen",
+            "others": "Sonstige",
+            "feeling_about": "Diese Version bewerten",
+            "2_4_0": {
+                "features": {
+                    "i18n": "Sie können nun die Sprache in der App und auf der Website auswählen. Fühlen Sie sich frei, eine falsche Übersetzung in der Discord zu melden.",
+                    "translate_button": "Es gibt nun eine \"Übersetzen\"-Taste neben der kurzen Beschreibung (in Suchergebnissen) und neben der Beschreibung (in Mod Detailansicht). Bitte beachten Sie, dass große Beschreibungen einige Zeit brauchen, um übersetzt zu werden...",
+                    "uninstalling": "Deinstallieren der App entfernt jetzt alle internen Dateien und alle aktuellen Zustände",
+                    "icemunmun": "Icemun mods werden jetzt indiziert",
+                    "vickysims": "Vicky Sims mods werden jetzt indiziert"
+                },
+                "fixes": {
+                    "fix_loading": "Verhindern Sie, dass die App nach einigen Operationen im Zustand \"Loading\" bleibt",
+                    "fix_versioning": "Problem behoben mit Versionssystem nicht richtig starten auf einigen Computern",
+                    "fix_restart": "Problem behoben, bei dem die App Mods ohne Neustart nicht mehr installieren oder aktualisieren konnte",
+                    "fix_wrong_error": "Fehler beim Installieren einiger Mods behoben"
+                },
+                "others": {
+                    "update_checking": "Update-Check-Prozess wurde optimiert (250 mal schneller)",
+                    "rewording": "Einige Neuwörter wurden gemacht",
+                    "optimize": "Optimierung der Website-Größe"
+                }
+            },
+            "2_5_x": {
+                "features": {
+                    "recover_versioning": "Die App kann jetzt von der Version System Korruption erholen",
+                    "mods_screen_redesign": "Mods-Bildschirm wurde überarbeitet, um Leistungsprobleme zu lösen",
+                    "bulk_operations": "Sie können jetzt Massenoperationen auf Mods ausführen (entfernen, deaktivieren, aktivieren und aktualisieren)",
+                    "log_in": "Sie können sich jetzt mit Google, Facebook, Twitter oder E-Mail/Passwort anmelden, um neue Funktionalitäten zu öffnen",
+                    "mod_group": "Sie können jetzt erstellen Mods-Gruppe, die von anderen Benutzern gesucht und installiert werden kann. Mehr wird bald um diese Funktion kommen!",
+                    "adeepindigo": "Adeepindigo mods werden jetzt indiziert",
+                    "feedback": "Sie können jetzt ein Update bewerten"
+                },
+                "fixes": {
+                    "loading": "Lade Overlay auf der Suchseite reparieren",
+                    "disabled_popup": "Deaktivieren von Popup-Warnmeldung nicht richtig angezeigt",
+                    "close_button": "Fix \"close\" Taste nicht das richtige Etikett anzeigen",
+                    "update_disabled_mod": "Wenn Sie einen deaktivierten Mod aktualisieren, wird es nach dem Update noch deaktiviert"
+                },
+                "others": {
+                    "search_engine": "Suchmaschine aktualisieren (Suchleistung verbessern x20)",
+                    "ads": "Einige Anzeigen entfernen"
+                }
+            }
+        }
+    }
+}

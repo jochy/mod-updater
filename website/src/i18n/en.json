@@ -1,0 +1,432 @@
+{
+  "message": {
+    "common": {
+      "link": "link",
+      "item_type_label": "Type",
+      "group_item_type_label": "Mods group",
+      "hide_button": "Hide",
+      "edit_button": "Edit",
+      "translate_button": "Translate",
+      "website": "website",
+      "operation_label": "Operation",
+      "file_label": "File",
+      "select_file": "Select file",
+      "version_label": "Version",
+      "name_label": "Name",
+      "date_label": "Date",
+      "size_label": "Size",
+      "search_label": "Search",
+      "update_label": "Update",
+      "disabled_label": "Disabled",
+      "description_label": "Description",
+      "no_results_label": "No results",
+      "please_review_your_criteria": "Please review your criteria",
+      "are_you_sure_do_you_cant_to_remove_this_mod": "Are you sure you want to remove this mod?",
+      "remove_label": "Remove",
+      "disable_label": "Disable",
+      "enable_label": "Enable",
+      "unignore_update_until_next_one": "Un-ignore update until the next one",
+      "created_label": "Created",
+      "creator_label": "Creator",
+      "source_label": "Source",
+      "info_label": "Info",
+      "installations_label": "Installations",
+      "marked_outdated_label": "Marked as outdated",
+      "updated_label": "Updated",
+      "downloads_label": "Downloads",
+      "required_label": "Requires",
+      "files_label": "Files",
+      "tags_label": "Tags",
+      "sort_label": "Sort",
+      "filter_label": "Filter",
+      "filters_label": "Filters",
+      "provider_label": "Provider",
+      "modder_website": "Modder's website",
+      "creator_name_label": "Creator's name",
+      "clear_filters_button": "Clear filters",
+      "sort": {
+        "best_match": "Best match",
+        "downloads": "Downloads",
+        "creation_date": "Creation date",
+        "last_update": "Last update"
+      },
+      "install_button": "Install",
+      "remove_mod_button": "Remove mod",
+      "faq_label": "FAQ",
+      "contact_label": "Contact",
+      "about_label": "About",
+      "last_update_label": "Last update",
+      "close_button": "Close",
+      "cancel_button": "Cancel",
+      "logs_label": "Logs",
+      "others_label": "Others",
+      "validate_button": "Validate",
+      "ok_button": "Ok",
+      "new_tag_label": "New tag",
+      "type_or_select_a_tag": "Type or select a tag",
+      "add_tag": "Add tag",
+      "install_mod_button": "Install mod",
+      "quick_install_mod_button": "Install",
+      "no_download_file_mod_cannot_be_installed": "The mod can't be installed because there is no files to download",
+      "developed_by": "Developed by",
+      "fix_button": "Fix",
+      "no_issue_found": "No issue found",
+      "tray_files_label": "Tray files",
+      "zip_file_in_mods_folder_label": "Zip files in mods folder",
+      "ts4script_files_label": "ts4script files",
+      "duplicated_files": "Duplicated files",
+      "select_the_file_to_keep": "Select the file to keep",
+      "multiple_select": {
+        "all": "All",
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "undefined": "None",
+        "no_update": "No update",
+        "update_available": "Update available",
+        "update_ignored": "Update ignored"
+      },
+      "mods_included": "Mods included",
+      "group_mods_tab_label": "Mods",
+      "group_confirm_install": "By installing this group, you will install the following mods:",
+      "are_you_sure_do_you_cant_to_remove_this_mod_group": "Are you sure you want to remove this mod group? Mods won't be removed, this will just untrack the group.",
+      "group_installed": "Mod group installed",
+      "group_uninstalled": "Mod group removed"
+    },
+    "app": {
+      "authenticate": "Authentication",
+      "sign_out": "Sign out",
+      "user_not_signed_in": "Log in",
+      "app_required_warning": "Without our app, we can't update your mods. Please download it using this ",
+      "app_required_title": "App required",
+      "new_app_update_required": "New upgrade available",
+      "new_app_update_available_title_summary": "A new upgrade is available",
+      "new_app_update_text": "In order to work, please download and install the new version",
+      "new_app_update_button": "Download new version",
+      "last_updated_mods": "Last updated mods",
+      "most_downloaded_mods": "Most downloaded mods",
+      "never_lose_time_again": "Never lose time again while upgrading your mods",
+      "choose_between_more_than": "Choose between more than {modsCount} mods and CC",
+      "psst_its_free": "Psst: it means more time to play and it's free",
+      "start_using_app_button": "Start using our app now",
+      "facts_label": "Facts",
+      "about_your_installation_title": "About your installation",
+      "installed_mods": "Installed mods",
+      "enabled_mods": "Enabled mods",
+      "disabled_mods": "Disabled mods",
+      "available_updates": "Available updates",
+      "issues_found": "Issues found",
+      "about_sims_mods_updater": "About Sims Mods Updater",
+      "app_version_label": "App version",
+      "indexed_mods": "Indexed mods in database",
+      "installed_mods_using_smu": "Mod installed with app",
+      "updated_mods_using_smu": "Mod updated with app",
+      "do_not_forget_to_join_our": "Do not forget to join our",
+      "and_follow_us_on": "and follow us on",
+      "and": "and",
+      "coffee_time": {
+        "title": "Coffee time!",
+        "desc": "This helps me run the website and the application. Thank to that, they are free for all and performant. If you want to help me more, you can subscribe <a href=\"https://www.buymeacoffee.com/joch\" target=\"_blank\">on my page</a> using Buy Me A Coffee membership. <br/><b>If you supported me</b>, do not forget to add your email in your app <a href=\"/config\">configuration</a>: this will remove all ads and popups, with 1 coffee = 1 month without ads."
+      },
+      "loading": "Loading...",
+      "notify": {
+        "mod_install": "{modName} has been installed",
+        "mod_updat": "{modName} has been updated",
+        "mod_removed": "{modName} has been removed",
+        "status_issue_detected": "We detected an issue with an external component. <br/>You may not be able to install or update mods from some sources. <br/>Please check the status page for more details.",
+        "status_issue_resolved": "All components are now available: you can now install and upgrade any mod.",
+        "waiting_no_more_tasks": "Waiting tasks end",
+        "checking_dependencies": "Checking dependencies",
+        "downloading_cache": "Downloading cache...",
+        "downloading_cache_progression": "Downloading cache {progression}%",
+        "validating_cache": "Validating cache...",
+        "purging_cache": "Purging previous cache...",
+        "indexing_cache_progression": "Indexing cache {progression}%",
+        "downloading_dependencies_progression": "Downloading dependencies {progression}%",
+        "starting_internal_processes": "Starting internal processes",
+        "starting_internal_processes_failure": "Unable to start internal processes. Please restart the app in administrator mode and disable your anti malware.",
+        "waiting_for_settings": "Waiting for settings",
+        "initializing_versioning_system": "Initializing versioning system (may be long)",
+        "sorting_mods_progression": "Sorting mods {progression}%",
+        "deleting_empty_folders": "Deleting empty folder",
+        "fixing_issues": "Fixing issues...",
+        "fixing_issues_progression": "Fixing issue n°{current}/{total}",
+        "fixing_issue_done": "All issues fixed. Preparing a full scan...",
+        "reverting_change": "Reverting change...",
+        "reinit_versioning_system": "Reinitializing versioning system (may be long)",
+        "listing_files": "Listing files in mod's folder...",
+        "retrieving_mods_from_files_progression": "Retrieving mods from files - {progression}%",
+        "merging_stuff": "Merging stuff...",
+        "loading_mods": "Loading mods...",
+        "loading_metadata": "Loading metadata...",
+        "checking_issues_for_duplicates": "Checking issues for duplicated files",
+        "checking_issues_for_duplicates_progression": "Checking issues for duplicated files {progression}%",
+        "checking_issues_for_misplaced_tray_files": "Checking issues for misplaced tray files",
+        "checking_issues_for_misplaced_ts4script": "Checking issues for misplaced ts4script",
+        "checking_issues_for_zip_files": "Checking issues for zip file in mods folder",
+        "checking_issues_progression": "Checking issues {progression}%"
+      }
+    },
+    "menu": {
+      "home_menu_tooltip": "Home",
+      "mods_menu_tooltip": "Mods",
+      "issues_menu_tooltip": "Issues",
+      "history_menu_tooltip": "History",
+      "search_menu_tooltip": "Search",
+      "settings_menu_tooltip": "Settings",
+      "download_menu_tooltip": "Download",
+      "status_menu_tooltip": "Status",
+      "faq_contact_about_menu_tooltip": "FAQ - Contact - About"
+    },
+    "config": {
+      "configure_title": "Configure your installation",
+      "invalid_config": "Invalid configuration",
+      "folder_not_found": "One of your selected folder does not exists. Please check them.",
+      "mods_folder": "Mods folder",
+      "please_select_a_folder": "Please select a folder",
+      "select_folder_button": "Select folder",
+      "tray_folder": "Tray folder",
+      "enable_versioning": "Enable versioning",
+      "new_folder_pattern": "New folder pattern",
+      "new_folder_pattern_placeholder": "New folder pattern (e.g. {creator} {title})",
+      "new_folder_pattern_desc": {
+        "available_placeholders_title": "Available placeholders",
+        "example_with_your_current_pattern": "Example with your current pattern"
+      },
+      "please_fill_the_input": "Please fill the input",
+      "check_update_interval": "Check update interval",
+      "hours": "hours",
+      "display_update_popup": "Display update popup",
+      "update_mods_in_their_previous_folder": "Update mods in their previous folder",
+      "buy_me_a_coffee_email": "Buy me a coffee account email",
+      "please_input_a_correct_email": "Please input correct email address",
+      "buy_me_a_coffee_email_placeholder": "Buy me a coffee mail (used to remove ads if you supported me)",
+      "disable_hardware_acceleration": "Disable hardware acceleration",
+      "versioning_warning": {
+        "title": "Enable versioning",
+        "desc": "Please note that the versioning system requires disk space: at least the same amount of your Mods folder."
+      },
+      "versioning_help": {
+        "title": "Enable versioning",
+        "desc": "When enabled, the app will record all changes made the app itself. You will be able to see your modifications and revert some of them. Please note that you must have at least 3 times your mods folder size in disk space"
+      },
+      "display_update_help": {
+        "title": "Display update popup",
+        "desc": "When enabled, the app will show you a popup with mods to update. If disabled, you will have to go to the mods menu to update mods one by one."
+      },
+      "update_mods_in_their_previous_folder_help": {
+        "title": "Update mods in their current folder",
+        "desc": "Tells the app to install files in the mod's folder after an update. Please do not enable this option if you have multiple mods inside a same folder."
+      },
+      "hardware_acceleration_help": {
+        "title": "Hardware acceleration",
+        "desc": "Enable this parameter if you encounter lags. Please restart the app after changing this setting"
+      },
+      "new_folder_pattern_help": {
+        "title": "New folder pattern",
+        "desc": "This is the pattern used when the app creates new folder in your Mods folder during an installation."
+      },
+      "new_folder_pattern_modified_popup": {
+        "title": "Mod folder pattern changed",
+        "desc": "You changed the new folder pattern.<br/>Do you want to rename all your mods folder using the new pattern?",
+        "confirm_button": "Rename mods folder",
+        "cancel_button": "Do nothing"
+      },
+      "refresh_logs_button": "Refresh logs",
+      "open_log_file_button": "Open log file",
+      "reset_mod_cache_button": "Reset mod cache"
+    },
+    "update": {
+      "update_found_title": "Update found",
+      "ignore_until_next_update": "Ignore update until next update",
+      "operation_type_remove": "Remove",
+      "operation_type_install": "Install",
+      "no_file_selected_so_nothing_will_be_done": "No file selected: this means that the mod will not be updated. Files will not be removed.",
+      "will_ignore_this_update_until_the_next_one_available": "This update will be ignored until the next one"
+    },
+    "mods": {
+      "installed_mods": "Installed mods",
+      "category": "Category",
+      "state": "State",
+      "actions_button": "Actions",
+      "check_update_button": "Check update",
+      "rescan_folder_button": "Rescan mods folder",
+      "sort_mods_button": "Sort mods based on folder pattern",
+      "no_mods_found_title": "No mods found",
+      "no_mods_found_description": "No mods have been found...",
+      "selected_label": "{nb} selected",
+      "remove_popup": {
+        "title": "Remove confirmation",
+        "desc": "The mod <b style=\"color: var(--el-color-primary)\">{modName}</b> will be removed from your filesystem. <br/>This can't be undone. Are you sure ?"
+      },
+      "bulk_remove_popup": {
+        "desc": "All selected mods will be removed from your filesystem. <br/>This can't be undone. Are you sure ?"
+      },
+      "bulk_disable_popup": {
+        "desc": "All selected mods will be disabled from your filesystem. <br/>This means that files will still be on your filesystem, but won't be picked by the game."
+      },
+      "disable_popup": {
+        "title": "Disable confirmation",
+        "desc": "The mod <b style=\"color: var(--el-color-primary)\">{modName}</b> will be disabled. <br/>This means that files will still be on your filesystem, but won't be picked by the game."
+      },
+      "groups_tab_label": "Mods groups",
+      "group_form_title": "Group title",
+      "group_form_description": "Group description",
+      "please_fill_the_field": "Please fill this field",
+      "length_should_be_in_range": "Length should be from {min} to {max} letters",
+      "create_new_group_button": "New group",
+      "create_new_group_dialog": "Create a new Mod group",
+      "edit_group_dialog": "Edit Mod group",
+      "group_remove_dialog": {
+        "title": "Remove group confirmation",
+        "desc": "The group will be removed. The app will not track group's updates. Mods will still be installed"
+      },
+      "group_help_dialog": {
+        "title": "Group Mod feature",
+        "desc": "<h3>This feature allows you to share a mod pack, based on your installed mods.</h3><br/>When a user installs a mod group, it will automatically installs all mods included in this group, with the same creator's configuration.<br/>You can create a mod group, which will be searchable and installable by any other user."
+      },
+      "group_err_dialog": {
+        "title": "Failure",
+        "desc": "Unable to create or edit a mod group: {reason}"
+      },
+      "group_created": "Mod group created",
+      "group_edited": "Mod group edited",
+      "no_followed_groups_title": "No mod group",
+      "no_followed_groups_desc": "You don't have any mod group. You can create one or install some from the search menu"
+    },
+    "details": {
+      "shout_out_to_modders": "Please, go check out {creator}'s <a href=\"{url}\" target=\"_blank\">{type}</a> to support them",
+      "suggestions_label": "Suggestions",
+      "no_suggestions_yet": "No suggestions yet...",
+      "mark_as_outdated": "Mark as outdated",
+      "unmark_as_outdated": "Unmark as outdated",
+      "mark_mod_as_outdated_popup_title": "Mark mod as outdated",
+      "mark_mod_as_outdated_popup_desc": "You are about to mark this mod as outdated: other users will see it.<br/><b>Please, do not mark it as outdated if you are not sure.</b>",
+      "mark_mod_as_outdated_popup_confirm_button": "Mark it as outdated"
+    },
+    "scheduler": {
+      "pending_tasks": "Pending tasks",
+      "done": "Done",
+      "checking_update": "Checking update"
+    },
+    "file_picker": {
+      "select_files_to_install_title": "Select files to install",
+      "select_files_to_install_desc": "You may not want to install all files: some of them are probably older versions. Having the same mod with 2 different versions may cause the game crash. Choose wisely ;)",
+      "no_files_to_install_title": "No files to install",
+      "no_files_to_install_desc": "No files to install for this mod. The creator removed them, sorry!"
+    },
+    "faq": {
+      "how_does_it_works_title": "How does it works?",
+      "how_does_it_works_desc": "You will have to download the application, using this <a href=\"/download\">link</a> and you will have to install it. Once you configured it, you can browse mods and install some of them. The app will automatically check updates and install them for you.",
+      "is_it_legal_title": "Is it legal? Can I get banned for using it?",
+      "is_it_legal_desc": "This is a legal application and you can not be banned for using it. This application will install and update mods, exactly the same way you do it.",
+      "can_i_modify_mods_title": "Can I modify mods installed by the application?",
+      "can_i_modify_mods_desc": "Yes, you can modify mods installed by the application."
+    },
+    "download": {
+      "why_is_there_an_app": "Why is there an app?",
+      "explain_why_is_there_an_app": "Because we need to manipulate your filesystem in order to install and update your mods.",
+      "what_do_i_need": "What do I need? ",
+      "explain_what_do_i_need": "You will need to have at least 300 Mo free space",
+      "how_does_it_works": "How does it works? ",
+      "explain_dow_does_it_works_1": "1. Configure the application: select your Sims 4 mods folder",
+      "explain_dow_does_it_works_2": "2. Browse mods and click the Install button",
+      "explain_dow_does_it_works_3": "3. Enjoy and play"
+    },
+    "commit": {
+      "title": "Mods history",
+      "reset_history_button": "Reset history",
+      "history_details_title": "History detail",
+      "history_change_details_desc": {
+        "title": "History change details",
+        "reason": "Reason",
+        "date": "Date",
+        "mod": "Mod",
+        "mod_files": "Mod files",
+        "previous_version": "Previous version"
+      },
+      "confirm_revert_change": "Are you sure do you want to revert this change ?",
+      "confirm_revert_change_button": "Revert this change",
+      "no_file_changed": "No file has been changed",
+      "no_file_changed_desc": "Usually, this situation occurs when the mod description has been updated or when the modder changes a non tracked file (like a txt file).",
+      "no_file_changed_revert_desc": "Usually, this situation occurs when the changes have already been reverted",
+      "reset_history_confirm": {
+        "title": "Reset history",
+        "desc": "History will be wiped out. <br/>You will not lose your mods, however, you will not be able to revert a change.<br/>You will gain space on your disk."
+      },
+      "update_mod": "Mod updated",
+      "enable_mod": "Mod enabled",
+      "disable_mod": "Mod disabled",
+      "install_mod": "Mod installed",
+      "delete_mod": "Mod deleted",
+      "sort_mods": "Mods sorted",
+      "app_start": "App started with manually modified files",
+      "revert_change": "Change reverted",
+      "manually_modified_changed": "Manually modified files",
+      "force_revert_change": "Revert forced with history loss",
+      "reset_versioning": "History reset",
+      "patch": {
+        "remove": "Removed",
+        "add": "Added",
+        "modify": "Modified"
+      }
+    },
+    "about": {
+      "title": "All mods in one place with automatic update",
+      "subtitle": "Find mods that suit you, without having to search all the internet. Using <span style=\"color: var(--el-color-primary)\">sims-mods-updater</span>, you can search around multiple creators contents and keep your mods updated, without doing anything.",
+      "goal": "My goal is to help people to maintain their mods updated, without manually downloading them one by one. I continuously improve my website and my app to make your life better, by automating most of your tasks. For now, I only support Sims 4, however, I might extend this concept to other (sims) games.",
+      "search": "The search algorithm is designed to help you to find the perfect mod. The algorithm will search on all our supported providers: one search is enough to find your mod. It is also typo friendly :)",
+      "update": "The application allows you to automatically update your mods when there is a new update. You don't have to spent hours and hours to update them manually. We also check is mods are compatible, which can save you hours and hours of troubleshooting.",
+      "providers": "We currently support those providers: modthesims, thesimsresource, nexusmods, some itch.io, some patreons and some modders. I plan to add more providers and also I plan to allow you to upload your mods directly inside my system.",
+      "free": "Unlike many other websites and tools, the website and the application will always be free. Ads are only here to cover website's running costs. You can remove them by helping my using the <a href=\"https://www.buymeacoffee.com/joch\">Buy me a coffee</a> program",
+      "privacy": "Your privacy is safe with us: we do not collect any data about yourself. We do not use any cookie and the internet traffic is encrypted using SSL (https). <br/>The app and the website are scanned every day for security breaches and known vulnerabilities, in order to make sure that you won't have any issue using our tools.",
+      "copyright": "<span style=\"color: var(--el-color-primary)\">Sims mods updater</span> - All rights Reserved. This website and application is not endorsed by or affiliated with electronic Arts, or its licensors. Trademarks are the property of their respective owners."
+    },
+    "changelog": {
+      "features": "Features",
+      "fixes": "Fixes",
+      "others": "Others",
+      "feeling_about": "Rate this version",
+      "2_4_0": {
+        "features": {
+          "i18n": "You can now select the language in the app and in the website. Feel free to report any wrong translation in the discord.",
+          "translate_button": "There is now a \"Translate\" button next to short description (in Search results) and next to the description (in Mod detail view). Please note that large descriptions may take some time to be translated...",
+          "uninstalling": "Uninstalling the app now removes all internal files and all current states",
+          "icemunmun": "Icemunmun mods are now indexed",
+          "vickysims": "VickySims mods are now indexed"
+        },
+        "fixes": {
+          "fix_loading": "Prevent app staying in state \"Loading\" after some operations",
+          "fix_versioning": "Fix issue with versioning system not starting properly on some computers",
+          "fix_restart": "Fix issue where the app could not install or update mods anymore without a restart",
+          "fix_wrong_error": "Fix false error displayed when installing some mods"
+        },
+        "others": {
+          "update_checking": "Update checking process has been optimized (250 times faster)",
+          "rewording": "Some rewording have been made",
+          "optimize": "Optimize website size"
+        }
+      },
+      "2_5_x": {
+        "features": {
+          "recover_versioning": "The app can now recover from versioning system corruption",
+          "mods_screen_redesign": "Mods screen has been redesigned to address performance issues",
+          "bulk_operations": "You can now run bulk operations on mods (remove, disable, enable and update)",
+          "log_in": "You can now log in using Google, Facebook, Twitter or email/password this unlock some new functionalities",
+          "mod_group": "You can now create Mods group which can be searched and installed by other users. More will come soon around this feature!",
+          "adeepindigo": "Adeepindigo mods are now indexed",
+          "feedback": "You can now rate an update"
+        },
+        "fixes": {
+          "loading": "Fix loading overlay on search page",
+          "disabled_popup": "Fix disable popup warning message not showing properly",
+          "close_button": "Fix \"close\" button not showing the right label",
+          "update_disabled_mod": "When you update a disabled mod, it will still be disabled after the update"
+        },
+        "others": {
+          "search_engine": "Upgrade search engine (improve search performance x20)",
+          "ads": "Remove some ads"
+        }
+      }
+    }
+  }
+}

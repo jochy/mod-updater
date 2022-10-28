@@ -1,0 +1,27 @@
+name: Build
+on: [push, pull_request]
+
+jobs:
+
+  build_website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@master
+        with:
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: install dependencies
+        run: pnpm i --unsafe-perm=true --prefer-offline --strict-peer-dependencies=false
+        working-directory: website
+
+      - name: Build website
+        run: pnpm run build
+        working-directory: website
