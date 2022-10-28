@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex';
+import {mapGetters, mapActions} from 'vuex';
 import ThemeButton from "@/components/ui/ThemeButton.vue";
 import LocaleSelector from "@/components/ui/LocaleSelector.vue";
 import FirebaseAuth from "@/components/login/FirebaseAuth.vue";
@@ -59,13 +59,13 @@ export default {
   data: function () {
     return {
       input: "",
-      isCentralSimmer: false /*document.querySelector('html').classList.contains('central-simmer')*/
     }
   },
   methods: {
     ...mapActions(['search']),
   },
   computed: {
+    ...mapGetters(['isCentralSimmer']),
     searchQuery: function () {
       return this.$store.getters.searchQuery;
     },

@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%; position: absolute; z-index:-1000">
+  <div v-if="!isCentralSimmer" style="width: 100%; position: absolute; z-index:-1000">
     <Particles
         id="tsparticles"
         :particlesInit="particlesInit"
@@ -103,6 +103,7 @@ import Backend from '../backend.js';
 import LastMods from "./LastMods.vue";
 import Ads from "./google/Ads.vue";
 import {loadFull} from "tsparticles";
+import {mapGetters} from "vuex";
 
 export default {
   name: "HomeWeb",
@@ -113,6 +114,7 @@ export default {
     return {windowHeight: window.innerHeight - 65 - 100, modsCount: null}
   },
   computed: {
+    ...mapGetters(['isCentralSimmer']),
     backgroundStyle: function () {
       return `height: ${this.windowHeight}px`;
     },

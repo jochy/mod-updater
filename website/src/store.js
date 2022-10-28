@@ -37,7 +37,8 @@ const store = {
             theme: 'dark',
             commits: null,
             authenticatedUser: null,
-            askAuthentication: 0
+            askAuthentication: 0,
+            brand: "smu"
         };
     },
     getters: {
@@ -102,6 +103,7 @@ const store = {
         },
         authenticatedUser: state => state.authenticatedUser,
         getAskAuthentication: state => state.askAuthentication,
+        isCentralSimmer: state => state.brand === 'cs'
     },
     mutations: {
         addDisplayedAd: function (state) {
@@ -162,6 +164,9 @@ const store = {
         },
         askAuthentication: function(state) {
             state.askAuthentication = state.askAuthentication + 1;
+        },
+        setCentralSimmerBrand: function(state) {
+            state.brand = 'cs';
         }
     },
     actions: {

@@ -157,7 +157,7 @@ export default {
   methods: {
     ...mapMutations(['setScroll', 'useApp', 'setConfig', 'schedulerStatus', 'setDisableAds',
       'setUpdates', 'setApplicationManifest', 'incrementAskLoading', 'setIssues', 'updateStatus',
-      'setCommits']),
+      'setCommits', 'setCentralSimmerBrand']),
     onResize: function () {
       this.header = 66;
       if (!this.isApp || this.hasPendingTask || !this.disableAds) {
@@ -181,6 +181,12 @@ export default {
       } else {
         console.log(`${version} (${Semver._toLong(version)}) is more or equals to ${minVersion} (${Semver._toLong(minVersion)})`)
       }
+    }
+  },
+  beforeMount() {
+    let isCs = window.document.querySelector('html').classList.contains('central-simmer');
+    if (isCs) {
+      this.setCentralSimmerBrand();
     }
   },
   mounted() {

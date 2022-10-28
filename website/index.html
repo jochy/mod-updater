@@ -2,6 +2,10 @@
 <html lang="" class="dark">
 <head>
     <script>
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('theme') === 'cs') {
+            document.querySelector('html').classList.add("central-simmer");
+        }
         if (localStorage.getItem('theme') === 'light') {
             document.querySelector('html').classList.remove('dark');
         }
