@@ -25,7 +25,6 @@
 <script>
 import MultipleSelect from "@/components/ui/MultipleSelect.vue";
 import {mapGetters} from "vuex";
-import md5 from 'md5';
 
 export default {
   name: "ModFilter",
@@ -38,50 +37,47 @@ export default {
         text: '',
         update: []
       },
-      computedFilterHash: "",
-      computedConfigHash: "",
-      computedInstallingHash: ""
+      askingComputeScheduler: null
     }
   },
   watch: {
     filters: {
-      handler: async function() {
+      handler: async function () {
         await this.$nextTick();
-        this.computeResult();
+        this.askComputeResult();
       },
       deep: true
     },
     config: {
-      handler: async function() {
+      handler: async function () {
         await this.$nextTick();
-        this.computeResult();
+        this.askComputeResult();
       },
       deep: true
     },
-    getInstalling: async function() {
+    getInstalling: async function () {
       await this.$nextTick();
-      this.computeResult();
+      this.askComputeResult();
     }
   },
   computed: {
     ...mapGetters(['config', 'updates', 'getInstalling', 'disableAds', 'modsCategories', 'hasPendingTask', 'disableAds']),
   },
   methods: {
-    computeResult: async function() {
+    askComputeResult: function () {
+      if (this.askingComputeScheduler == null) {
+        this.askingComputeScheduler = setTimeout(() => this.computeResult(), 50);
+      } else {
+        console.log('Collapsing search requests');
+      }
+    },
+    computeResult: async function () {
+      this.askingComputeScheduler = null;
+
       let start = new Date().getTime();
       if (this.config == null || this.config.mods == null) {
         return;
       }
-      let newHash = md5(JSON.stringify(this.filters));
-      let newConfigHash = md5(JSON.stringify(this.config));
-      let newInstallingHash = md5(JSON.stringify(this.getInstalling));
-      if (newHash === this.computedFilterHash && newConfigHash === this.computedConfigHash && newInstallingHash === this.newInstallingHash) {
-        console.log('Dropped');
-        return;
-      }
-      this.computedFilterHash = newHash;
-      this.computedConfigHash = newConfigHash;
-      this.newInstallingHash = newInstallingHash;
 
       let takeEnabled = this.filters.state.length === 0 || this.filters.state.includes('Enabled');
       let takeDisabled = this.filters.state.length === 0 || this.filters.state.includes('Disabled');
@@ -90,27 +86,28 @@ export default {
       let takeUpdate = this.filters.update.length === 0 || this.filters.update.includes('Update available');
       let takeUpdateIgnored = this.filters.update.length === 0 || this.filters.update.includes('Update ignored');
 
+      console.log(`Before filter in ${new Date().getTime() - start} ms`);
+
       let mods = this.config.mods
           .map(mod => {
             mod.hasUpdate = this.updates.find(it => it.id === mod.id) != null;
             mod.isInstalling = this.getInstalling.includes(mod.id);
-            mod.show = ((takeEnabled && !mod.isDisabled) || (takeDisabled && mod.isDisabled)) && (this.filters.category.length === 0 ||
-                    (takeNoTag && (mod.category == null || mod.category === '') || this.filters.category.includes(mod.category)))
-                && (this.filters.text == null || this.filters.text === ''
-                    || mod.name.toLowerCase().includes(this.filters.text.toLowerCase()))
-                && ((takeNoUpdate && !mod.hasUpdate)
-                    || (takeUpdate && mod.hasUpdate)
-                    || (takeUpdateIgnored && mod.ignoreUpdateUntil != null)
-                );
             return mod;
           })
-          .filter(mod => mod.show);
+          .filter(mod => ((takeEnabled && !mod.isDisabled) || (takeDisabled && mod.isDisabled)) && (this.filters.category.length === 0 ||
+                  (takeNoTag && (mod.category == null || mod.category === '') || this.filters.category.includes(mod.category)))
+              && (this.filters.text == null || this.filters.text === ''
+                  || mod.name.toLowerCase().includes(this.filters.text.toLowerCase()))
+              && ((takeNoUpdate && !mod.hasUpdate)
+                  || (takeUpdate && mod.hasUpdate)
+                  || (takeUpdateIgnored && mod.ignoreUpdateUntil != null)
+              ));
 
       console.log(`Filter in ${new Date().getTime() - start} ms with ${mods.length} elements left`);
       this.$emit('update:modelValue', Object.freeze(mods));
     }
   },
-  mounted: function() {
+  mounted: function () {
     this.computeResult();
   }
 }
