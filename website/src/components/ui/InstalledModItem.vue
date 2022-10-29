@@ -141,7 +141,7 @@ export default {
 
 .image {
   width: 100%;
-  height: 170px;
+  height: 100px;
   object-fit: cover;
   display: block;
 }
