@@ -15,7 +15,12 @@
                     :key="file"
                     :label="file.file"
                     :value="file.file"
-                />
+                >
+                  <span style="float: left">{{ file.file }}</span>
+                  <span style="float: right;color: var(--el-text-color-secondary);font-size: 13px;">
+                      {{ new Date(file.lastUpdate).toLocaleString() }}
+                    </span>
+                </el-option>
               </el-select>
             </div>
           </div>
