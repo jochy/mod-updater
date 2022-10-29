@@ -17,9 +17,21 @@
         <ads type="leaderboard"/>
         <div style="text-align: left !important; margin-top: 20px">
           {{ $t(`message.common.group_confirm_install`) }}
-          <ul>
-            <li v-for="mod in document.mods">{{ mod.name }}</li>
-          </ul>
+          <div style="height: 400px; width: 100%; margin: 20px 0">
+            <el-auto-resizer>
+              <template #default="{ height, width }">
+                <el-table-v2 ref="testing"
+                             :columns="columns"
+                             :data="document.mods"
+                             :width="width"
+                             :height="height"
+                             :header-height="0"
+                             :row-height="50"
+                             :cache="0"
+                />
+              </template>
+            </el-auto-resizer>
+          </div>
         </div>
         <el-button-group>
           <el-button @click="() => this.quickInstall = false">{{ $t(`message.common.cancel_button`) }}</el-button>
@@ -32,7 +44,7 @@
   </div>
 </template>
 
-<script>
+<script lang="jsx">
 import Backend from "@/backend.js";
 import Ads from "@/components/google/Ads.vue";
 import {ElMessage} from "element-plus";
@@ -56,6 +68,33 @@ export default {
       installPlain: false,
       scheduler: null,
       quickInstall: false,
+      checked: {},
+      columns: [
+        {
+          key: 'selection',
+          width: 50,
+          cellRenderer: ({rowData}) => {
+            return <el-checkbox size="large" v-model={this.checked[rowData.id]}/>
+          },
+        },
+        {
+          key: 'preview',
+          width: 90,
+          align: 'center',
+          cellRenderer: (cellData) => <el-avatar shape="square" size={50} src={cellData.rowData.preview}/>
+        },
+        {
+          key: 'name',
+          width: 500,
+          align: 'left',
+          cellRenderer: (cellData) => {
+            const to = {name: 'detail', params: {id: cellData.rowData.id}}
+            return <router-link to={to}>
+              <el-button link type="primary">{cellData.rowData.name}</el-button>
+            </router-link>
+          },
+        }
+      ]
     }
   },
   methods: {
@@ -64,7 +103,12 @@ export default {
     },
     installGroup: function ($event) {
       this.blur($event);
-      window.ipcRenderer.send('install-group', JSON.parse(JSON.stringify(this.document)));
+      let ignored = [...this.document.mods.filter(mod => this.checked[mod.id] === false).map(it => it.id)];
+      let doc = {
+        ...this.document,
+        ignoreMods: ignored
+      }
+      window.ipcRenderer.send('install-group', JSON.parse(JSON.stringify(doc)));
       ElMessage({
         message: this.$t(`message.common.group_installed`),
         type: 'success',
@@ -81,6 +125,7 @@ export default {
   },
   mounted() {
     const _this = this;
+    this.document.mods.forEach(mod => this.checked[mod.id] = true);
     this.scheduler = setInterval(function () {
       _this.installPlain = !_this.installPlain
     }, 1000);
