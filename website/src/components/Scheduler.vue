@@ -8,7 +8,7 @@
                          :indeterminate="task.unknownProgression"
                          :percentage="task.unknownProgression ? 100 : Math.round(task.completion * 100)"
                          :text-inside="!task.unknownProgression"
-                         :stroke-width="task.unknownProgression ? 10 : 20">
+                         :stroke-width="task.unknownProgression ? 10 : 18">
               <template #default="{ percentage }">
                 <span>{{ translated(task.msg) }} {{ percentage != 100 ? ' - ' + percentage + ' %' : '' }}</span>
               </template>
