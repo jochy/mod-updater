@@ -13,6 +13,11 @@
     padding: 0 20px;
 }
 
+@font-face {
+    font-family: "the sims sans";
+    src: url("../webfonts/thesimssansbold.woff") format("woff");
+}
+
 .central-simmer {
     --el-color-primary-light-9: #eedafa !important;
     --el-color-primary-light-8: #e5baff !important;
@@ -56,47 +61,51 @@
     --el-menu-active-color: var(--el-color-primary) !important;
     --thumbBG: var(--el-color-primary) !important;
     --el-fill-color-blank: #f7edff !important;
+
+    --el-font-family: 'the sims sans', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif !important;
 }
 
 .central-simmer.dark {
-    /** TODO : create dark palette for colors bellow color-primary = #cca1e7 !important;*/
-    --el-color-primary-light-9: #eedafa !important;
-    --el-color-primary-light-8: #e5baff !important;
-    --el-color-primary-light-7: #e5baff !important;
-    --el-color-primary-light-5: #d1a9e9 !important;
-    --el-color-primary-light-3: #b030ff !important;
-    --el-color-primary: #9019da !important;
-    --el-text-color-primary: #6F448A !important;
-    --el-color-primary-dark-2: #8224e3 !important;
+    --el-color-primary-light-9: #391450 !important;
+    --el-color-primary-light-8: #501c71 !important;
+    --el-color-primary-light-7: #501c71 !important;
+    --el-color-primary-light-5: #71289f !important;
+    --el-color-primary-light-3: #9b48d0 !important;
+    --el-color-primary: #cca1e7 !important;
+    --el-text-color-primary: #f6e0fb !important;
+    --el-color-primary-dark-2: #c091f1 !important;
 
     --el-color-success: #1a9c91 !important;
-    --el-color-success-light-3: #00d082 !important;
-    --el-color-success-light-5: #00d084 !important;
-    --el-color-success-light-7: #aebcb9 !important;
-    --el-color-success-light-8: #aebcb9 !important;
-    --el-color-success-light-9: #b6e3d4 !important;
-    --el-color-success-dark-2: #00ab6b !important;
+    --el-color-success-light-3: #14786f !important;
+    --el-color-success-light-5: #0f5c55 !important;
+    --el-color-success-light-7: #0b4641 !important;
+    --el-color-success-light-8: #0b4641 !important;
+    --el-color-success-light-9: #083532 !important;
+    --el-color-success-dark-2: #15a094 !important;
 
-    --el-color-danger: #BB338E !important;
-    --el-color-danger-light-3: #ee2c82 !important;
-    --el-color-danger-light-5: #e94c89 !important;
-    --el-color-danger-light-7: #ea4c89 !important;
-    --el-color-danger-light-8: #ea4c89 !important;
-    --el-color-danger-light-9: #ffceec !important;
-    --el-color-danger-dark-2: #6b003e !important;
+    --el-color-danger: #f099d6 !important;
+    --el-color-danger-light-3: #e44ab6 !important;
+    --el-color-danger-light-5: #ca1e96 !important;
+    --el-color-danger-light-7: #9b1773 !important;
+    --el-color-danger-light-8: #9b1773 !important;
+    --el-color-danger-light-9: #771158 !important;
+    --el-color-danger-dark-2: #e45bbc !important;
 
-    --el-color-warning: #BB9612 !important;
-    --el-color-warning-light-3: #ffa41b !important;
-    --el-color-warning-light-5: #dd9933 !important;
-    --el-color-warning-light-7: #f0ad4e !important;
-    --el-color-warning-light-8: #fdd79a !important;
-    --el-color-warning-light-9: #fecda5 !important;
-    --el-color-warning-dark-2: #ff6900 !important;
+    --el-color-warning: #eccf8c !important;
+    --el-color-warning-light-3: #dfb041 !important;
+    --el-color-warning-light-5: #bd8e1f !important;
+    --el-color-warning-light-7: #916d17 !important;
+    --el-color-warning-light-8: #916d17 !important;
+    --el-color-warning-light-9: #6f5311 !important;
+    --el-color-warning-dark-2: #eed089 !important;
 
-    /** Already mapped */
     --el-bg-color: #2a1e34d6 !important;
     --el-fill-color-blank: #382742 !important;
     --el-text-color-placeholder: #382742 !important;
+}
+
+.central-simmer :is(button, input) {
+    font-family: var(--el-font-family);
 }
 
 .central-simmer.dark .el-card{
@@ -105,6 +114,10 @@
 
 .central-simmer.dark #app {
     color: #ffffffba !important;
+}
+
+.central-simmer #app {
+    font-family: 'the sims sans', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif !important;
 }
 
 .central-simmer .el-input__inner::placeholder{
