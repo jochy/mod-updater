@@ -48,7 +48,7 @@
           </el-alert>
         </div>
 
-        <el-dialog v-model="displayUpdatePopup" v-if="updateMods != null" title="$t(`message.app.available_updates`)"
+        <el-dialog v-model="displayUpdatePopup" v-if="updateMods != null" :title="$t(`message.app.available_updates`)"
                    width="60%" top="15px">
           <update :to-update="updates.filter(it => updateMods.includes(it.id))"
                   @close="bulkRemoveModFromUpdates"/>
