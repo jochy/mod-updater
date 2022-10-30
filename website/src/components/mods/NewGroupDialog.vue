@@ -1,17 +1,14 @@
 <template>
   <div>
     <el-form label-position="right" label-width="200px" :model="form" style="max-width: 100%"
-             @validate="formValidation" ref="form" :rules="rules">
+             ref="form" :rules="rules">
       <el-form-item :label="$t(`message.mods.group_form_title`)" prop="name">
         <el-input v-model="form.name" :placeholder="$t(`message.mods.group_form_title`)"/>
       </el-form-item>
       <el-form-item :label="$t(`message.mods.group_form_description`)" prop="desc">
-        <el-input
-            v-model="form.desc"
-            :rows="10"
-            type="textarea"
-            :placeholder="$t(`message.mods.group_form_description`)"
-        />
+        <div style="width: 100%; text-align: left" v-if="editor != null">
+          <ckeditor :editor="editor" v-model="form.desc" :config="editorConfig" />
+        </div>
       </el-form-item>
     </el-form>
     <hr/>
@@ -44,6 +41,7 @@ import ModFilter from "./ModFilter.vue";
 import {mapGetters} from "vuex";
 import Backend from '../../backend.js';
 import {ElMessageBox} from "element-plus";
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export default {
   name: "NewGroupDialog",
@@ -58,7 +56,12 @@ export default {
   },
   data: function () {
     return {
+      editor: ClassicEditor,
+      editorConfig: {
+        removePlugins: ['MediaEmbed', 'CKFinderUploadAdapter', 'CKFinder', 'EasyImage', 'Image', 'ImageCaption', 'ImageStyle', 'ImageToolbar', 'ImageUpload'],
+      },
       loading: false,
+      desc: this.toEdit ? this.toEdit.desc : '',
       form: {
         title: "",
         desc: ""
@@ -142,9 +145,23 @@ export default {
   },
   watch: {
     checked: {
+      handler: async function () {
+        await this.$nextTick();
+        let validation = false;
+        await this.$refs.form.validate((valid) => {
+          validation = valid;
+        });
+        this.enableConfirm = validation && this.checkedCount > 0;
+      },
+      deep: true
+    },
+    form: {
       handler: async function() {
         await this.$nextTick();
-        let validation = await this.$refs.form.validate();
+        let validation = false;
+        await this.$refs.form.validate((valid) => {
+          validation = valid;
+        });
         this.enableConfirm = validation && this.checkedCount > 0;
       },
       deep: true
@@ -157,14 +174,6 @@ export default {
       } else if (args.rowData.isDisabled) {
         return "bg-disabled";
       }
-    },
-    formValidation: function (name, error) {
-      this.formValidationState.name = error;
-      let valid = true;
-      for (let key of Object.keys(this.formValidationState)) {
-        valid &= this.formValidationState[key];
-      }
-      this.enableConfirm = valid && this.checkedCount > 0;
     },
     validateConfig: async function () {
       this.loading = true;
@@ -240,6 +249,14 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style>
+:root {
+  --ck-color-base-background: var(--el-bg-color);
+  --ck-color-base-text: var(--el-text-color-primary);
+  --ck-color-button-default-hover-background: var(--el-color-info-light-3);
+}
+.ck-editor__editable {
+  height: 200px;
+  max-height: 200px;
+}
 </style>
