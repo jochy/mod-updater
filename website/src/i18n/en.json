@@ -386,26 +386,6 @@
       "fixes": "Fixes",
       "others": "Others",
       "feeling_about": "Rate this version",
-      "2_4_0": {
-        "features": {
-          "i18n": "You can now select the language in the app and in the website. Feel free to report any wrong translation in the discord.",
-          "translate_button": "There is now a \"Translate\" button next to short description (in Search results) and next to the description (in Mod detail view). Please note that large descriptions may take some time to be translated...",
-          "uninstalling": "Uninstalling the app now removes all internal files and all current states",
-          "icemunmun": "Icemunmun mods are now indexed",
-          "vickysims": "VickySims mods are now indexed"
-        },
-        "fixes": {
-          "fix_loading": "Prevent app staying in state \"Loading\" after some operations",
-          "fix_versioning": "Fix issue with versioning system not starting properly on some computers",
-          "fix_restart": "Fix issue where the app could not install or update mods anymore without a restart",
-          "fix_wrong_error": "Fix false error displayed when installing some mods"
-        },
-        "others": {
-          "update_checking": "Update checking process has been optimized (250 times faster)",
-          "rewording": "Some rewording have been made",
-          "optimize": "Optimize website size"
-        }
-      },
       "2_5_x": {
         "features": {
           "recover_versioning": "The app can now recover from versioning system corruption",

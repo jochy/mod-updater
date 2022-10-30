@@ -552,4 +552,8 @@ html.dark {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.fa-circle-question {
+  font-size: 18px;
+}
 </style>

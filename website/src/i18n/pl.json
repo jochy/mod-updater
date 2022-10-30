@@ -386,26 +386,6 @@
             "fixes": "Fix",
             "others": "inni",
             "feeling_about": "Wersja ta",
-            "2_4_0": {
-                "features": {
-                    "i18n": "Możesz teraz wybrać język w aplikacji i na stronie internetowej. Uczucie swobodne do zgłoszenia błędnego tłumaczenia.",
-                    "translate_button": "Obecnie przycisk \"Translate\" obok krótkiego opisu (w wyników wyszukiwania) i obok opisu (w szczegółowym widoku Mod). Okazuje się, że duże opisy mogą trwać trochę czasu na tłumaczenia..",
-                    "uninstalling": "Obecnie aplikacja usuwa wszystkie pliki wewnętrzne i wszystkie obecne stany.",
-                    "icemunmun": "Obecnie stosowane mody są w lodach indeksowane.",
-                    "vickysims": "Vicky Obecnie mody Sims są indeksowane."
-                },
-                "fixes": {
-                    "fix_loading": "Preventa pozostaje w stanie „Loading”.",
-                    "fix_versioning": "Problemy z systemem operacyjnym nie uruchamiają się na niektórych komputerach.",
-                    "fix_restart": "Pytanie, w którym aplikacja nie mogłaby instalować lub zaktualizować modów dowolnie bez restartu.",
-                    "fix_wrong_error": "Kluczowe błędy wyświetlane podczas instalacji niektórych modów."
-                },
-                "others": {
-                    "update_checking": "Ponowny proces sprawdzania został zoptymalizowany (250 razy szybszy).",
-                    "rewording": "Wykonano kilka przemówień.",
-                    "optimize": "Strona internetowa"
-                }
-            },
             "2_5_x": {
                 "features": {
                     "recover_versioning": "Aplikacja może teraz odwrócić się od korupcji systemowej.",

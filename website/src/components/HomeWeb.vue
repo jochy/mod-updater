@@ -1,81 +1,5 @@
 <template>
   <div style="width: 100%; position: absolute; z-index:-1000">
-    <Particles
-        id="tsparticles"
-        :particlesInit="particlesInit"
-        :options="{
-                    fpsLimit: 60,
-                    interactivity: {
-                        events: {
-                            onClick: {
-                                enable: false,
-                                mode: 'push'
-                            },
-                            onHover: {
-                                enable: false,
-                                mode: 'repulse'
-                            },
-                            resize: true
-                        },
-                        modes: {
-                            bubble: {
-                                distance: 400,
-                                duration: 2,
-                                opacity: 0.4,
-                                size: 40
-                            },
-                            push: {
-                                quantity: 4
-                            },
-                            repulse: {
-                                distance: 200,
-                                duration: 0.4
-                            }
-                        }
-                    },
-                    particles: {
-                        color: {
-                            value: '#dedede'
-                        },
-                        links: {
-                            color: '#ffffff',
-                            distance: 100,
-                            enable: true,
-                            opacity: 0.2,
-                            width: 1
-                        },
-                        collisions: {
-                            enable: true
-                        },
-                        move: {
-                            direction: 'none',
-                            enable: true,
-                            outMode: 'bounce',
-                            random: false,
-                            speed: 1,
-                            straight: false
-                        },
-                        number: {
-                            density: {
-                                enable: true,
-                                area: 900
-                            },
-                            value: 80
-                        },
-                        opacity: {
-                            value: 0.5
-                        },
-                        shape: {
-                            type: 'circle'
-                        },
-                        size: {
-                            random: true,
-                            value: 5
-                        }
-                    },
-                    detectRetina: true
-                }"
-    />
   </div>
   <div class="home-container" :style="foregroundStyle">
     <el-space direction="vertical" style="max-width: 100%;flex-wrap: nowrap !important;" :fill="true">
@@ -102,7 +26,6 @@
 import Backend from '../backend.js';
 import LastMods from "./LastMods.vue";
 import Ads from "./google/Ads.vue";
-import {loadFull} from "tsparticles";
 
 export default {
   name: "HomeWeb",
@@ -113,9 +36,6 @@ export default {
     return {windowHeight: window.innerHeight - 65 - 100, modsCount: null}
   },
   computed: {
-    backgroundStyle: function () {
-      return `height: ${this.windowHeight}px`;
-    },
     foregroundStyle: function () {
       return `min-height: ${this.windowHeight}px; height:100%`;
     }
@@ -127,9 +47,6 @@ export default {
         this.windowHeight -= 100;
       }
     },
-    particlesInit: async function (engine) {
-      await loadFull(engine);
-    }
   },
   async mounted() {
     window.updateTitleAndDescription('Sims mods updater', 'Search around more than 200000 mods and custom contents for the game The Sims 4 and install them through our application. The application will handle automatically all updates. This means more time to play and more fun! You are guaranteed to always have the last update!');

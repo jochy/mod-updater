@@ -386,26 +386,6 @@
             "fixes": "Fissi",
             "others": "Altri",
             "feeling_about": "Valuta questa versione",
-            "2_4_0": {
-                "features": {
-                    "i18n": "Ora è possibile selezionare la lingua nell'app e nel sito web. Sentitevi liberi di segnalare qualsiasi traduzione sbagliata nella discoteca.",
-                    "translate_button": "C'è ora un pulsante \"Translate\" accanto a una breve descrizione (in Risultati di ricerca) e accanto alla descrizione (in Vista dettagliata Mod). Si prega di notare che grandi descrizioni possono richiedere del tempo per essere tradotti...",
-                    "uninstalling": "Disinstallare l'app rimuove ora tutti i file interni e tutti gli stati attuali",
-                    "icemunmun": "I mod Icemunmun sono ora indicizzati",
-                    "vickysims": "Vicky I mod Sims sono ora indicizzati"
-                },
-                "fixes": {
-                    "fix_loading": "Prevenire app rimanere in stato \"Loading\" dopo alcune operazioni",
-                    "fix_versioning": "Risolvere il problema con il sistema di versione non inizia correttamente su alcuni computer",
-                    "fix_restart": "Risolvere il problema in cui l'applicazione non poteva installare o aggiornare le mod più senza un riavvio",
-                    "fix_wrong_error": "Fissare errore falso visualizzato durante l'installazione di alcuni mod"
-                },
-                "others": {
-                    "update_checking": "Aggiornamento processo di controllo è stato ottimizzato (250 volte più veloce)",
-                    "rewording": "Alcune riformulazioni sono state fatte",
-                    "optimize": "Ottimizzare la dimensione del sito"
-                }
-            },
             "2_5_x": {
                 "features": {
                     "recover_versioning": "L'app può ora recuperare dalla corruzione del sistema di versione",

@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import * as firebase from "firebase/app";
+import {initializeApp} from "firebase/app";
 import {getAuth, GoogleAuthProvider, FacebookAuthProvider, TwitterAuthProvider, EmailAuthProvider} from "firebase/auth";
 import * as firebaseui from 'firebaseui';
 import {mapGetters, mapMutations} from "vuex";
@@ -51,9 +51,7 @@ export default {
       appId: "1:128345234146:web:58aa94e084f1db7a63dcbb",
       measurementId: "G-WBTM2N1JRC"
     },
-    // https://firebaseopensource.com/projects/firebase/firebaseui-web/#configuration
     firebaseConfigUI: {
-      //signInSuccessUrl: '/tmp.html',
       signInOptions: [
         GoogleAuthProvider.PROVIDER_ID,
         FacebookAuthProvider.PROVIDER_ID,
@@ -106,7 +104,7 @@ export default {
       signInFailure: this.signInAttempFailure,
       uiShown: this.firebaseUiShown,
     }
-    let app = firebase.initializeApp(this.firebaseConfig)
+    let app = initializeApp(this.firebaseConfig)
     this.auth = getAuth(app);
     this.auth.onAuthStateChanged(() => this.setAuthenticatedUser(this.auth.currentUser));
     let ui = new firebaseui.auth.AuthUI(this.auth, "smu-auth-ui")

@@ -2,7 +2,7 @@
   <div>
     <div style="margin-bottom: 10px; text-align: right">
       <el-link :underline="false" style="float: left" @click="displayHelp">
-        <i class="material-icons">help_outline</i>
+        <i class="fa-duotone fa-circle-question"></i>
       </el-link>
       <el-button type="primary" plain @click="($event) => { this.toEdit = null ; this.openCreateNewGroup($event) }">{{
           $t(`message.mods.create_new_group_button`)

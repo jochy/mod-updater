@@ -5,7 +5,7 @@
         <el-col :span="12" style="width: 100%">
           <el-card shadow="always" style="width: 100%">
             <div style="text-align: left; font-size: 14px">
-              <changelog/>
+              <last-changelog/>
             </div>
           </el-card>
         </el-col>
@@ -98,11 +98,11 @@ import Backend from "@/backend.js";
 import LastMods from "./LastMods.vue";
 import {mapGetters} from 'vuex';
 import Ads from "@/components/google/Ads.vue";
-import Changelog20500 from "@/components/changelog/Changelog20500.vue";
+import LastChangelog from "@/components/changelog/Changelog20500.vue";
 
 export default {
   name: "HomeApp",
-  components: {Changelog: Changelog20500, LastMods, Ads},
+  components: {LastChangelog: LastChangelog, LastMods, Ads},
   data: function () {
     return {windowHeight: window.innerHeight - 65 - 100, facts: null}
   },

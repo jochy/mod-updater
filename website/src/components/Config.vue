@@ -36,7 +36,7 @@
           <el-switch v-model="enableVersioning"/>
           <el-link :underline="false" @click="displayVersioningPopupHelp"
                    style="top: 3px; vertical-align: sub; margin-left: 30px">
-            <i class="material-icons">help_outline</i>
+            <i class="fa-duotone fa-circle-question"></i>
           </el-link>
         </el-form-item>
         <el-form-item :label="$t(`message.config.new_folder_pattern`)" prop="newFolderPattern"
@@ -51,7 +51,7 @@
             }}
           </p>
           <el-link :underline="false" @click="newPatternHelp" style="top: 3px; vertical-align: sub; margin-left: 30px">
-            <i class="material-icons">help_outline</i>
+            <i class="fa-duotone fa-circle-question"></i>
           </el-link>
         </el-form-item>
         <el-form-item :label="$t(`message.config.check_update_interval`)">
@@ -62,14 +62,14 @@
           <el-switch v-model="displayUpdatePopup"/>
           <el-link :underline="false" @click="displayUpdatePopupHelp"
                    style="top: 3px; vertical-align: sub; margin-left: 30px">
-            <i class="material-icons">help_outline</i>
+            <i class="fa-duotone fa-circle-question"></i>
           </el-link>
         </el-form-item>
         <el-form-item :label="$t(`message.config.update_mods_in_their_previous_folder`)">
           <el-switch v-model="updateModInPreviousFolder"/>
           <el-link :underline="false" @click="displayUpdateModInPreviousFolderPopupHelp"
                    style="top: 3px; vertical-align: sub; margin-left: 30px">
-            <i class="material-icons">help_outline</i>
+            <i class="fa-duotone fa-circle-question"></i>
           </el-link>
         </el-form-item>
         <el-form-item
@@ -90,7 +90,7 @@
           <el-switch v-model="disableHardwareAcceleration"/>
           <el-link :underline="false" @click="hardwareAccelerationHelp"
                    style="top: 3px; vertical-align: sub; margin-left: 30px">
-            <i class="material-icons">help_outline</i>
+            <i class="fa-duotone fa-circle-question"></i>
           </el-link>
         </el-form-item>
       </el-form>

@@ -386,26 +386,6 @@
             "fixes": "Behebungen",
             "others": "Sonstige",
             "feeling_about": "Diese Version bewerten",
-            "2_4_0": {
-                "features": {
-                    "i18n": "Sie können nun die Sprache in der App und auf der Website auswählen. Fühlen Sie sich frei, eine falsche Übersetzung in der Discord zu melden.",
-                    "translate_button": "Es gibt nun eine \"Übersetzen\"-Taste neben der kurzen Beschreibung (in Suchergebnissen) und neben der Beschreibung (in Mod Detailansicht). Bitte beachten Sie, dass große Beschreibungen einige Zeit brauchen, um übersetzt zu werden...",
-                    "uninstalling": "Deinstallieren der App entfernt jetzt alle internen Dateien und alle aktuellen Zustände",
-                    "icemunmun": "Icemun mods werden jetzt indiziert",
-                    "vickysims": "Vicky Sims mods werden jetzt indiziert"
-                },
-                "fixes": {
-                    "fix_loading": "Verhindern Sie, dass die App nach einigen Operationen im Zustand \"Loading\" bleibt",
-                    "fix_versioning": "Problem behoben mit Versionssystem nicht richtig starten auf einigen Computern",
-                    "fix_restart": "Problem behoben, bei dem die App Mods ohne Neustart nicht mehr installieren oder aktualisieren konnte",
-                    "fix_wrong_error": "Fehler beim Installieren einiger Mods behoben"
-                },
-                "others": {
-                    "update_checking": "Update-Check-Prozess wurde optimiert (250 mal schneller)",
-                    "rewording": "Einige Neuwörter wurden gemacht",
-                    "optimize": "Optimierung der Website-Größe"
-                }
-            },
             "2_5_x": {
                 "features": {
                     "recover_versioning": "Die App kann jetzt von der Version System Korruption erholen",

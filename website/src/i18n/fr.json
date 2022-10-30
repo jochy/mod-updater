@@ -386,26 +386,6 @@
       "fixes": "Corrections",
       "others": "Autre",
       "feeling_about": "Notez cette version",
-      "2_4_0": {
-        "features": {
-          "i18n": "Vous pouvez désormais changer la langue de l'application en haut à droite",
-          "translate_button": "A certains endroits, il y a un bouton \"Traduire\" qui vous permet de traduire le texte écrit par un Modder. Plus le texte est gros, plus la traduction prendra du temps...",
-          "uninstalling": "La désinstallation de l'application supprime également tous les fichiers internes",
-          "icemunmun": "Les mods de Icemunmun sont désormais indexés",
-          "vickysims": "Les mods de VickySims sont désormais indexés"
-        },
-        "fixes": {
-          "fix_loading": "Correction d'un problème où l'application restait dans l'état \"Chargement\"",
-          "fix_versioning": "Correction d'un problème avec le système d'historique sur certains PC",
-          "fix_restart": "Correction d'un problème où l'application n'était plus capable d'installer ou supprimer des mods sans un redémarrage",
-          "fix_wrong_error": "Correction d'une erreur affichée à l'écran à tord lors de l'installation de certains mods"
-        },
-        "others": {
-          "update_checking": "Amélioration du processus de vérification des mises à jours (250 fois plus rapide)",
-          "rewording": "Quelques renommages ont été faits",
-          "optimize": "Optimisation de la taille du site web"
-        }
-      },
       "2_5_x": {
         "features": {
           "recover_versioning": "L'application peut désormais réparer les problèmes de corruption de données du système d'historique",

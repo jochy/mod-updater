@@ -1,7 +1,6 @@
 import {createApp} from 'vue'
 import App from './App.vue'
 import 'element-plus/dist/index.css'
-import ElementPlus from 'element-plus'
 import {createRouter, createWebHistory} from "vue-router";
 import Home from './components/Home.vue';
 import Search from './components/Search.vue';
@@ -9,7 +8,6 @@ import {createStore} from "vuex";
 import Store from "./store.js";
 import Detail from './components/Detail.vue';
 import DetailGroup from './components/DetailGroup.vue';
-import Particles from "vue3-particles";
 import Download from "./components/Download.vue";
 import Contact from "./components/Contact.vue";
 import About from "./components/About.vue";
@@ -20,7 +18,7 @@ import IssueScreen from "@/components/issues/IssueScreen.vue";
 import Status from "@/components/Status.vue";
 import * as Sentry from "@sentry/vue";
 import {BrowserTracing} from "@sentry/tracing";
-import pkg from '../package.json';
+import {version} from '../package.json';
 import 'element-plus/theme-chalk/dark/css-vars.css';
 import VueLazyload from '@jambonn/vue-lazyload';
 import Versioning from "@/components/versioning/Versioning.vue";
@@ -109,7 +107,7 @@ Sentry.init({
             tracingOrigins: ["localhost", "sims-mods-updater.com", /^\//],
         }),
     ],
-    release: "smu-web@" + pkg.version,
+    release: "smu-web@" + version,
     // Set tracesSampleRate to 1.0 to capture 100%
     // of transactions for performance monitoring.
     // We recommend adjusting this value in production
@@ -132,11 +130,9 @@ const i18n = createI18n({
 })
 
 
-app.use(ElementPlus)
-    .use(i18n)
+app.use(i18n)
     .use(router)
     .use(store)
-    .use(Particles)
     .use(CKEditor)
     .use(VueLazyload, {
         preLoad: 2,

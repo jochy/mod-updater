@@ -386,26 +386,6 @@
             "fixes": "Arreglos",
             "others": "Otros",
             "feeling_about": "Vota esta versión",
-            "2_4_0": {
-                "features": {
-                    "i18n": "Ahora puede seleccionar el idioma en la aplicación y en el sitio web. Siéntete libre de reportar cualquier traducción incorrecta en la discordia.",
-                    "translate_button": "Ahora hay un botón \"Translate\" junto a la descripción corta (en resultados de búsqueda) y junto a la descripción (en vista Mod detallado). Tenga en cuenta que las descripciones grandes pueden tomar algún tiempo para ser traducidas...",
-                    "uninstalling": "Desinstalar la aplicación ahora elimina todos los archivos internos y todos los estados actuales",
-                    "icemunmun": "Los mods inmunitarios están ahora indizados",
-                    "vickysims": "Vicky Los mods de Sims ahora están indexados"
-                },
-                "fixes": {
-                    "fix_loading": "Evitar que la aplicación permanezca en el estado \"Cargando\" después de algunas operaciones",
-                    "fix_versioning": "Corregir el problema con el sistema de versión no comienza correctamente en algunos ordenadores",
-                    "fix_restart": "Edición fija donde la aplicación ya no puede instalar o actualizar mods sin reiniciar",
-                    "fix_wrong_error": "Corregir error falso mostrado al instalar algunos mods"
-                },
-                "others": {
-                    "update_checking": "El proceso de comprobación de actualización ha sido optimizado (250 veces más rápido)",
-                    "rewording": "Se han hecho algunas palabras",
-                    "optimize": "Optimize website size"
-                }
-            },
             "2_5_x": {
                 "features": {
                     "recover_versioning": "La aplicación ahora puede recuperarse de la corrupción del sistema de versión",

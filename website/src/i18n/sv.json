@@ -386,26 +386,6 @@
             "fixes": "fixar",
             "others": "Andra",
             "feeling_about": "Rate this version",
-            "2_4_0": {
-                "features": {
-                    "i18n": "Du kan nu välja språket i appen och på webbplatsen. Känn dig fri att rapportera fel översättning i oenigheten.",
-                    "translate_button": "Det finns nu en \"Translate\" knapp bredvid kort beskrivning (i sökresultat) och bredvid beskrivningen (i Mod detaljvy). Observera att stora beskrivningar kan ta lite tid att översättas.",
-                    "uninstalling": "Avinstallera appen tar nu bort alla interna filer och alla aktuella stater",
-                    "icemunmun": "Icemunmun mods är nu indexerade",
-                    "vickysims": "Vicky Sims mods är nu indexerade"
-                },
-                "fixes": {
-                    "fix_loading": "Förhindra att appen stannar i staten \"Loading\" efter vissa operationer",
-                    "fix_versioning": "Fixa problem med versionssystemet som inte startar korrekt på vissa datorer",
-                    "fix_restart": "Lös problemet där appen inte kunde installera eller uppdatera mods längre utan omstart",
-                    "fix_wrong_error": "Fixa falska fel visas när du installerar vissa mods"
-                },
-                "others": {
-                    "update_checking": "Uppdateringskontrollprocessen har optimerats (250 gånger snabbare)",
-                    "rewording": "Vissa omställningar har gjorts",
-                    "optimize": "Optimera webbplatsstorlek"
-                }
-            },
             "2_5_x": {
                 "features": {
                     "recover_versioning": "Appen kan nu återhämta sig från versionssystemkorruption",
