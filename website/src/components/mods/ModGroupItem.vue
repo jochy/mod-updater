@@ -20,11 +20,7 @@
       </div>
     </template>
     <div style="text-align: left">
-      <div style="width: calc(50% - 5px);display: inline-block;text-align:left;vertical-align: top;padding:5px">
-        {{
-          group.desc
-        }}
-      </div>
+      <div style="width: calc(50% - 5px);display: inline-block;text-align:left;vertical-align: top;padding:5px" v-html="group.desc"></div>
       <div style="display: inline-block;padding:5px;width: calc(50% - 20px);height:250px;border-left: 1px solid var(--el-border-color)">
         <el-auto-resizer>
           <template #default="{ height, width }">

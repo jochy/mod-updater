@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9",
+    "@ckeditor/ckeditor5-build-classic": "^35.2.1",
+    "@ckeditor/ckeditor5-vue": "^4.0.1",
     "@element-plus/icons": "^0.0.11",
     "@jambonn/vue-lazyload": "^1.0.9",
     "@sentry/tracing": "^7.8.0",
