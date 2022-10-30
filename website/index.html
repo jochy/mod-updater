@@ -19,10 +19,8 @@
     <link rel="stylesheet" href="//fonts.loli.net/css?family=Inter:300,400,500,600|Open+Sans:400,600;display=swap">
     <link href="https://fonts.googleapis.com/css?family=Cookie&amp;display=swap" rel="stylesheet">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/fa.css" />
-    <link rel="stylesheet" href="/css/central-simmer.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-          rel="stylesheet">
+    <link rel="stylesheet" href="/css/fa.css"/>
+    <link rel="stylesheet" href="/css/central-simmer.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
     <title>Sims 4 mods updater</title>
     <style>
@@ -30,13 +28,55 @@
             background-color: var(--el-bg-color-page);
             margin: 0;
         }
+
         html.dark body {
             background-color: unset;
         }
+
         .-D6i8 {
             display: none !important;
         }
-        ins.adsbygoogle { background: transparent !important; }
+
+        ins.adsbygoogle {
+            background: transparent !important;
+        }
+
+        .loading-rotate {
+            display: inline;
+            -webkit-animation: loading-rotate 2s linear infinite;
+            animation: loading-rotate 2s linear infinite;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: loading-rotate;
+            width: 60px;
+            height: 60px;
+        }
+
+        @keyframes loading-rotate{100%{transform:rotate(360deg)}}
+        @keyframes loading-dash{0%{stroke-dasharray:1,200;stroke-dashoffset:0}50%{stroke-dasharray:90,150;stroke-dashoffset:-40px}100%{stroke-dasharray:90,150;stroke-dashoffset:-120px}}
+
+        .loading-rotate .path {
+            -webkit-animation: loading-dash 1.5s ease-in-out infinite;
+            animation: loading-dash 1.5s ease-in-out infinite;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: none;
+            animation-play-state: running;
+            animation-name: loading-dash;
+            stroke-dasharray: 90,150;
+            stroke-dashoffset: 0;
+            stroke-width: 2;
+            stroke: #409EFF;
+            stroke-linecap: round;
+        }
     </style>
     <script>
         function showSpoiler(el) {
@@ -49,7 +89,7 @@
         }
 
         window.setPage = function (name) {
-            let event = new CustomEvent('new-page', { to: name });
+            let event = new CustomEvent('new-page', {to: name});
             window.dispatchEvent(event);
 
             if (gtag != null) {
@@ -94,6 +134,20 @@
     <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
         Please enable it to continue.</strong>
 </noscript>
+<div id="loading-screen" style="width: 100%; height: 100%; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 9999;">
+    <div class="smu-loader" style="max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;">
+        <svg class="loading-rotate" viewBox="-10, -10, 50, 50" style="margin: auto;position: absolute; top: 0;bottom: 0;left: 0;right: 0;margin: auto;"><path class="path" d="
+          M 30 15
+          L 28 17
+          M 25.61 25.61
+          A 15 15, 0, 0, 1, 15 30
+          A 15 15, 0, 1, 1, 27.99 7.5
+          L 15 15
+        " style="stroke-width: 4px; fill: rgba(0, 0, 0, 0)"></path></svg>
+    </div>
+    <img class="central-simmer-loader" style="display: none;max-height: 100%;max-width: 100%;width: auto;height: auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;"
+         src="https://centralsimmertesting.com/wp-content/uploads/themeres/anim/anim-lightskin.webp">
+</div>
 <div id="app"></div>
 <script type="module" src="/src/main.js"></script>
 <!-- built files will be auto injected -->

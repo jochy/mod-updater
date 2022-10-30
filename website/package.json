@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vite",
+    "preview": "vite preview",
     "build": "vite build --mode prod",
     "lint": "eslint src ",
     "translate": "node translate.js"

@@ -135,3 +135,11 @@
 .central-simmer.dark section.el-container .el-scrollbar {
     background: url("https://centralsimmer.com/wp-content/uploads/themeres/bg/bg_darkskin_plain.jpg") !important;
 }
+
+.central-simmer .central-simmer-loader {
+    display: inline-block !important;
+}
+
+.central-simmer .smu-loader {
+    display: none !important;
+}
