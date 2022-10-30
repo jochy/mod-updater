@@ -552,8 +552,4 @@ html.dark {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
-.tox-statusbar {
-  display: none !important;
-}
 </style>
