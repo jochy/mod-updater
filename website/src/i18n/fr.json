@@ -3,7 +3,7 @@
     "common": {
       "link": "lien",
       "item_type_label": "Type",
-      "group_item_type_label": "Groupe de mods",
+      "group_item_type_label": "Modpack",
       "edit_button": "Modifier",
       "hide_button": "Masquer",
       "translate_button": "Traduire",
@@ -87,10 +87,10 @@
       },
       "mods_included": "Mods inclus,",
       "group_mods_tab_label": "Mods",
-      "group_confirm_install": "En installant ce groupe, vous allez installer les mods suivants :",
-      "are_you_sure_do_you_cant_to_remove_this_mod_group": "Voulez-vous supprimer ce groupe de mods ? Les mods ne seront pas supprimés, l'application va juste ne plus suivre ce groupe.",
-      "group_installed": "Groupe de mods installé",
-      "group_uninstalled": "Groupe de mods désinstallé"
+      "group_confirm_install": "En installant ce pack, vous allez installer les mods suivants :",
+      "are_you_sure_do_you_cant_to_remove_this_mod_group": "Voulez-vous supprimer ce pack de mods ? Les mods ne seront pas supprimés, l'application va juste ne plus suivre ce pack.",
+      "group_installed": "Modpack installé",
+      "group_uninstalled": "Modpack désinstallé"
     },
     "app": {
       "authenticate": "Authentification",
@@ -268,30 +268,30 @@
         "title": "Confirmation de la désactivation",
         "desc": "Le mod <b style=\"color: var(--el-color-primary)\">{modName}</b> va être désactivé. <br/>Les fichiers vont rester sur votre disque, mais ne seront pas pris en compte par le jeu."
       },
-      "groups_tab_label": "Groupes de mods",
-      "group_form_title": "Titre du groupe",
-      "group_form_description": "Description du groupe",
+      "groups_tab_label": "Modpack",
+      "group_form_title": "Titre du pack",
+      "group_form_description": "Description du pack",
       "please_fill_the_field": "Le champ est obligatoire",
       "length_should_be_in_range": "La taille doit être entre {min} et {max} caractères",
-      "create_new_group_button": "Nouveau groupe",
-      "create_new_group_dialog": "Créer un nouveau groupe de mods",
-      "edit_group_dialog": "Modifier un groupe",
+      "create_new_group_button": "Nouveau modpack",
+      "create_new_group_dialog": "Créer un nouveau modpack",
+      "edit_group_dialog": "Modifier un modpack",
       "group_remove_dialog": {
-        "title": "Suppression du groupe",
-        "desc": "Ce groupe va être supprimé. L'application ne va plus suivre les mises à jours de ce groupe. Les mods inclus dans ce groupe ne seront pas modifiés ni désinstallés."
+        "title": "Suppression du modpack",
+        "desc": "Ce pack va être supprimé. L'application ne va plus suivre les mises à jours de ce pack. Les mods inclus dans ce pack ne seront pas modifiés ni désinstallés."
       },
       "group_help_dialog": {
         "title": "Fonctionnalité de Mod pack",
-        "desc": "<h3>Cette fonctionnalité vous permet de partager un ensemble de mods installés en local.</h3><br/>Quand un utilisateur installe un groupe de mods, tous les mods inclus dans ce groupe seront installés par l'application. Les mods auront la même configuration que celle du créateur du groupe.<br/>Vous pouvez créer un groupe de mods, qui sera recherchable et installable par tous les utilisateurs."
+        "desc": "<h3>Cette fonctionnalité vous permet de partager un ensemble de mods installés en local.</h3><br/>Quand un utilisateur installe un pack de mods, tous les mods inclus dans ce pack seront installés par l'application. Les mods auront la même configuration que celle du créateur du pack.<br/>Vous pouvez créer un modpack, qui sera recherchable et installable par tous les utilisateurs."
       },
       "group_err_dialog": {
         "title": "Echec",
         "desc": "Error lors de la création ou la modification du group de mods : {reason}"
       },
-      "group_created": "Groupe de mods créé",
-      "group_edited": "Groupe de mod modifié",
-      "no_followed_groups_title": "Aucun groupe de mods",
-      "no_followed_groups_desc": "Vous n'avez aucun groupe de mods. Vous pouvez en créer un ou en télécharger depuis l'écran de recherche"
+      "group_created": "Modpack créé",
+      "group_edited": "Modpack modifié",
+      "no_followed_groups_title": "Aucun modpack",
+      "no_followed_groups_desc": "Vous n'avez aucun modpack. Vous pouvez en créer un ou en télécharger depuis l'écran de recherche"
     },
     "details": {
       "shout_out_to_modders": "Merci d'aller voir le <a href=\"{url}\" target=\"_blank\">{type}</a> de {creator} pour le/la supporter",
@@ -301,7 +301,9 @@
       "unmark_as_outdated": "Le mod n'est pas obsolète",
       "mark_mod_as_outdated_popup_title": "Marquer le mod comme obsolète",
       "mark_mod_as_outdated_popup_desc": "Vous êtes sur le point de marquer ce mod comme obsolète : les autres utilisateurs vont le voir.<br/><b>Merci, de ne pas le faire si vous n'êtes pas sûr de vous.</b>",
-      "mark_mod_as_outdated_popup_confirm_button": "Marquer le mod comme obsolète"
+      "mark_mod_as_outdated_popup_confirm_button": "Marquer le mod comme obsolète",
+      "my_rating": "Ma note",
+      "community_rating": "La note de la communauté"
     },
     "scheduler": {
       "pending_tasks": "Tâches en attente",
@@ -392,7 +394,7 @@
           "mods_screen_redesign": "L'écran des Mods a été repensé pour optimiser les performances",
           "bulk_operations": "Vous pouvez désormais lancer des opérations sur plusieurs mods en même temps (suppression, activation, etc.)",
           "log_in": "Vous pouvez désormais vous connecter avec votre compte Google, Facebook, Twitter et même créer un compte. Ceci active des fonctionnalités supplémentaires.",
-          "mod_group": "Vous pouvez désormais publier des groupes de mods qui seront recherchables et installables par les autre sutilisateurs. Plus de fonctionnalités autour de ce sujet prochainement !",
+          "mod_group": "Vous pouvez désormais publier des packs de mods qui seront recherchables et installables par les autre sutilisateurs. Plus de fonctionnalités autour de ce sujet prochainement !",
           "adeepindigo": "Les mods d'Adeepindigo sont désormais indexés",
           "feedback": "Vous pouvez désormais noter une version"
         },

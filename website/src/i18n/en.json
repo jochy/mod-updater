@@ -3,7 +3,7 @@
     "common": {
       "link": "link",
       "item_type_label": "Type",
-      "group_item_type_label": "Mods group",
+      "group_item_type_label": "Modpack",
       "hide_button": "Hide",
       "edit_button": "Edit",
       "translate_button": "Translate",
@@ -87,10 +87,10 @@
       },
       "mods_included": "Mods included",
       "group_mods_tab_label": "Mods",
-      "group_confirm_install": "By installing this group, you will install the following mods:",
-      "are_you_sure_do_you_cant_to_remove_this_mod_group": "Are you sure you want to remove this mod group? Mods won't be removed, this will just untrack the group.",
-      "group_installed": "Mod group installed",
-      "group_uninstalled": "Mod group removed"
+      "group_confirm_install": "By installing this modpack, you will install the following mods:",
+      "are_you_sure_do_you_cant_to_remove_this_mod_group": "Are you sure you want to remove this modpack? Mods won't be removed, this will just untrack the modpack.",
+      "group_installed": "Mod pack installed",
+      "group_uninstalled": "Mod pack removed"
     },
     "app": {
       "authenticate": "Authentication",
@@ -268,30 +268,30 @@
         "title": "Disable confirmation",
         "desc": "The mod <b style=\"color: var(--el-color-primary)\">{modName}</b> will be disabled. <br/>This means that files will still be on your filesystem, but won't be picked by the game."
       },
-      "groups_tab_label": "Mods groups",
-      "group_form_title": "Group title",
-      "group_form_description": "Group description",
+      "groups_tab_label": "modpack",
+      "group_form_title": "Pack title",
+      "group_form_description": "Pack description",
       "please_fill_the_field": "Please fill this field",
       "length_should_be_in_range": "Length should be from {min} to {max} letters",
-      "create_new_group_button": "New group",
-      "create_new_group_dialog": "Create a new Mod group",
-      "edit_group_dialog": "Edit Mod group",
+      "create_new_group_button": "New modpack",
+      "create_new_group_dialog": "Create a new Mod pack",
+      "edit_group_dialog": "Edit Mod pack",
       "group_remove_dialog": {
-        "title": "Remove group confirmation",
-        "desc": "The group will be removed. The app will not track group's updates. Mods will still be installed"
+        "title": "Remove modpack confirmation",
+        "desc": "The modpack will be removed. The app will not track pack's updates. Mods will still be installed"
       },
       "group_help_dialog": {
-        "title": "Group Mod feature",
-        "desc": "<h3>This feature allows you to share a mod pack, based on your installed mods.</h3><br/>When a user installs a mod group, it will automatically installs all mods included in this group, with the same creator's configuration.<br/>You can create a mod group, which will be searchable and installable by any other user."
+        "title": "Mod pack feature",
+        "desc": "<h3>This feature allows you to share a mod pack, based on your installed mods.</h3><br/>When a user installs a modpack, it will automatically installs all mods included in this pack, with the same creator's configuration.<br/>You can create a modpack, which will be searchable and installable by any other user."
       },
       "group_err_dialog": {
         "title": "Failure",
-        "desc": "Unable to create or edit a mod group: {reason}"
+        "desc": "Unable to create or edit a mod pack: {reason}"
       },
-      "group_created": "Mod group created",
-      "group_edited": "Mod group edited",
-      "no_followed_groups_title": "No mod group",
-      "no_followed_groups_desc": "You don't have any mod group. You can create one or install some from the search menu"
+      "group_created": "Mod pack created",
+      "group_edited": "Mod pack edited",
+      "no_followed_groups_title": "No mod pack",
+      "no_followed_groups_desc": "You don't have any mod pack. You can create one or install some from the search menu"
     },
     "details": {
       "shout_out_to_modders": "Please, go check out {creator}'s <a href=\"{url}\" target=\"_blank\">{type}</a> to support them",
@@ -301,7 +301,9 @@
       "unmark_as_outdated": "Unmark as outdated",
       "mark_mod_as_outdated_popup_title": "Mark mod as outdated",
       "mark_mod_as_outdated_popup_desc": "You are about to mark this mod as outdated: other users will see it.<br/><b>Please, do not mark it as outdated if you are not sure.</b>",
-      "mark_mod_as_outdated_popup_confirm_button": "Mark it as outdated"
+      "mark_mod_as_outdated_popup_confirm_button": "Mark it as outdated",
+      "my_rating": "My rate",
+      "community_rating": "Community rating"
     },
     "scheduler": {
       "pending_tasks": "Pending tasks",
@@ -392,7 +394,7 @@
           "mods_screen_redesign": "Mods screen has been redesigned to address performance issues",
           "bulk_operations": "You can now run bulk operations on mods (remove, disable, enable and update)",
           "log_in": "You can now log in using Google, Facebook, Twitter or email/password this unlock some new functionalities",
-          "mod_group": "You can now create Mods group which can be searched and installed by other users. More will come soon around this feature!",
+          "mod_group": "You can now create Mods pack which can be searched and installed by other users. More will come soon around this feature!",
           "adeepindigo": "Adeepindigo mods are now indexed",
           "feedback": "You can now rate an update"
         },

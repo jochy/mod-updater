@@ -59,7 +59,13 @@
             <el-tabs style="margin-left: 20px">
               <el-tab-pane :label="$t(`message.common.info_label`)">
                 <el-descriptions :column="1">
-                  <el-descriptions-item :label="$t(`message.common.creator_label`)" label-class-name="key">
+                  <el-descriptions-item :label="$t(`message.details.my_rating`)" v-if="isApp">
+                    <el-rate  :colors="colors" @change="submitFeedback" v-model="userRating" size="small" style="vertical-align: bottom"></el-rate>
+                  </el-descriptions-item>
+                  <el-descriptions-item :label="$t(`message.details.community_rating`)">
+                    <el-rate v-model="communityRating" disabled size="small" style="vertical-align: bottom"></el-rate>
+                  </el-descriptions-item>
+                  <el-descriptions-item :label="$t(`message.common.creator_label`)" label-class-name="key" v-if="document.creatorPseudo != null">
                     {{ document.creatorPseudo }}
                   </el-descriptions-item>
                   <el-descriptions-item :label="$t(`message.common.created_label`)" label-class-name="key">{{
@@ -72,6 +78,9 @@
                   </el-descriptions-item>
                   <el-descriptions-item :label="$t(`message.common.mods_included`)" label-class-name="key">
                     {{ document.mods.length }}
+                  </el-descriptions-item>
+                  <el-descriptions-item :label="$t(`message.common.installations_label`)" label-class-name="key" v-if="installations != null">
+                    {{ installations }}
                   </el-descriptions-item>
                   <el-descriptions-item :label="$t(`message.common.tags_label`)"
                                         v-if="document.tags != null && document.tags.length > 0"
@@ -113,7 +122,11 @@ export default {
       installPlain: false,
       scheduler: null,
       isTranslating: false,
-      translated: null
+      translated: null,
+      colors: ['#99A9BF', '#F7BA2A', '#FF9900'],
+      userRating: null,
+      communityRating: null,
+      installations: null
     }
   },
   computed: {
@@ -173,10 +186,18 @@ export default {
         a.style.color = 'var(--el-color-primary)';
       });
       this.document.desc = document.getElementById("detail-buffer").innerHTML;
-    }
+    },
+    submitFeedback: async function (val) {
+      await Backend.rate(this.config.uniqueId, this.document.id, val, 'Group');
+    },
   },
   async mounted() {
-    this.document = await Backend.getById(this.id);
+    let back = await Backend.getGroupById(this.id, this.config != null ? this.config.uniqueId : '');
+    this.document = back.doc;
+    this.userRating = back.userRating;
+    this.communityRating = back.communityRating;
+    this.installations = back.installed;
+
     window.updateTitleAndDescription(this.document.title, this.document.desc);
     window.sendGtagEvent("detailGroup", {mod: this.document.title, id: this.document.id});
     this.lintDesc(this.document.desc);

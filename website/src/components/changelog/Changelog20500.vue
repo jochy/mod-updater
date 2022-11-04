@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     submitFeedback: async function (val) {
-      await Backend.rateVersion(this.userId, this.version, val);
+      await Backend.rate(this.userId, this.version, val, 'Version');
     }
   },
   computed: {
@@ -63,7 +63,7 @@ export default {
           this.userId = this.config.uniqueId;
           if (this.userId != null) {
             const _this = this;
-            Backend.getRateVersion(this.userId, this.version).then(res => _this.userRating = res.score);
+            Backend.getRate(this.userId, this.version, 'Version').then(res => _this.userRating = res.score);
           }
         }
       },

@@ -198,7 +198,7 @@ const store = {
                 const result = await Backend.search(search.query, search.page, search.filters);
                 console.log(`Search done in ${new Date() - start} ms`);
                 await sleep(100);
-                context.state.searchResult.results.push(...result.hits);
+                context.state.searchResult.results.push(...result.hits.filter(it => it.document.isDuplicateOf == null || it.document.isDuplicateOf.id == null));
                 context.state.searchResult.total = result.found;
                 context.state.searchResult.time = result.search_time_ms;
                 context.state.searchResult.success = true;

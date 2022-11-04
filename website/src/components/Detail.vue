@@ -105,6 +105,12 @@
             <el-tabs style="margin-left: 20px">
               <el-tab-pane :label="$t(`message.common.info_label`)">
                 <el-descriptions :column="1">
+                  <el-descriptions-item :label="$t(`message.details.my_rating`)" v-if="isApp">
+                    <el-rate  :colors="colors" @change="submitFeedback" v-model="userRating" size="small" style="vertical-align: bottom"></el-rate>
+                  </el-descriptions-item>
+                  <el-descriptions-item :label="$t(`message.details.community_rating`)">
+                    <el-rate v-model="communityRating" disabled size="small" style="vertical-align: bottom"></el-rate>
+                  </el-descriptions-item>
                   <el-descriptions-item :label="$t(`message.common.provider_label`)" label-class-name="key">
                     <el-link :href="document.url" target="_blank" type="primary">{{ document.provider }}</el-link>
                   </el-descriptions-item>
@@ -133,7 +139,7 @@
                     {{ suggestions.outdated }}
                     <el-tooltip :content="helpMarkedOutdated" placement="bottom" raw-content>
                       <el-link :underline="false" style="top: -1px; vertical-align: sub; margin-left: 5px">
-                        <i class="material-icons" style="font-size: 16px">help_outline</i>
+                        <i class="fa-duotone fa-circle-question"></i>
                       </el-link>
                     </el-tooltip>
                     <el-button v-if="isApp && !suggestions.userOutdated && !isMarkingMod" type="danger" :plain="true"
@@ -216,7 +222,10 @@ export default {
       helpMarkedOutdated: `<span style="font-size:20px">The number of users who find this mod outdated</span>`,
       isMarkingMod: false,
       isTranslating: false,
-      translated: null
+      translated: null,
+      userRating: null,
+      colors: ['#99A9BF', '#F7BA2A', '#FF9900'],
+      communityRating: null,
     }
   },
   computed: {
@@ -287,6 +296,9 @@ export default {
         name: this.document.title
       });
     },
+    submitFeedback: async function (val) {
+      await Backend.rate(this.config.uniqueId, this.document.id, val, 'Mod');
+    },
     lintDesc: function (text) {
       document.getElementById("detail-buffer").innerHTML = text;
       document.getElementById("detail-buffer").querySelectorAll("a").forEach(a => {
@@ -313,7 +325,11 @@ export default {
   },
   async mounted() {
     Backend.suggestions(this.id, this.config != null ? this.config.uniqueId : null)
-        .then(suggestions => _this.suggestions = suggestions);
+        .then(suggestions => {
+          _this.suggestions = suggestions;
+          _this.communityRating = suggestions.communityRating;
+          _this.userRating = suggestions.userRating;
+        });
     this.document = await Backend.getById(this.id);
     window.updateTitleAndDescription(this.document.title, this.document.desc);
     window.sendGtagEvent("detail", {mod: this.document.title, id: this.document.id});

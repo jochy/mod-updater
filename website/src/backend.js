@@ -110,6 +110,11 @@ function suggestions(modId, userId) {
             }));
 }
 
+function getGroupById(groupId, userId) {
+    return axios.get(`${backendUrl}/group/${groupId}?userId=${userId}`)
+        .then(res => res.data);
+}
+
 function markModAsOutdated(modId, userId) {
     return axios.post(`${backendUrl}/user/${userId}/mark-outdated/${modId}`, {})
         .then(res => res.data)
@@ -162,14 +167,15 @@ async function createOrUpdateGroup(group, accessToken, userId) {
     });
 }
 
-async function rateVersion(userId, version, score) {
-    return axios.post(`${backendUrl}/user/${userId}/rate/${version}`, {
-        score: score
+async function rate(userId, targetId, score, type) {
+    return axios.post(`${backendUrl}/user/${userId}/rate/${targetId}`, {
+        score: score,
+        type: type
     });
 }
 
-async function getRateVersion(userId, version) {
-    return axios.get(`${backendUrl}/user/${userId}/rate/${version}`).then(res => res.data)
+async function getRate(userId, targetId, type) {
+    return axios.get(`${backendUrl}/user/${userId}/rate/${targetId}?type=${type}`).then(res => res.data)
         .catch(err => null);
 }
 
@@ -185,6 +191,7 @@ export default {
     unmarkModAsOutdated,
     translate,
     createOrUpdateGroup,
-    rateVersion,
-    getRateVersion
+    rate,
+    getRate,
+    getGroupById
 }
