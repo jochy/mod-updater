@@ -268,7 +268,7 @@
         "title": "Disable confirmation",
         "desc": "The mod <b style=\"color: var(--el-color-primary)\">{modName}</b> will be disabled. <br/>This means that files will still be on your filesystem, but won't be picked by the game."
       },
-      "groups_tab_label": "modpack",
+      "groups_tab_label": "Modpack",
       "group_form_title": "Pack title",
       "group_form_description": "Pack description",
       "please_fill_the_field": "Please fill this field",
