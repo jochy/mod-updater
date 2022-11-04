@@ -22,7 +22,7 @@
                        :width="width"
                        :height="height"
                        :header-height="60"
-                       :row-height="80"
+                       :row-height="60"
                        :row-class="rowClass"
                        :cache="0"
           />
@@ -115,12 +115,12 @@ export default {
         },
         {
           key: 'preview',
-          width: 100,
+          width: 80,
           align: 'center',
           cellRenderer: (cellData) => <div>{!cellData.rowData.isDisabled ?
               <el-badge value={this.$t(`message.common.update_label`)}
                         type="success" class="verbose-badge" hidden={!cellData.rowData.hasUpdate}>
-                <el-image src={cellData.rowData.preview} lazy fit="scale-down" style="height:80px"></el-image>
+                <el-image src={cellData.rowData.preview} lazy fit="scale-down" style="height:60px"></el-image>
               </el-badge>
               :
               <el-badge value={this.$t(`message.common.disabled_label`)} type="info" class="verbose-badge">
