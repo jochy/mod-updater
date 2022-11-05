@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ref="scheduler">
     <div v-if="schedulerStatus != null && hasPendingTask">
       <el-row :gutter="20">
         <el-col :span="18">
@@ -31,7 +31,8 @@
     </div>
     <div v-else-if="!disableAds">
       <div style="height: 90px; max-height: 90px">
-        <ads type="footer" :reload="true"/>
+          <ads type="footer" :reload="true" style="display: inline-block; width: 728px"/>
+          <ads v-if="width > 728 * 2 + 15" type="footer" :reload="true" style="display: inline-block; margin-left: 5px; width: 728px"/>
       </div>
     </div>
   </div>
@@ -44,17 +45,29 @@ import Ads from "@/components/google/Ads.vue";
 export default {
   name: "Scheduler",
   components: {Ads: Ads},
+  data: function () {
+    return {
+      width: 0
+    }
+  },
   computed: {
     ...mapGetters(['schedulerStatus', 'disableAds', 'hasPendingTask']),
   },
   methods: {
-    translated: function(text) {
+    translated: function (text) {
       const i18n = this.$t(text);
       if (i18n != text) {
         return i18n;
       }
       return text;
-    }
+    },
+    onResize: function () {
+      this.width = this.$refs.scheduler.clientWidth;
+    },
+  },
+  mounted() {
+    window.addEventListener('resize', this.onResize);
+    this.onResize();
   }
 }
 </script>
