@@ -6,8 +6,13 @@
         <el-input v-model="form.name" :placeholder="$t(`message.mods.group_form_title`)"/>
       </el-form-item>
       <el-form-item :label="$t(`message.mods.group_form_description`)" prop="desc">
-        <div style="width: 100%; text-align: left" v-if="editor != null">
-          <ckeditor :editor="editor" v-model="form.desc" :config="editorConfig" />
+        <div style="width: 100%; text-align: left">
+          <el-input
+              v-model="form.desc"
+              :rows="10"
+              type="textarea"
+              :placeholder="$t(`message.mods.group_form_description`)"
+          />
         </div>
       </el-form-item>
     </el-form>
@@ -41,7 +46,6 @@ import ModFilter from "./ModFilter.vue";
 import {mapGetters} from "vuex";
 import Backend from '../../backend.js';
 import {ElMessageBox} from "element-plus";
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export default {
   name: "NewGroupDialog",
@@ -56,7 +60,7 @@ export default {
   },
   data: function () {
     return {
-      editor: ClassicEditor,
+      //editor: ClassicEditor,
       editorConfig: {
         removePlugins: ['MediaEmbed', 'CKFinderUploadAdapter', 'CKFinder', 'EasyImage', 'Image', 'ImageCaption', 'ImageStyle', 'ImageToolbar', 'ImageUpload'],
       },

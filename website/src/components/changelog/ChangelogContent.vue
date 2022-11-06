@@ -15,7 +15,9 @@
       <li>{{ $t(`message.changelog.${this.version}.features.display_last_update`) }}</li>
       <li>{{ $t(`message.changelog.${this.version}.features.mod_search_speed`) }}</li>
       <li>{{ $t(`message.changelog.${this.version}.features.ignore_mod_to_install_modpack`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.features.rich_text_editor`) }}</li>
+      <li style="text-decoration: line-through;">
+        {{ $t(`message.changelog.${this.version}.features.rich_text_editor`) }}
+      </li>
       <li>{{ $t(`message.changelog.${this.version}.features.rate`) }}</li>
       <li>{{ $t(`message.changelog.${this.version}.features.kiara`) }}</li>
       <li>{{ $t(`message.changelog.${this.version}.features.curseforge`) }}</li>
