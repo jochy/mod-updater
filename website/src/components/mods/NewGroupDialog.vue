@@ -7,12 +7,7 @@
       </el-form-item>
       <el-form-item :label="$t(`message.mods.group_form_description`)" prop="desc">
         <div style="width: 100%; text-align: left">
-          <el-input
-              v-model="form.desc"
-              :rows="10"
-              type="textarea"
-              :placeholder="$t(`message.mods.group_form_description`)"
-          />
+          <QuillEditor theme="snow" v-model:content="form.desc" contentType="html" />
         </div>
       </el-form-item>
     </el-form>

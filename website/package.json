@@ -1,9 +1,10 @@
 {
   "name": "website",
-  "version": "3.0.0",
+  "version": "2.6.1",
   "private": true,
   "scripts": {
     "serve": "vite",
+    "preview": "vite preview",
     "build": "vite build --mode prod",
     "lint": "eslint src ",
     "translate": "node translate.js"
@@ -14,6 +15,7 @@
     "@jambonn/vue-lazyload": "^1.0.9",
     "@sentry/tracing": "^7.12.1",
     "@sentry/vue": "^7.12.1",
+    "@vueup/vue-quill": "^1.0.0",
     "async-validator": "4.0.3",
     "axios": "^0.27.2",
     "core-js": "^3.25.0",

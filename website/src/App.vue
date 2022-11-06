@@ -556,4 +556,9 @@ html.dark {
 .fa-circle-question {
   font-size: 18px;
 }
+
+.ql-container {
+  min-height: 200px;
+  max-height: 200px;
+}
 </style>
