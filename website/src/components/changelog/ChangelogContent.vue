@@ -33,7 +33,7 @@
       <li v-html="$t(`message.changelog.${this.version}.others.website_code`)"></li>
       <li>{{ $t(`message.changelog.${this.version}.others.deduplicate`) }}</li>
     </ul>
-    <el-button link type="primary"><a target="_blank" href="https://www.buymeacoffee.com/joch/sims-mods-updater-2-5-0">More...</a></el-button>
+    <el-button link type="primary"><a target="_blank" href="https://www.buymeacoffee.com/joch/sims-mods-updater-2-6-0">More...</a></el-button>
   </div>
 </template>
 
