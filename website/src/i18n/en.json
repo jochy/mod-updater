@@ -388,25 +388,29 @@
       "fixes": "Fixes",
       "others": "Others",
       "feeling_about": "Rate this version",
-      "2_5_x": {
+      "2_6_x": {
         "features": {
-          "recover_versioning": "The app can now recover from versioning system corruption",
-          "mods_screen_redesign": "Mods screen has been redesigned to address performance issues",
-          "bulk_operations": "You can now run bulk operations on mods (remove, disable, enable and update)",
-          "log_in": "You can now log in using Google, Facebook, Twitter or email/password this unlock some new functionalities",
-          "mod_group": "You can now create Mods pack which can be searched and installed by other users. More will come soon around this feature!",
-          "adeepindigo": "Adeepindigo mods are now indexed",
-          "feedback": "You can now rate an update"
+          "modpack_screen_table": "Modpack screen now display mods using a table, which reduce the scroll size",
+          "mod_screen_number_displayed": "Increase the number of mods shown in the Mod screen",
+          "task_count": "The app can now handle 2 more tasks at the same time (max = 4)",
+          "display_last_update": "Now display the file update date on duplicates file screen",
+          "mod_search_speed": "Installed mod search has been improved (100 times faster with 2k mods)",
+          "ignore_mod_to_install_modpack": "You can now ignore a mod to install when installing a modpack",
+          "rich_text_editor": "You can now use a text editor to fill the modpack description",
+          "rate": "You can now rate mods and modpack",
+          "kiara": "KiaraSims4Mods are now indexed",
+          "curseforge": "Curseforge mods will be integrated to the database and the app will be able to download them (as soon as they are available)"
         },
         "fixes": {
-          "loading": "Fix loading overlay on search page",
-          "disabled_popup": "Fix disable popup warning message not showing properly",
-          "close_button": "Fix \"close\" button not showing the right label",
-          "update_disabled_mod": "When you update a disabled mod, it will still be disabled after the update"
+          "enable_versioning": "Fix enable versioning popup shown twice",
+          "ignore_update_until_next_one": "Fix 'ignore update until next one' when the mod has multiple files with different version",
+          "srslysims": "Fix Srslysims indexer",
+          "locking_mecanism": "Fix locking behavior: this prevents app from waiting a long time while installing a mod",
+          "icemunmun_title": "Icemunmun mods title have been fixed"
         },
         "others": {
-          "search_engine": "Upgrade search engine (improve search performance x20)",
-          "ads": "Remove some ads"
+          "website_code": "Website code is now published on <a href=\"https://github.com/jochy/mod-updater\" target=\"_blank\">Github</a>",
+          "deduplicate": "Duplicated mods have been removed to keep only the most recent one"
         }
       }
     }

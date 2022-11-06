@@ -98,7 +98,7 @@ import Backend from "@/backend.js";
 import LastMods from "./LastMods.vue";
 import {mapGetters} from 'vuex';
 import Ads from "@/components/google/Ads.vue";
-import LastChangelog from "@/components/changelog/Changelog20500.vue";
+import LastChangelog from "@/components/changelog/ChangelogContent.vue";
 
 export default {
   name: "HomeApp",

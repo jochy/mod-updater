@@ -3,7 +3,7 @@
         "common": {
             "link": "link",
             "item_type_label": "Tipo",
-            "group_item_type_label": "Grupo Mods",
+            "group_item_type_label": "Modpack",
             "hide_button": "Esconde-te.",
             "edit_button": "Editar",
             "translate_button": "Traduzir",
@@ -87,10 +87,10 @@
             },
             "mods_included": "Mods incluídos",
             "group_mods_tab_label": "Mods",
-            "group_confirm_install": "Ao instalar este grupo, você instalará os seguintes mods:",
-            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Tem certeza de que deseja remover este grupo mod? Os Mods não serão removidos, isto irá desviar o grupo.",
-            "group_installed": "Grupo Mod instalado",
-            "group_uninstalled": "Grupo Mod removido"
+            "group_confirm_install": "Ao instalar este modpack, você instalará os seguintes mods:",
+            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Tem certeza de que deseja remover este modpack? Mods não serão removidos, isso irá desmarcar o modpack.",
+            "group_installed": "Pacote Mod instalado",
+            "group_uninstalled": "Pacote Mod removido"
         },
         "app": {
             "authenticate": "Autenticação",
@@ -268,30 +268,30 @@
                 "title": "Compatibilidade com a confirmação",
                 "desc": "O mod <b style=\"color: var(--el-color-primary)\">Não.</b> será desativado. <br/>Isso significa que os arquivos ainda estarão no seu sistema de arquivos, mas não serão escolhidos pelo jogo."
             },
-            "groups_tab_label": "Grupos Mods",
-            "group_form_title": "Título do grupo",
-            "group_form_description": "Descrição do grupo",
+            "groups_tab_label": "Modpack",
+            "group_form_title": "Título do pacote",
+            "group_form_description": "Descrição do pacote",
             "please_fill_the_field": "Por favor preencha este campo",
             "length_should_be_in_range": "O comprimento deve ser de {min} a {max} letras",
-            "create_new_group_button": "Novo grupo",
-            "create_new_group_dialog": "Criar um novo grupo Mod",
-            "edit_group_dialog": "Editar grupo Mod",
+            "create_new_group_button": "Novo modpack",
+            "create_new_group_dialog": "Criar um novo pacote Mod",
+            "edit_group_dialog": "Editar pacote Mod",
             "group_remove_dialog": {
-                "title": "Remover confirmação do grupo",
-                "desc": "O grupo será removido. O aplicativo não rastreará as atualizações do grupo. Mods ainda serão instalados"
+                "title": "Remover confirmação do modpack",
+                "desc": "O modpack será removido. O aplicativo não rastreará as atualizações do pacote. Mods ainda serão instalados"
             },
             "group_help_dialog": {
-                "title": "Característica de Mod de grupo",
-                "desc": "<h3>Este recurso permite que você compartilhe um pacote de mod, com base em seus mods instalados.</h3><br/>Quando um usuário instala um grupo mod, ele instala automaticamente todos os mods incluídos neste grupo, com a configuração do mesmo criador.<br/>Você pode criar um grupo mod, que será pesquisável e instalável por qualquer outro usuário."
+                "title": "Característica do pacote Mod",
+                "desc": "<h3>Este recurso permite que você compartilhe um pacote de mod, com base em seus mods instalados.</h3><br/>Quando um usuário instala um modpack, ele instala automaticamente todos os mods incluídos neste pacote, com a configuração do mesmo criador.<br/>Você pode criar um modpack, que será pesquisável e instalável por qualquer outro usuário."
             },
             "group_err_dialog": {
                 "title": "Incumprimento",
-                "desc": "Incapaz de criar ou editar um grupo de mod: Não."
+                "desc": "Incapaz de criar ou editar um pacote de mod: {reason}"
             },
-            "group_created": "Grupo Mod criado",
-            "group_edited": "Grupo Mod editado",
-            "no_followed_groups_title": "Nenhum grupo mod",
-            "no_followed_groups_desc": "Não tens nenhum grupo mod. Você pode criar um ou instalar alguns no menu de pesquisa"
+            "group_created": "Pacote Mod criado",
+            "group_edited": "Mod pack editado",
+            "no_followed_groups_title": "Nenhum pacote mod",
+            "no_followed_groups_desc": "Não tens nenhum mod pack. Você pode criar um ou instalar alguns no menu de pesquisa"
         },
         "details": {
             "shout_out_to_modders": "Por favor, vai ver se és um criador. <a href=\"{url}\" target=\"_blank\">Não.</a> para apoiá-los",
@@ -301,7 +301,9 @@
             "unmark_as_outdated": "Unmark como ultrapassado",
             "mark_mod_as_outdated_popup_title": "Mark mod como ultrapassado",
             "mark_mod_as_outdated_popup_desc": "Você está prestes a marcar este mod como desatualizado: outros usuários vão vê-lo.<br/><b>Por favor, não o marque como desatualizado se você não tiver certeza.</b>",
-            "mark_mod_as_outdated_popup_confirm_button": "Marcar como desatualizado"
+            "mark_mod_as_outdated_popup_confirm_button": "Marcar como desatualizado",
+            "my_rating": "A minha taxa",
+            "community_rating": "Classificação comunitária"
         },
         "scheduler": {
             "pending_tasks": "tarefas pendentes",
@@ -386,25 +388,29 @@
             "fixes": "Correções",
             "others": "Outros",
             "feeling_about": "Avalie esta versão",
-            "2_5_x": {
+            "2_6_x": {
                 "features": {
-                    "recover_versioning": "O aplicativo agora pode recuperar da corrupção do sistema de versão",
-                    "mods_screen_redesign": "A tela Mods foi redesenhada para resolver problemas de desempenho",
-                    "bulk_operations": "Agora você pode executar operações em massa em mods (remover, desativar, ativar e atualizar)",
-                    "log_in": "Agora você pode fazer login usando o Google, Facebook, Twitter ou e-mail/password este desbloquear algumas novas funcionalidades",
-                    "mod_group": "Agora você pode criar Grupo Mods que pode ser pesquisado e instalado por outros usuários. Mais virá em breve ao redor deste recurso!",
-                    "adeepindigo": "Os mods Adeepindigo estão agora indexados",
-                    "feedback": "Agora você pode classificar uma atualização"
+                    "modpack_screen_table": "Tela Modpack agora exibe mods usando uma tabela, que reduz o tamanho do rolo",
+                    "mod_screen_number_displayed": "Aumentar o número de mods mostrados na tela Mod",
+                    "task_count": "O aplicativo agora pode lidar com mais 2 tarefas ao mesmo tempo (max = 4)",
+                    "display_last_update": "Agora exibir a data de atualização do arquivo na tela de arquivo duplicatas",
+                    "mod_search_speed": "Pesquisa mod instalada foi melhorada (100 vezes mais rápido com mods 2k)",
+                    "ignore_mod_to_install_modpack": "Agora você pode ignorar um mod para instalar ao instalar um modpack",
+                    "rich_text_editor": "Agora você pode usar um editor de texto para preencher a descrição do modpack",
+                    "rate": "Agora você pode classificar mods e modpack",
+                    "kiara": "KiaraSims4 Mods estão agora indexados",
+                    "curseforge": "Os mods Curseforge serão integrados ao banco de dados e o aplicativo será capaz de baixá-los (assim que estiverem disponíveis)"
                 },
                 "fixes": {
-                    "loading": "Corrigir sobreposição de carregamento na página de pesquisa",
-                    "disabled_popup": "Corrigir desativar mensagem de aviso popup não mostrando corretamente",
-                    "close_button": "Corrigir \"fecha\" botão não mostrando a etiqueta certa",
-                    "update_disabled_mod": "Quando você atualizar um mod desativado, ele ainda será desativado após a atualização"
+                    "enable_versioning": "Fix enable versioning popup mostrado duas vezes",
+                    "ignore_update_until_next_one": "Corrigir 'ignore atualização até o próximo' quando o mod tem vários arquivos com versão diferente",
+                    "srslysims": "Fix Srslysims indexer",
+                    "locking_mecanism": "Corrigir comportamento de bloqueio: isso impede que o aplicativo espere muito tempo ao instalar um mod",
+                    "icemunmun_title": "Icemun mods título foram corrigidos"
                 },
                 "others": {
-                    "search_engine": "Melhorar o motor de busca (melhorar o desempenho da pesquisa x20)",
-                    "ads": "Remover alguns anúncios"
+                    "website_code": "Código do site é agora publicado em <a href=\"https://github.com/jochy/mod-updater\" target=\"_blank\">Github</a>",
+                    "deduplicate": "Mods duplicados foram removidos para manter apenas o mais recente"
                 }
             }
         }

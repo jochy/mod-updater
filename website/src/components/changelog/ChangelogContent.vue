@@ -9,25 +9,29 @@
     </h2>
     <b>{{ $t(`message.changelog.features`) }}</b>
     <ul>
-      <li>{{ $t(`message.changelog.${this.version}.features.recover_versioning`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.features.mods_screen_redesign`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.features.bulk_operations`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.features.log_in`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.features.mod_group`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.features.adeepindigo`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.features.feedback`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.modpack_screen_table`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.mod_screen_number_displayed`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.task_count`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.display_last_update`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.mod_search_speed`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.ignore_mod_to_install_modpack`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.rich_text_editor`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.rate`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.kiara`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.features.curseforge`) }}</li>
     </ul>
     <b>{{ $t(`message.changelog.fixes`) }}</b>
     <ul>
-      <li>{{ $t(`message.changelog.${this.version}.fixes.loading`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.fixes.disabled_popup`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.fixes.close_button`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.fixes.update_disabled_mod`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.fixes.enable_versioning`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.fixes.ignore_update_until_next_one`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.fixes.srslysims`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.fixes.locking_mecanism`) }}</li>
+      <li>{{ $t(`message.changelog.${this.version}.fixes.icemunmun_title`) }}</li>
     </ul>
     <b>{{ $t(`message.changelog.others`) }}</b>
     <ul>
-      <li>{{ $t(`message.changelog.${this.version}.others.search_engine`) }}</li>
-      <li>{{ $t(`message.changelog.${this.version}.others.ads`) }}</li>
+      <li v-html="$t(`message.changelog.${this.version}.others.website_code`)"></li>
+      <li>{{ $t(`message.changelog.${this.version}.others.deduplicate`) }}</li>
     </ul>
     <el-button link type="primary"><a target="_blank" href="https://www.buymeacoffee.com/joch/sims-mods-updater-2-5-0">More...</a></el-button>
   </div>
@@ -38,10 +42,10 @@ import Backend from "../../backend.js";
 import {mapGetters} from "vuex";
 
 export default {
-  name: "Changelog20500",
+  name: "ChangelogContent",
   data: function () {
     return {
-      version: '2_5_x',
+      version: '2_6_x',
       userId: null,
       colors: ['#99A9BF', '#F7BA2A', '#FF9900'],
       userRating: 0

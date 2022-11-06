@@ -3,7 +3,7 @@
         "common": {
             "link": "länk länk",
             "item_type_label": "Typ",
-            "group_item_type_label": "Mods grupp",
+            "group_item_type_label": "Modpack",
             "hide_button": "Hide",
             "edit_button": "Edit",
             "translate_button": "Översättning",
@@ -87,10 +87,10 @@
             },
             "mods_included": "Mods ingår",
             "group_mods_tab_label": "Mods",
-            "group_confirm_install": "Genom att installera denna grupp installerar du följande mods:",
-            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Är du säker på att du vill ta bort denna modgrupp? Mods kommer inte att tas bort, detta kommer bara att spåra gruppen.",
-            "group_installed": "Mod grupp installerad",
-            "group_uninstalled": "Mod grupp bort"
+            "group_confirm_install": "Genom att installera denna modpack installerar du följande mods:",
+            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Är du säker på att du vill ta bort denna modpack? Mods kommer inte att tas bort, detta kommer bara att spåra modpack.",
+            "group_installed": "Mod Pack installerat",
+            "group_uninstalled": "Mod pack bort"
         },
         "app": {
             "authenticate": "Autentisering",
@@ -268,30 +268,30 @@
                 "title": "Inaktiv bekräftelse",
                 "desc": "mod <b style=\"color: var(--el-color-primary)\">{modname}</b> kommer att inaktiveras. <br/>Detta innebär att filer fortfarande kommer att finnas på ditt filsystem, men kommer inte att plockas av spelet."
             },
-            "groups_tab_label": "Modsgrupper",
-            "group_form_title": "Grupp titel",
-            "group_form_description": "Gruppbeskrivning",
+            "groups_tab_label": "Modpack",
+            "group_form_title": "Pack titel",
+            "group_form_description": "Pack beskrivning",
             "please_fill_the_field": "Fyll i detta fält",
             "length_should_be_in_range": "Längd bör vara från {min} till {max} bokstäver",
-            "create_new_group_button": "Ny grupp",
-            "create_new_group_dialog": "Skapa en ny Mod-grupp",
-            "edit_group_dialog": "Redigera Mod Group",
+            "create_new_group_button": "Ny modpack",
+            "create_new_group_dialog": "Skapa ett nytt Mod Pack",
+            "edit_group_dialog": "Redigera Mod Pack",
             "group_remove_dialog": {
-                "title": "Ta bort gruppbekräftelse",
-                "desc": "Gruppen kommer att tas bort. Appen spårar inte gruppens uppdateringar. Mods kommer fortfarande att installeras"
+                "title": "Ta bort modpack bekräftelse",
+                "desc": "modpacken kommer att tas bort. Appen kommer inte att spåra packs uppdateringar. Mods kommer fortfarande att installeras"
             },
             "group_help_dialog": {
-                "title": "Group Mod-funktion",
-                "desc": "<h3>Den här funktionen låter dig dela ett mod pack, baserat på dina installerade mods.</h3><br/>När en användare installerar en mod-grupp installerar den automatiskt alla mods som ingår i denna grupp, med samma skapare konfiguration.<br/>Du kan skapa en mod-grupp, som kommer att vara sökbar och installeras av någon annan användare."
+                "title": "Mod Pack funktion",
+                "desc": "<h3>Den här funktionen låter dig dela ett mod pack, baserat på dina installerade mods.</h3><br/>När en användare installerar en modpack installerar den automatiskt alla mods som ingår i det här paketet, med samma skapare konfiguration.<br/>Du kan skapa en modpack, som kommer att vara sökbar och installeras av någon annan användare."
             },
             "group_err_dialog": {
                 "title": "Underlåtenhet",
-                "desc": "Kan inte skapa eller redigera en modgrupp: {reason}"
+                "desc": "Det går inte att skapa eller redigera en mod pack:"
             },
-            "group_created": "Mod grupp skapad",
-            "group_edited": "Mod grupp redigerad",
-            "no_followed_groups_title": "Ingen mod grupp",
-            "no_followed_groups_desc": "Du har ingen mod grupp. Du kan skapa en eller installera några från sökmenyn"
+            "group_created": "Mod Pack skapad",
+            "group_edited": "Mod Pack redigerad",
+            "no_followed_groups_title": "Ingen mod pack",
+            "no_followed_groups_desc": "Du har ingen mod pack. Du kan skapa en eller installera några från sökmenyn"
         },
         "details": {
             "shout_out_to_modders": "Vänligen, kolla in {skapare} <a href=\"{url}\" target=\"_blank\">{typ}</a> att stödja dem",
@@ -301,7 +301,9 @@
             "unmark_as_outdated": "Unmark som föråldrad",
             "mark_mod_as_outdated_popup_title": "Mark mod som föråldrad",
             "mark_mod_as_outdated_popup_desc": "Du är på väg att markera denna mod som föråldrad: andra användare kommer att se den.<br/><b>Vänligen markera inte det som föråldrat om du inte är säker.</b>",
-            "mark_mod_as_outdated_popup_confirm_button": "Markera den som föråldrad"
+            "mark_mod_as_outdated_popup_confirm_button": "Markera den som föråldrad",
+            "my_rating": "Min hastighet",
+            "community_rating": "Gemenskapsbetyg"
         },
         "scheduler": {
             "pending_tasks": "I väntan på uppgifter",
@@ -386,25 +388,29 @@
             "fixes": "fixar",
             "others": "Andra",
             "feeling_about": "Rate this version",
-            "2_5_x": {
+            "2_6_x": {
                 "features": {
-                    "recover_versioning": "Appen kan nu återhämta sig från versionssystemkorruption",
-                    "mods_screen_redesign": "Mods-skärmen har omdesignats för att hantera prestandaproblem",
-                    "bulk_operations": "Du kan nu köra bulkverksamhet på mods (ta bort, inaktivera, aktivera och uppdatera)",
-                    "log_in": "Du kan nu logga in med hjälp av Google, Facebook, Twitter eller e-post / lösenord detta låsa upp några nya funktioner",
-                    "mod_group": "Du kan nu skapa Mods grupp som kan sökas och installeras av andra användare. Mer kommer snart runt denna funktion!",
-                    "adeepindigo": "Adeepindigo mods är nu indexerade",
-                    "feedback": "Du kan nu betygsätta en uppdatering"
+                    "modpack_screen_table": "Modpack-skärm visar nu mods med en tabell, vilket minskar rullstorleken",
+                    "mod_screen_number_displayed": "Öka antalet mods som visas i Mod-skärmen",
+                    "task_count": "Appen kan nu hantera ytterligare 2 uppgifter samtidigt (max = 4)",
+                    "display_last_update": "Visa nu filuppdateringsdatumet på dubbletter filskärm",
+                    "mod_search_speed": "Installerad mod-sökning har förbättrats (100 gånger snabbare med 2k mods)",
+                    "ignore_mod_to_install_modpack": "Du kan nu ignorera en mod att installera när du installerar en modpack",
+                    "rich_text_editor": "Du kan nu använda en textredigerare för att fylla modpack beskrivning",
+                    "rate": "Du kan nu betygsätta mods och modpack",
+                    "kiara": "KiaraSims4 Mods är nu indexerade",
+                    "curseforge": "Curseforge mods kommer att integreras i databasen och appen kommer att kunna ladda ner dem (så snart de är tillgängliga)"
                 },
                 "fixes": {
-                    "loading": "Fix loading overlay på söksidan",
-                    "disabled_popup": "Fix inaktivera popup varningsmeddelande som inte visar ordentligt",
-                    "close_button": "Fix \"nära\" knappen som inte visar rätt etikett",
-                    "update_disabled_mod": "När du uppdaterar en funktionshindrad mod kommer den fortfarande att inaktiveras efter uppdateringen"
+                    "enable_versioning": "Fix aktivera versions popup visas två gånger",
+                    "ignore_update_until_next_one": "Fix \"ignore-uppdatering till nästa\" när mod har flera filer med olika version",
+                    "srslysims": "Fix Srslysims indexerare",
+                    "locking_mecanism": "Fix låsning beteende: detta förhindrar appen från att vänta länge medan du installerar en mod",
+                    "icemunmun_title": "Icemunmun mods titel har fastställts"
                 },
                 "others": {
-                    "search_engine": "Uppgradera sökmotor (förbättra sökprestanda x20)",
-                    "ads": "Ta bort några annonser"
+                    "website_code": "Webbplatskoden publiceras nu på <a href=\"https://github.com/jochy/mod-updater\" target=\"_blank\">Github</a>",
+                    "deduplicate": "Duplicerade mods har tagits bort för att bara hålla den senaste"
                 }
             }
         }

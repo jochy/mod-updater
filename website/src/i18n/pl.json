@@ -3,7 +3,7 @@
         "common": {
             "link": "link",
             "item_type_label": "Typ",
-            "group_item_type_label": "Grupa Modułowa",
+            "group_item_type_label": "Mod",
             "hide_button": "Hide",
             "edit_button": "Edyta",
             "translate_button": "Translat",
@@ -87,10 +87,10 @@
             },
             "mods_included": "moduły obejmowały moduły",
             "group_mods_tab_label": "Mod",
-            "group_confirm_install": "Poprzez instalowanie tej grupy, zainstalowano następujące modyfikacje: .",
-            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Czy chcesz usunąć tę grupę? Mods nie został jednak zdyskwalifikowany, nie będzie to jednak usunąć grupy.",
-            "group_installed": "Grupa modułowa",
-            "group_uninstalled": "Grupa Modułowa"
+            "group_confirm_install": "Poprzez instalowanie tego modpacka, możemy zainstalować następujące mody: .",
+            "are_you_sure_do_you_cant_to_remove_this_mod_group": "Czy chcesz usunąć ten model? Mody nie zostały usunięte, nie będzie to tylko przetworzone.",
+            "group_installed": "moduł",
+            "group_uninstalled": "Mod"
         },
         "app": {
             "authenticate": "Authenticacja",
@@ -268,30 +268,30 @@
                 "title": "Niepewne potwierdzenie",
                 "desc": "mod <b style=\"color: var(--el-color-primary)\">{modName”</b> Będzie niepełnosprawny. <br/>Oznacza to, że pliki będą nadal w swoim systemie plików, ale nie zostały wybrane przez grę."
             },
-            "groups_tab_label": "grupa Moduł",
-            "group_form_title": "tytuł",
-            "group_form_description": "opis grupy",
+            "groups_tab_label": "Mod",
+            "group_form_title": "Pack",
+            "group_form_description": "opis",
             "please_fill_the_field": "Załóżmy, że to miejsce zajmiemy.",
             "length_should_be_in_range": "Należy od {min} do {max} litery.",
-            "create_new_group_button": "Nowa grupa",
-            "create_new_group_dialog": "Tworzy nową grupę Mod.",
-            "edit_group_dialog": "Edit Mod group",
+            "create_new_group_button": "New modpack",
+            "create_new_group_dialog": "Stworzenie nowego pakietu Mod",
+            "edit_group_dialog": "Edit Mod",
             "group_remove_dialog": {
-                "title": "Grupa przesunięcia",
-                "desc": "Grupa zostanie usunięta. Aplikacja nie może śledzić aktualizacji grupy. Mody będą nadal zainstalowane."
+                "title": "Remove modpack confirmation",
+                "desc": "W ten sposób modpack zostanie usunięty. Aplikacja nie może śledzić aktualizacji. Mody będą nadal zainstalowane."
             },
             "group_help_dialog": {
-                "title": "Grupa Mod",
-                "desc": "<h3>Ta cecha pozwala dzielić pakiet modowy, oparty na twoich zainstalowanych modach.</h3><br/>Kiedy użytkownik instaluje grupę modową, automatycznie uruchamia wszystkie mody zawarte w tej grupie.<br/>Możesz stworzyć grupę modową, która będzie można wyszukiwać i instalować przez innego użytkownika."
+                "title": "Mod",
+                "desc": "<h3>Ta cecha pozwala dzielić pakiet modowy, oparty na twoich zainstalowanych modach.</h3><br/>Kiedy użytkownik instaluje modpack, automatycznie uruchamia wszystkie mody zawarte w pakcie, z tym samym konfiguracją twórcy.<br/>Możesz tworzyć modpack, który będzie można wyszukiwać i instalować przez innego użytkownika."
             },
             "group_err_dialog": {
                 "title": "Failure",
-                "desc": "Nie mogąc tworzyć ani edytować grupy modowej. {reason}"
+                "desc": "Nie mogąc tworzyć ani edytować pakietu modowego: {reason}"
             },
-            "group_created": "Grupa Modułowa",
-            "group_edited": "edytować",
-            "no_followed_groups_title": "Grupa nie modowa",
-            "no_followed_groups_desc": "Nie ma żadnej grupy modowej. Możesz tworzyć jedną lub instalować część z wyszukiwania menu."
+            "group_created": "Mod",
+            "group_edited": "Mod",
+            "no_followed_groups_title": "niedostępny",
+            "no_followed_groups_desc": "Nie ma żadnego pakietu. Możesz tworzyć jedną lub instalować część z wyszukiwania menu."
         },
         "details": {
             "shout_out_to_modders": "Proszę, przejmujesz słońce (pol.). <a href=\"{url}\" target=\"_blank\">{typ}</a> wspierać ich",
@@ -301,7 +301,9 @@
             "unmark_as_outdated": "Nieokreślony",
             "mark_mod_as_outdated_popup_title": "Mark mod as outdated",
             "mark_mod_as_outdated_popup_desc": "Umożliwia to wskazanie tego modu: inni użytkownicy zobaczą to.<br/><b>Nie oznacza to, czy nie jesteśmy pewni.</b>",
-            "mark_mod_as_outdated_popup_confirm_button": "Mark it as outdated"
+            "mark_mod_as_outdated_popup_confirm_button": "Mark it as outdated",
+            "my_rating": "Możliwość",
+            "community_rating": "rating Społeczny"
         },
         "scheduler": {
             "pending_tasks": "zadania",
@@ -386,25 +388,29 @@
             "fixes": "Fix",
             "others": "inni",
             "feeling_about": "Wersja ta",
-            "2_5_x": {
+            "2_6_x": {
                 "features": {
-                    "recover_versioning": "Aplikacja może teraz odwrócić się od korupcji systemowej.",
-                    "mods_screen_redesign": "Przestrzenie modułów zostało przeprojektowane w celu rozwiązania problemów wydajności.",
-                    "bulk_operations": "Możesz działać w dużej mierze na modach (remove, dezaktywowane, umożliwiające i aktualizację).",
-                    "log_in": "Możesz teraz zalogować się w Google, Facebooku, Twitterze lub e-mailu, tym samym odblokuje nowe funkcje.",
-                    "mod_group": "Możesz teraz tworzyć Grupa modułów, która może być przeszukiwana i zainstalowana przez innych użytkowników. Więcej niż tak się dzieje.",
-                    "adeepindigo": "Obecnie mody Adeepindigo są indeksowane.",
-                    "feedback": "Możesz teraz ocenić aktualizację."
+                    "modpack_screen_table": "Obecnie ekran Modpacka wyświetla mody za pomocą tabeli, która zmniejsza rozmiary zwoju.",
+                    "mod_screen_number_displayed": "Increase the number of mods pokazywanych w ekranie Mod.",
+                    "task_count": "Aplikacja może teraz działać w tym samym czasie (max = 4).",
+                    "display_last_update": "Obecnie wyświetla datę aktualizacji pliku na duplikacjach ekranu plików.",
+                    "mod_search_speed": "Instalowane wyszukiwanie modów zostało poprawione (100 razy szybciej z modami 2k).",
+                    "ignore_mod_to_install_modpack": "Możesz teraz zignorować mod, aby instalować modpacka.",
+                    "rich_text_editor": "Możesz teraz użyć edytora tekstu do wypełnienia opisu modpacka.",
+                    "rate": "Może teraz modyfikować i modpackować",
+                    "kiara": "KiaraSims4 (ang.). Mody są teraz indeksowane.",
+                    "curseforge": "mody Curseforge mogą być zintegrowane z bazą danych, a aplikacja będzie mogła pobrać je (z wyjątkiem ich)."
                 },
                 "fixes": {
-                    "loading": "Fix załadować",
-                    "disabled_popup": "Strona oficjalna Fix nie ma odpowiednich informacji na temat popu.",
-                    "close_button": "Fix „zamknięte” przyciskiem nie pokazują odpowiedniej wytwórni.",
-                    "update_disabled_mod": "Gdy uaktualnisz mod, nadal będzie ona niepełnosprawna po aktualizacji."
+                    "enable_versioning": "50x umożliwia tworzenie wersji dwukrotnej",
+                    "ignore_update_until_next_one": "Fix 'ignore aktualizuje się do momentu, gdy mod ma wiele plików z różnymi wersjami.",
+                    "srslysims": "Fix Srslysims index",
+                    "locking_mecanism": "Fix blokuje zachowanie: to zapobiega oczekiwaniu na długi czas, kiedy instaluje mod mod.",
+                    "icemunmun_title": "Nazwy modów na lodzie zostały ustalone."
                 },
                 "others": {
-                    "search_engine": "Upgrade search engine (improve search performance x20) (ang.).",
-                    "ads": "Remove niektóre reklamy."
+                    "website_code": "Kod internetowy jest obecnie publikowany na stronie <a href=\"https://github.com/jochy/mod-updater\" target=\"_blank\">Github</a>",
+                    "deduplicate": "Zmienne mody zostały usunięte, aby zachować tylko najnowsze."
                 }
             }
         }

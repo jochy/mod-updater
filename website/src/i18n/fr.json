@@ -388,25 +388,29 @@
       "fixes": "Corrections",
       "others": "Autre",
       "feeling_about": "Notez cette version",
-      "2_5_x": {
+      "2_6_x": {
         "features": {
-          "recover_versioning": "L'application peut désormais réparer les problèmes de corruption de données du système d'historique",
-          "mods_screen_redesign": "L'écran des Mods a été repensé pour optimiser les performances",
-          "bulk_operations": "Vous pouvez désormais lancer des opérations sur plusieurs mods en même temps (suppression, activation, etc.)",
-          "log_in": "Vous pouvez désormais vous connecter avec votre compte Google, Facebook, Twitter et même créer un compte. Ceci active des fonctionnalités supplémentaires.",
-          "mod_group": "Vous pouvez désormais publier des packs de mods qui seront recherchables et installables par les autre sutilisateurs. Plus de fonctionnalités autour de ce sujet prochainement !",
-          "adeepindigo": "Les mods d'Adeepindigo sont désormais indexés",
-          "feedback": "Vous pouvez désormais noter une version"
+          "modpack_screen_table": "Le contenu d'un modpack est désormais affiché sous forme d'une table pour limiter la taille d'affichage d'un gros modpack",
+          "mod_screen_number_displayed": "Augmentation du nombre de mods affichés sur l'écran des Mods installés",
+          "task_count": "L'application peut désormais gérer jusqu'à 4 tâches (= installations ou suppression de mods) en parallèle",
+          "display_last_update": "La date de mise à jour du fichier est désormais affiché sur l'écran des doublons de fichiers",
+          "mod_search_speed": "La recherche sur l'écran des mods installés a été optimisée (100 fois plus rapide)",
+          "ignore_mod_to_install_modpack": "Vous pouvez désormais ignorer un mods à installer lors de l'installation d'un modpack",
+          "rich_text_editor": "Lors de la création d'un modpack, vous pouvez formatter la description grâce à un éditeur de texte",
+          "rate": "Vous pouvez désormais noter les mods et les modpacks",
+          "kiara": "Les mods de KiaraSims4Mods sont désormais indexés",
+          "curseforge": "Les mods publiés sur Curseforge seront indexés et pourront ête installés depuis l'application (quand le service Curseforge sera disponible)"
         },
         "fixes": {
-          "loading": "Correction du masque de chargement sur certaines pages",
-          "disabled_popup": "Correction de la description de la fenêtre de désactivation d'un mod",
-          "close_button": "Correction du bouton 'Annuler' qui n'affichait pas le bon texte",
-          "update_disabled_mod": "Quand un mod désactivé est mis à jour, il reste désactivé"
+          "enable_versioning": "Correction de la popup d'aide d'activation de l'historique qui s'affichait 2 fois",
+          "ignore_update_until_next_one": "Correction du comportement 'Ignorer la mise à jour jusqu'à la prochaine' pour gérer quelques cas marginaux",
+          "srslysims": "Correction de l'indexation des mods de Srslysims",
+          "locking_mecanism": "Correction de la synchronisation lors de l'installation des mods",
+          "icemunmun_title": "Correction des titres des mods de Icemunmun"
         },
         "others": {
-          "search_engine": "Mise à jour du moteur de recherche (x20 en performances)",
-          "ads": "Suppression de certaines annonces publicitaires"
+          "website_code": "Le code du site web est désormais public sur <a href=\"https://github.com/jochy/mod-updater\" target=\"_blank\">Github</a>",
+          "deduplicate": "Les mods ont été dédupliqués entre les différentes sources, pour ne garder que ceux à jour"
         }
       }
     }

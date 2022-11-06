@@ -6,7 +6,7 @@
         width="60%"
         style="text-align: left"
     >
-      <Changelog20500 v-if="version === '2.5.0'"/>
+      <ChangelogContent v-if="version === '2.6.0'"/>
       <template #footer>
       <span class="dialog-footer">
         <el-button type="primary" @click="displayChangelog = false">Got it!</el-button>
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import Changelog20500 from "@/components/changelog/Changelog20500.vue";
+import ChangelogContent from "@/components/changelog/ChangelogContent.vue";
 
 export default {
   name: "changelog",
   components: {
-    Changelog20500
+    ChangelogContent
   },
   props: {
     version: {
