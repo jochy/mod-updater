@@ -27,7 +27,7 @@ const store = {
             isApp: false,
             config: null,
             schedulerStatus: null,
-            disableAds: false,
+            disableAds: true,
             updates: [],
             applicationManifest: null,
             askLoading: 0,
