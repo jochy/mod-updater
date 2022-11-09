@@ -190,6 +190,7 @@ export default {
     }
   },
   mounted() {
+    document.getElementById("loading-screen").style.display = 'none';
     window.addEventListener('resize', this.onResize);
     if (window.isModAppElectron) {
       this.loadingMods = ElLoading.service({

@@ -29,7 +29,7 @@
             <h3>Windows</h3>
             <hr/>
             <div class="bottom">
-              <a href="https://hazel-smod-manager.vercel.app/download/win32" target="_blank">
+              <a :href="`${downloadHostName}/download/win32`" target="_blank">
                 <el-button type="primary" plain @click="incrementDownloadCounter">sims-mod-updater.exe</el-button>
               </a>
             </div>
@@ -43,10 +43,10 @@
             <h3>Linux</h3>
             <hr/>
             <div class="bottom">
-              <a href="https://hazel-smod-manager.vercel.app/download/rpm" target="_blank">
+              <a :href="`${downloadHostName}/download/rpm`" target="_blank">
                 <el-button type="primary" plain @click="incrementDownloadCounter">sims-mod-updater.rpm</el-button>
               </a>
-              <a href="https://hazel-smod-manager.vercel.app/download/deb" target="_blank"
+              <a :href="`${downloadHostName}/download/deb`" target="_blank"
                  style="margin-top: 2px; display: block">
                 <el-button type="primary" plain @click="incrementDownloadCounter">sims-mod-updater.deb</el-button>
               </a>
@@ -64,7 +64,7 @@
             <h3>MacOS</h3>
             <hr/>
             <div class="bottom">
-              <a href="https://hazel-smod-manager.vercel.app/download/dmg" target="_blank">
+              <a :href="`${downloadHostName}/download/dmg`" target="_blank">
                 <el-button type="primary" plain @click="incrementDownloadCounter">sims-mod-updater.dmg</el-button>
               </a>
             </div>
@@ -79,10 +79,20 @@
 <script>
 import Ads from "@/components/google/Ads.vue";
 import axios from 'axios';
+import {mapGetters} from "vuex";
 
 export default {
   name: "Download",
   components: {Ads},
+  computed: {
+    ...mapGetters(['isCentralSimmer']),
+    downloadHostName: function() {
+      if (this.isCentralSimmer) {
+        return "https://cs-download.sims-mods-updater.com";
+      }
+      return "https://download.sims-mods-updater.com";
+    }
+  },
   methods: {
     incrementDownloadCounter: async function() {
       await axios.get("https://us-central1-smod-manager.cloudfunctions.net/incrementCounter")
