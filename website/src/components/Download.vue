@@ -88,9 +88,9 @@ export default {
     ...mapGetters(['isCentralSimmer']),
     downloadHostName: function() {
       if (this.isCentralSimmer) {
-        return "https://central-simmer-smu-updater.vercel.app";
+        return "https://cs-download.sims-mods-updater.com";
       }
-      return "https://hazel-smod-manager.vercel.app";
+      return "https://download.sims-mods-updater.com";
     }
   },
   methods: {
