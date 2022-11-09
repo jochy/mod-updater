@@ -209,7 +209,6 @@
     height: calc(95vh - 60px) !important;
     z-index: 1000000 !important;
 }
-
 .central-simmer .el-select-dropdown__item {
     font-size: var(--el-font-size-base);
     padding: 10px 10px 10px 10px;
@@ -223,25 +222,21 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
 .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
     background-color: var(--el-fill-color-light);
     border-radius: 15px;
 }
-
 .central-simmer .el-dropdown__popper .el-dropdown-menu{
     border-radius: 15px !important;
     margin: 10px;
     z-index: 10000;
 }
-
 .central-simmer .el-popper.is-pure {
     z-index: 9999 !important;
     position: absolute !important;
     margin: 0px !important;
     border-radius: 15px !important;
 }
-
 .central-simmer .el-card{
     border-radius: var(--el-card-border-radius);
     border-style: solid;
@@ -268,12 +263,10 @@
     border-color: var(--el-color-primary) !important;
     box-shadow: 0px 0px 10px 0px rgb(169 81 223 / 36%) !important;
 }
-
 .central-simmer .el-card{
     margin: 0 !important;
     margin-bottom: 20px !important;
 }
-
 .central-simmer .el-card {
     border-radius: 15px;
     border: 0px solid #FFFFFF00;
@@ -287,7 +280,6 @@
 
 
 /*DIRTY CODE*/
-
 
 .central-simmer .imgPreview[data-v-531a60bf]{
     border-radius: 13px;
@@ -327,7 +319,6 @@
     height: max-content;
     padding-top: 67px;
 }
-
 .central-simmer .el-input--large .el-input__wrapper {
     box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
     margin-left: 100px;
@@ -336,14 +327,12 @@
 .central-simmer .fa-duotone.fa-swap-opacity:before, .central-simmer .fa-duotone:after, .central-simmer .fa-swap-opacity .fa-duotone:before, .central-simmer .fa-swap-opacity .fad:before, .central-simmer .fad.fa-swap-opacity:before, .fad:after {
     opacity: var(--fa-secondary-opacity,1);
 }
-
 .central-simmer .el-input--large .el-input__wrapper {
     padding: 5px 20px;
     box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
     margin-left: 50px;
     margin-right: -50px;
 }
-
 .central-simmer .el-aside.menu-left {
     --el-aside-width: 85px !important;
     border-color: #FFFFFF00;
@@ -352,7 +341,6 @@
     background-color: #e3caf9d6 !important;
     backdrop-filter: blur(30px) !important;
 }
-
 .central-simmer .el-menu-item {
     border-radius: 15px;
     background-color: #FFFFFF00;
@@ -391,7 +379,6 @@
     margin-top: -80px;
     z-index: 999999;
 }
-
 .central-simmer .el-page-header__back{
     z-index: 99999;
     color: var(--el-text-color-primary) !important;
@@ -405,7 +392,6 @@
     border-style: solid;
     border-color: #ffffff00 !important;
 }
-
 .central-simmer .el-page-header__back:hover{
     background-color: #ffffff00;
     color: var(--el-color-primary) !important;
@@ -425,12 +411,9 @@
 .central-simmer .el-page-header__icon .el-icon{
     font-size: 30px;
 }
-
 .central-simmer .logo-container[data-v-c970699f] {
     margin-bottom: -80px;
 }
-
-
 .central-simmer .el-menu-item .el-menu-tooltip__trigger {
     position: absolute;
     left: 0;
@@ -454,7 +437,6 @@
     background: 0 0;
     box-sizing: border-box;
 }
-
 .central-simmer .el-button {
     --el-button-disabled-text-color: rgba(255, 255, 255, 0.5);
     border-color: #FFFFFF00;
@@ -480,7 +462,6 @@
     padding: 20px;
     color: #ffffff;
 }
-
 .central-simmer #app {
     color: #FFFFFF00 !important;
     margin-top: 100px;
@@ -579,8 +560,6 @@
     bottom: 20px !important;
     right: 100px !important;
 }
-
-
 .central-simmer .fi {
     background-size: contain;
     background-position: 0%;
@@ -609,12 +588,9 @@
     margin-left: 20px;
     margin-right: 20px;
 }
-
-
 .central-simmer :is(button, input) {
     font-family: var(--el-font-family);
 }
-
 .central-simmer.dark .el-card{
     background-color: #382742 !important;
     border-color: #382742 !important;
@@ -636,7 +612,6 @@
     color: #ffffff96 !important;
     text-transform: uppercase !important;
 }
-
 .central-simmer.dark .el-input__prefix-inner, .central-simmer.dark .el-input__inner::placeholder{
     color: #382742cc !important;
 }
@@ -646,36 +621,29 @@
 .central-simmer.dark .el-input .el-input__inner{
     color: #382742 !important;
 }
-
 .central-simmer .el-button--small.is-circle {
     padding: 20px !important;
     border-color: var(--el-color-primary);
 }
-
-<<<<<<< HEAD
 .central-simmer .el-main {
     --el-main-padding: 0px;
     margin-right: 10px;
     border-radius: 15px !important;
 }
-
 .central-simmer .el-button.is-circle {
     border-radius: 15px !important;
     padding: 20px !important;
 }
-
 .central-simmer .el-input--small {
     --el-input-height: var(--el-component-size-small);
     font-size: 12px;
     width: 180px;
 }
-
 .central-simmer .el-container{
     margin-top: 3px !important;
     margin-bottom: 3px !important;
     border-radius: 15px !important;
 }
-
 .central-simmer .image[data-v-87359d7f] {
     width: 100%;
     max-width: 280px;
@@ -683,21 +651,16 @@
     border-radius: 15px;
     box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
 }
-
 .central-simmer div[data-v-87359d7f]{
     padding: 0px !important;
 }
-
 .central-simmer .el-col-lg-6 {
     display: flex;
     align-items: flex-start;
     justify-content: start !important;
     max-width: 20%;
     flex: 0 0 50%;
-    }
-
-
-
+}
 .central-simmer .el-space[data-v-87359d7f] {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -714,11 +677,9 @@
     margin-bottom: -10px !important;
     box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
 }
-
 .central-simmer.dark .el-space[data-v-87359d7f]{
     background-color: #2a1e34d6 !important;
 }
-
 .central-simmer .search-filters[data-v-87359d7f] {
     position: absolute;
     z-index: 999;
@@ -729,18 +690,13 @@
     padding: 5px 0px 10px 10px !important;
     border-color: #FFFFFF00 !important;
 }
-
-
-
 .central-simmer div[data-v-87359d7f] {
     padding: 0px !important;
 }
-
 .central-simmer .el-col-8 {
     max-width: 5%;
     flex: 0%;
 }
-
 .central-simmer .el-message{
 border-radius: 15px !important;
 }
@@ -749,12 +705,9 @@ border-radius: 15px !important;
     padding-left: 125px !important;
     border-radius: 15px !important;
 }
-
-
 .central-simmer.dark .el-aside{
     background-color: #2a1e34d6 !important;
 }
-
 .central-simmer .el-popper {
     position: absolute;
     border-radius: 15px;
@@ -766,7 +719,6 @@ border-radius: 15px !important;
     word-wrap: break-word;
     visibility: visible;
 }
-
 .central-simmer .el-popper.is-dark {
     color: #F0F0F0;
     background-color: var(--el-color-primary);
@@ -779,26 +731,17 @@ border-radius: 15px !important;
     inset: 0px auto auto 10px;
     margin: 10px 0px 0px 30px !important;
 }
-
 .central-simmer.dark .el-popper.is-dark{
     background-color: var(--el-color-primary);
     border-color: var(--el-color-primary);
     color: #1e1e1e;
 }
-
-.central-simmer .el-page-header__icon .el-icon {
-    font-size: 30px;
-    font-family: "Font Awesome 6 Pro";
-=======
 .central-simmer.dark section.el-container .el-scrollbar {
     background: url("https://centralsimmer.com/wp-content/uploads/themeres/bg/bg_darkskin_plain.jpg") !important;
 }
-
 .central-simmer .central-simmer-loader {
     display: inline-block !important;
 }
-
 .central-simmer .smu-loader {
     display: none !important;
->>>>>>> c510caa434d1b9eb0f56c539cbb85356945ea5bc
 }
