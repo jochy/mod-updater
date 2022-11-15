@@ -1,11 +1,11 @@
 <template>
   <div>
-    <el-button v-if="detail" type="success" class="install-btn" :plain="installPlain"
+    <el-button v-if="detail && !hidden" type="success" class="install-btn" :plain="installPlain"
                @click="blur($event);install()">
       <i class="fa-duotone fa-download icon-install-btn"></i>
       {{ $t(`message.common.install_mod_button`) }}
     </el-button>
-    <el-button v-else type="success" plain size="small" @click="blur($event);askQuickInstall()">
+    <el-button v-else-if="!hidden" type="success" plain size="small" @click="blur($event);askQuickInstall()">
       <template #icon>
         <i class="fa-duotone fa-download"></i>
       </template>
@@ -59,6 +59,12 @@ export default {
     },
     id: {
       type: String
+    },
+    hidden: {
+      type: Boolean,
+      default() {
+        return false;
+      }
     }
   },
   watch: {
@@ -84,6 +90,7 @@ export default {
       this.loading = false;
     },
     askQuickInstall: function () {
+      console.log('Asked');
       if (this.id === 'modthesims_663925') {
         this.easterEgg = true;
       } else {

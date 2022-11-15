@@ -75,6 +75,8 @@
   <changelog v-if="changelogVersion != null" :version="changelogVersion"/>
 
   <mac-not-well-started-popup v-model="macNotWellStarted"/>
+
+  <queue-handler/>
 </template>
 
 <script>
@@ -90,10 +92,11 @@ import Semver from "../lib/Semver";
 import CoffeePopup from "@/components/ui/CoffeePopup.vue";
 import MacNotWellStartedPopup from "@/components/ui/MacNotWellStartedPopup.vue";
 import Ads from "@/components/google/Ads.vue";
+import QueueHandler from "./components/queue/QueueHandler.vue";
 
 export default {
   name: 'App',
-  components: {Ads, Changelog, Menu, Header, Config, Scheduler, Update, CoffeePopup, MacNotWellStartedPopup},
+  components: {Ads, Changelog, Menu, Header, Config, Scheduler, Update, CoffeePopup, MacNotWellStartedPopup, QueueHandler},
   data: function () {
     return {
       windowHeight: window.innerHeight - 65 - 95,
@@ -323,7 +326,10 @@ export default {
         }
         _this.updateStatus(msg.status);
       });
-      window.ipcRenderer.on('handle-link', (event, msg) => _this.addLinkToQueue(msg));
+      window.ipcRenderer.on('handle-link', (event, msg) => {
+        console.log('Link received ' + msg);
+        _this.addLinkToQueue(msg);
+      });
       window.ipcRenderer.send('webAppLoaded');
     } else {
       setTimeout(function () {

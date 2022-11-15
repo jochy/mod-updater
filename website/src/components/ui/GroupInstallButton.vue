@@ -1,11 +1,11 @@
 <template>
   <div>
-    <el-button v-if="detail" type="success" class="install-btn" :plain="installPlain"
+    <el-button v-if="detail && !hidden" type="success" class="install-btn" :plain="installPlain"
                @click="blur($event);askQuickInstall()">
       <i class="fa-duotone fa-download icon-install-btn"></i>
       {{ $t(`message.common.quick_install_mod_button`) }}
     </el-button>
-    <el-button v-else type="success" plain size="small" @click="blur($event);askQuickInstall()">
+    <el-button v-else-if="!hidden" type="success" plain size="small" @click="blur($event);askQuickInstall()">
       <template #icon>
         <i class="fa-duotone fa-download"></i>
       </template>
@@ -49,6 +49,12 @@ export default {
     },
     document: {
       type: Object
+    },
+    hidden: {
+      type: Boolean,
+      default() {
+        return false;
+      }
     }
   },
   data: function () {
@@ -56,6 +62,11 @@ export default {
       installPlain: false,
       scheduler: null,
       quickInstall: false,
+    }
+  },
+  watch: {
+    quickInstall: function() {
+      this.$emit('quick-install-changed');
     }
   },
   methods: {

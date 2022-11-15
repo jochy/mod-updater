@@ -114,9 +114,6 @@ const store = {
         addLinkToQueue: function(state, link) {
             state.linkQueue.push(link);
         },
-        popLinkFromQueue: function(state) {
-            return state.linkQueue.pop();
-        },
         setTheme: function (state, theme) {
             state.theme = theme;
         },
@@ -178,6 +175,12 @@ const store = {
         }
     },
     actions: {
+        popLinkFromQueue: function(context) {
+            if (context.state.linkQueue.length === 0) {
+                return new Promise(resolve => resolve(null));
+            }
+            return new Promise(resolve => resolve(context.state.linkQueue.pop()));
+        },
         async search(context, search) {
             if (search.query == null) {
                 return;

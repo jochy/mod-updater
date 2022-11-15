@@ -1,19 +1,25 @@
 <template>
-  <div style="display: none">
-    <div v-if="installModId != null">
-      <install-button ref="installModButton" @quick-install-changed="++quickInstallPopupCounter"></install-button>
+  <div>
+    <div v-if="installModId != null && installModId.type === 'mod'">
+      <install-button ref="installModButton" @quick-install-changed="++quickInstallPopupCounter"
+                      :title="installModId.title" :document="installModId" :hidden="true"/>
+    </div>
+    <div v-if="installModId != null && installModId.type === 'group'">
+      <group-install-button ref="groupInstallModButton" @quick-install-changed="++quickInstallPopupCounter"
+                            :document="installModId" :hidden="true"/>
     </div>
   </div>
 </template>
 
 <script>
-import {mapGetters, mapMutations} from "vuex";
+import {mapActions, mapGetters} from "vuex";
 import InstallButton from "../ui/InstallButton.vue";
+import GroupInstallButton from "../ui/GroupInstallButton.vue";
 import Backend from "../../backend.js";
 
 export default {
   name: "QueueHandler",
-  components: {InstallButton},
+  components: {InstallButton, GroupInstallButton},
   data: function () {
     return {
       currentLink: null,
@@ -25,29 +31,35 @@ export default {
     ...mapGetters(['linkQueue']),
   },
   watch: {
-    linkQueue: function () {
-      this.handleLink();
+    linkQueue: {
+      handler: function () {
+        this.handleLink();
+      },
+      deep: true
     }
   },
   methods: {
-    ...mapMutations(['popLinkFromQueue']),
+    ...mapActions(['popLinkFromQueue']),
     handleLink: async function () {
       if (this.currentLink != null) {
         return;
       }
 
       // Retrieve link
-      this.currentLink = this.popLinkFromQueue();
+      this.currentLink = "TMP"; // <- used to prevent others exec during promise resolving
+      this.currentLink = await this.popLinkFromQueue();
 
       // Throw it away if wrong
       if (this.currentLink == null || this.currentLink === "") {
         await this.$nextTick();
-        this.currentLink = null;
-        return this.handleLink();
+        this.currentLink = this.popLinkFromQueue();
+        if (this.currentLink == null || this.currentLink === "") {
+          return;
+        }
       }
 
       // Handle link
-      if (this.currentLink.includes('/mod/v1/')) {
+      if (this.currentLink.includes('/mod/v1/') || this.currentLink.includes('/group/v1/')) {
         if (this.currentLink.endsWith('/')) {
           this.currentLink = this.currentLink.substring(0, this.currentLink.length - 1);
         }
@@ -58,16 +70,22 @@ export default {
               _this.installModId = doc;
               return _this.$nextTick();
             })
-            .then(() => _this.$refs.installModButton.askQuickInstall())
+            .then(() => {
+              if (_this.installModId.type === 'mod') {
+                return _this.$refs.installModButton.askQuickInstall();
+              } else {
+                return _this.$refs.groupInstallModButton.askQuickInstall();
+              }
+            })
             .then(() => {
               let counter = _this.quickInstallPopupCounter;
-              return new Promise(resolve => {
-                while(true) {
+              return new Promise(async resolve => {
+                const interval = setInterval(() => {
                   if (_this.quickInstallPopupCounter != counter) {
+                    clearInterval(interval);
                     return resolve();
                   }
-                  setTimeout
-                }
+                }, 100);
               })
             })
             .catch(err => console.error(err));
