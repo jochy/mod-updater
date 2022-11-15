@@ -72,6 +72,7 @@
         </el-card>
       </el-col>
     </el-row>
+    <a href="mod-installer://mod/v1/thesimsresource_1627153">Install using app</a>
     <ads/>
   </div>
 </template>

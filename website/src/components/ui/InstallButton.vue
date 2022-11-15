@@ -61,6 +61,11 @@ export default {
       type: String
     }
   },
+  watch: {
+    quickInstall: function() {
+      this.$emit('quick-install-changed');
+    }
+  },
   data: function () {
     return {
       installPlain: false,

@@ -38,7 +38,8 @@ const store = {
             commits: null,
             authenticatedUser: null,
             askAuthentication: 0,
-            brand: "smu"
+            brand: "smu",
+            linkQueue: []
         };
     },
     getters: {
@@ -103,11 +104,18 @@ const store = {
         },
         authenticatedUser: state => state.authenticatedUser,
         getAskAuthentication: state => state.askAuthentication,
-        isCentralSimmer: state => state.brand === 'cs'
+        isCentralSimmer: state => state.brand === 'cs',
+        linkQueue: state => state.linkQueue,
     },
     mutations: {
         addDisplayedAd: function (state) {
             state.displayedAds = state.displayedAds + 1;
+        },
+        addLinkToQueue: function(state, link) {
+            state.linkQueue.push(link);
+        },
+        popLinkFromQueue: function(state) {
+            return state.linkQueue.pop();
         },
         setTheme: function (state, theme) {
             state.theme = theme;

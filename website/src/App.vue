@@ -157,7 +157,7 @@ export default {
   methods: {
     ...mapMutations(['setScroll', 'useApp', 'setConfig', 'schedulerStatus', 'setDisableAds',
       'setUpdates', 'setApplicationManifest', 'incrementAskLoading', 'setIssues', 'updateStatus',
-      'setCommits', 'setCentralSimmerBrand']),
+      'setCommits', 'setCentralSimmerBrand', 'addLinkToQueue']),
     onResize: function () {
       this.header = 66;
       if (!this.isApp || this.hasPendingTask || !this.disableAds) {
@@ -323,6 +323,7 @@ export default {
         }
         _this.updateStatus(msg.status);
       });
+      window.ipcRenderer.on('handle-link', (event, msg) => _this.addLinkToQueue(msg));
       window.ipcRenderer.send('webAppLoaded');
     } else {
       setTimeout(function () {
@@ -362,6 +363,7 @@ export default {
     window.ipcRenderer.removeAllListeners('ask-loading-layout');
     window.ipcRenderer.removeAllListeners('status-page-update');
     window.ipcRenderer.removeAllListeners('commits-loaded');
+    window.ipcRenderer.removeAllListeners('handle-link');
   }
 }
 </script>
