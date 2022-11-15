@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd website
-npm version 3.0.0
+npm version 2.6.2
 pnpm i
