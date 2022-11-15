@@ -173,7 +173,7 @@ export default {
       this.setScroll((event.scrollTop + this.windowHeight) / this.$refs.scrollable.$el.clientHeight);
     },
     checkVersion: function (version) {
-      const minVersion = "2.6.1";
+      const minVersion = "2.6.2";
       if (this.applicationManifest == null || version == null || Semver._toLong(version) < Semver._toLong(minVersion)) {
         console.log(version + ' is less than ' + minVersion);
         this.upgradeRequired = true;
