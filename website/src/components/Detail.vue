@@ -12,6 +12,9 @@
           </el-button>
           <el-button v-if="isInstalling" type="info" class="install-btn" :loading="true"/>
         </div>
+        <div v-else>
+          <install-with-app-button :document="document" :detail="true" class="install-btn"/>
+        </div>
         <h1 style="font-size: 24px; padding:0">{{ document.title }}</h1>
         <el-carousel :autoplay="false" arrow="always" type="card" v-if="document != null" height="300px"
                      style="width: 100%">
@@ -167,6 +170,9 @@
                       <el-tag v-for="item in document.tags" :key="item" size="small">{{ item }}</el-tag>
                     </el-space>
                   </el-descriptions-item>
+                  <el-descriptions-item v-if="!isApp" label-class-name="key">
+                    <copy-install-link-button :document="document"/>
+                  </el-descriptions-item>
                 </el-descriptions>
               </el-tab-pane>
             </el-tabs>
@@ -196,12 +202,16 @@ import DateUtils from "../../lib/DateUtils.js";
 import Ads from "@/components/google/Ads.vue";
 import InstallButton from "@/components/ui/InstallButton.vue";
 import {ElMessageBox} from "element-plus";
+import InstallWithAppButton from "./ui/InstallWithAppButton.vue";
+import CopyInstallLinkButton from "./ui/CopyInstallLinkButton.vue";
 
 export default {
   name: "Detail",
   components: {
     InstallButton,
-    Ads
+    Ads,
+    InstallWithAppButton,
+    CopyInstallLinkButton
   },
   data: function () {
     return {

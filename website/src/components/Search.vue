@@ -69,6 +69,9 @@
                            loading></el-button>
                 <install-button v-else :title="item.document.title" :id="item.document.id"/>
               </div>
+              <div v-else style="position: absolute; right:0; top: 0">
+                <install-with-app-button :document="item.document"/>
+              </div>
               <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="4"
                       style="display: flex; align-items: center; justify-content: space-around;">
                 <img v-lazy="{src: item.document.preview}" class="image"/>
@@ -148,6 +151,9 @@
                 </el-popconfirm>
                 <group-install-button v-else :document="item.document"/>
               </div>
+              <div v-else style="position: absolute; right:0; top: 0">
+                <install-with-app-button :document="item.document"/>
+              </div>
 
               <!-- Content -->
               <el-col :xs="24" :sm="12" :md="12" :lg="6" :xl="4"
@@ -212,11 +218,12 @@ import GroupInstallButton from "@/components/ui/GroupInstallButton.vue";
 import Backend from "../backend";
 import AvatarGrid from '@/components/ui/AvatarGrid.vue';
 import {ElMessage} from "element-plus";
+import InstallWithAppButton from "./ui/InstallWithAppButton.vue";
 
 export default {
   name: "Search",
   components: {
-    InstallButton, Ads, TagInput, AvatarGrid, GroupInstallButton
+    InstallButton, Ads, TagInput, AvatarGrid, GroupInstallButton, InstallWithAppButton
   },
   data: function () {
     return {

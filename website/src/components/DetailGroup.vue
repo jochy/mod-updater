@@ -18,6 +18,9 @@
           </el-popconfirm>
           <group-install-button v-else :detail="true" :document="document"/>
         </div>
+        <div v-else>
+          <install-with-app-button :document="document" :detail="true" class="install-btn"/>
+        </div>
 
         <h1 style="font-size: 24px; padding:0">{{ document.title }}</h1>
         <div style="max-width: 420px;text-align: center;display: inline-block">
@@ -99,11 +102,12 @@ import DateUtils from "../../lib/DateUtils.js";
 import AvaterGrid from "./ui/AvatarGrid.vue";
 import GroupInstallButton from "./ui/GroupInstallButton.vue";
 import {ElMessage} from "element-plus";
+import InstallWithAppButton from "./ui/InstallWithAppButton.vue";
 
 export default {
   name: "DetailGroup",
   components: {
-    AvaterGrid: AvaterGrid, GroupInstallButton
+    AvaterGrid: AvaterGrid, GroupInstallButton, InstallWithAppButton
   },
   data: function () {
     return {

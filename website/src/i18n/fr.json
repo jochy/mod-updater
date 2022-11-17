@@ -90,7 +90,10 @@
       "group_confirm_install": "En installant ce groupe, vous allez installer les mods suivants :",
       "are_you_sure_do_you_cant_to_remove_this_mod_group": "Voulez-vous supprimer ce groupe de mods ? Les mods ne seront pas supprimés, l'application va juste ne plus suivre ce groupe.",
       "group_installed": "Groupe de mods installé",
-      "group_uninstalled": "Groupe de mods désinstallé"
+      "group_uninstalled": "Groupe de mods désinstallé",
+      "install_with_app_button": "Installer avec l'application",
+      "copy_link_to_install_using_app": "Copier le lien pour installer avec l'application",
+      "link_copied": "Lien copié"
     },
     "app": {
       "authenticate": "Authentification",
