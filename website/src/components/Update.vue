@@ -1,5 +1,5 @@
 <template>
-  <el-table ref="updateTable" :data="toUpdate" style="width: 100%;">
+  <el-table ref="updateTable" :data="toUpdate" style="width: 100%;" class="update-table">
     <el-table-column>
       <template #default="mod">
         <h4>
@@ -26,12 +26,11 @@
                   <el-select style="width: 100%" disabled :model-value="scope.row.name">
                     <el-option :label="scope.row.name" :value="scope.row.name">{{ scope.row.name }}</el-option>
                   </el-select>
-                  <ul :set="common = longestCommonStringFromList(scope.row.createdFiles)"
-                      style="margin-top: 5px; margin-bottom: 0">
-                    <li v-for="f in scope.row.createdFiles" :key="f" style="list-style-type: none">
-                      {{ f.replace(common, '') }}
-                    </li>
-                  </ul>
+                  <div :set="common = longestCommonStringFromList(scope.row.createdFiles)"
+                      style="margin-top: 5px; margin-bottom: 0; margin-left: 25px">
+                      <el-checkbox v-for="f in scope.row.createdFiles" :key="f" :label="f.replace(common, '')" v-model="removeFiles[mod.row.id][f]"
+                                   style="height: unset"/>
+                  </div>
                 </div>
                 <div v-else-if="scope.row.available != null" class="install-div">
                   <el-select v-model="selected[mod.row.id + scope.row.local.name]"
@@ -82,7 +81,10 @@
       </template>
     </el-table-column>
   </el-table>
-  <el-button type="primary" class="btn-block" @click="validateFileSelected">{{ $t(`message.common.update_label`) }}</el-button>
+  <el-button type="primary" class="btn-block" @click="validateFileSelected">{{
+      $t(`message.common.update_label`)
+    }}
+  </el-button>
 </template>
 
 <script>
@@ -107,7 +109,17 @@ export default {
       defaultProps: {
         children: 'children',
         label: 'label',
-      }
+      },
+      removeFiles: {}
+    }
+  },
+  watch: {
+    toUpdate: {
+      handler: async function () {
+        await this.$nextTick();
+        this.setup();
+      },
+      deep: true
     }
   },
   methods: {
@@ -227,6 +239,7 @@ export default {
                 if (file.toUpdate.internalFiles == null || file.toUpdate.internalFiles.length === 0
                     || (this.checked[mod.id + file.local.name] != null && this.checked[mod.id + file.local.name].length > 0)) {
                   file.toUpdate.checked = this.checked[mod.id + file.local.name];
+                  file.toUpdate.skipDelete = file.local.createdFiles.filter(it => this.removeFiles[mod.id][it] === false);
                   files.push(file);
                 } else {
                   console.debug("No files checked");
@@ -261,17 +274,26 @@ export default {
         window.ipcRenderer.send('ignore-update', toIgnoreUntil);
       }
       this.$emit('close');
+    },
+    setup: function() {
+      this.toUpdate.forEach(mod => {
+        this.removeFiles[mod.id] = {};
+        mod.files.forEach(file => {
+          if (file.toUpdate != null) {
+            this.selected[mod.id + file.local.name] = file.toUpdate.link;
+            this.checked[mod.id + file.local.name] = this.guessFilesToCheck(file, file.toUpdate);
+          }
+          if (file.local.createdFiles != null) {
+            file.local.createdFiles.forEach(it => {
+              this.removeFiles[mod.id][it] = true;
+            });
+          }
+        });
+      });
     }
   },
   mounted() {
-    this.toUpdate.forEach(mod => {
-      mod.files.forEach(file => {
-        if (file.toUpdate != null) {
-          this.selected[mod.id + file.local.name] = file.toUpdate.link;
-          this.checked[mod.id + file.local.name] = this.guessFilesToCheck(file, file.toUpdate);
-        }
-      });
-    });
+    this.setup();
   }
 }
 </script>
@@ -295,4 +317,7 @@ export default {
   margin-top: 5px;
 }
 
+.update-table .el-checkbox__input.is-checked + .el-checkbox__label {
+  color: unset !important;
+}
 </style>

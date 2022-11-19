@@ -34,7 +34,7 @@
                            :width="width"
                            :height="height"
                            :header-height="60"
-                           :row-height="100"
+                           :row-height="170"
                            :row-class="rowClass"
                            :cache="0"
               />
