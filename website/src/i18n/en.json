@@ -360,6 +360,7 @@
       "disable_mod": "Mod disabled",
       "install_mod": "Mod installed",
       "delete_mod": "Mod deleted",
+      "issue_fixed": "Issues fixed",
       "sort_mods": "Mods sorted",
       "app_start": "App started with manually modified files",
       "revert_change": "Change reverted",

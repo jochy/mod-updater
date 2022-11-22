@@ -360,6 +360,7 @@
       "disable_mod": "Mod désactivé",
       "install_mod": "Mod installé",
       "delete_mod": "Mod supprimé",
+      "issue_fixed": "Problèmes corrigés",
       "sort_mods": "Mods triés",
       "app_start": "App démarrée avec des modifications manuelles sur vos fichiers",
       "revert_change": "Modification annulée",

@@ -165,6 +165,7 @@ export default {
         case 'revert_change':
         case 'force_revert_change':
         case 'reset_versioning':
+        case 'issue_fixed':
           return 'warning';
         default:
           return 'info'
