@@ -17,14 +17,14 @@
           </template>
         </el-button>
         <b class="space-right space-left">{{ $t('message.common.filters_label') }} : </b>
-        <el-select v-model="provider" class="m-2" :placeholder="$t('message.common.provider_label')" :clearable="true"
-                   size="small" style="width: 150px"
-                   @change="search">
+        <el-select v-model="provider" class="m-2" :placeholder="$t('message.common.provider_label')"
+                   :clearable="true" size="small" style="width: 150px" @change="search">
           <el-option label="modthesims" value="modthesims"/>
           <el-option label="thesimsresource" value="thesimsresource"/>
           <el-option label="nexusmods" value="nexus4mods"/>
           <el-option :label="$t('message.common.modder_website')" value="Modder's website"/>
           <el-option label="patreon" value="patreon"/>
+          <el-option label="curseforge" value="curseforge"/>
         </el-select>
         <el-select v-model="itemType" class="space-left" :placeholder="$t(`message.common.item_type_label`)"
                    :clearable="true"
