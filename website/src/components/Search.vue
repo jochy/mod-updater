@@ -27,8 +27,7 @@
           <el-option label="curseforge" value="curseforge"/>
         </el-select>
         <el-select v-model="itemType" class="space-left" :placeholder="$t(`message.common.item_type_label`)"
-                   :clearable="true"
-                   size="small" style="width: 150px" @change="search">
+                   :clearable="true" size="small" style="width: 150px" @change="search">
           <el-option label="Mod" value="mod"/>
           <el-option :label="$t(`message.common.group_item_type_label`)" value="group"/>
         </el-select>
@@ -345,7 +344,7 @@ export default {
       if (found.length === 0) return null;
       return found[0].html;
     },
-    removeGroup: function(gid) {
+    removeGroup: function (gid) {
       window.ipcRenderer.send('group-removed', {id: gid});
       ElMessage({
         message: this.$t(`message.common.group_uninstalled`),
